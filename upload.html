@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#mybtn{
+				width: 100px;
+				height: 30px;
+				font-size: 18px;
+				background-color: lightcoral;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<input type="file" name="myfile" id="myfile" value="" />
+		<button id="mybtn">点击</button>
+	</body>
+	<script type="text/javascript">
+		//获取一个上传文件的扩展名
+		var myfile = document.getElementById('myfile');
+		var mybtn = document.getElementById('mybtn');
+		mybtn.onclick = function(){
+			//获取文件上传文件的文件名和扩展名
+			if(myfile.files[0] == undefined){
+				alert('未上传文件！');
+			}else{
+				//获取上传文件的文件名
+				console.log(myfile.files[0]);
+			}
+			//获取上传文件的扩展名
+			var filevalue = myfile.value;
+			var index = filevalue.lastIndexOf('.');
+			alert(filevalue);
+		}
+	</script>
+</html>

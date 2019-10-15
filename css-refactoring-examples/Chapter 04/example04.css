@@ -1,0 +1,12 @@
+a,
+a:visited,
+a:focus,
+a:hover,
+a:active {
+  color: inherit;
+  text-decoration: underline;
+}
+
+a:hover {
+  background-color: #FFFF00;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Debounce</title>
+  <style>
+  #container {
+    display: inline-block;
+    width: 100px;
+    height: 200px;
+    overflow-y: auto;
+  }
+  </style>
+</head>
+<body>
+  <div id="container">
+    helloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworld
+    helloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworld
+    helloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworld
+    helloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworld
+    helloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworld
+    helloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworld
+    helloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworld
+    helloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworld
+    helloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworld
+    helloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworld
+    helloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworld
+  </div>
+  <script>
+  function debounce(fn, delay) {
+    let timer = null
+    // fn.apply(this. arguments)
+    return function() {
+      let context = this
+      let args = arguments
+      clearTimeout(timer)
+
+      timer = setTimeout( function() {
+        fn.apply(context, args)
+      }, delay)
+    }
+  }
+
+  function foo() { 
+    console.log('1111111111111111')
+  }
+
+  let elem = document.getElementById('container')
+  elem.addEventListener('scroll', debounce(foo, 2000))
+  
+  </script>  
+</body>
+</html>

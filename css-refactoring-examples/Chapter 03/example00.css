@@ -1,0 +1,25 @@
+/*
+ * Styles for main navigation links.
+ *
+ * @see templates/_navigation.html
+ */
+
+.nav-link {
+  padding: 4px;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  border-bottom: 4px solid #000000;
+
+  /*
+   * prevents addition of the 4px bottom border
+   * from making the element shift
+   */
+  padding-bottom: 0;
+}
+
+/* @deprecated */
+.navigation-link {
+  color: #1200FF;
+}

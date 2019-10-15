@@ -1,0 +1,29 @@
+body {
+  background: #FFFFFF;
+  color: #333333;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.3;
+  padding: 5% 20%;
+}
+
+article,
+footer,
+header,
+nav {
+  padding: 0;
+}
+
+article,
+nav {
+  margin-bottom: 12px;
+  margin-top: 12px;
+}
+
+footer {
+  margin-top: 12px;
+}
+
+header {
+  margin-bottom: 12px;
+}

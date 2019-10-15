@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Graph</title>
+  <script src="./echarts.js"></script>
+  <style>
+  .graphChart {
+    width:500px; 
+    height: 400px;
+    border: 1px solid black;
+  }
+  </style>
+</head>
+<body>
+  <h1>关系图谱</h1>
+  <div id="graphChart" class="graphChart" ></div>
+
+  <script>
+    var myChart = echarts.init(document.getElementById('graphChart'));
+    option = {
+      series: [{
+        type: 'graph',
+        layout: 'force',
+        // symbolSize: 50,
+        roam: true,
+        focusNodeAdjacency: true,
+        label: {
+            normal: {
+                fontSize:16,//设置标签的字体大小
+                position:'top',//设置标签的位置，当标签不遮盖点时，就变为实体了
+                fontWeight:'bold',//加粗
+                // show: true
+            }
+        },
+        edgeSymbol: ['none', 'arrow'],
+        edgeSymbolSize: [0, 8],
+        edgeLabel: {
+            normal: {
+              show: true,
+              textStyle: {
+                  fontSize: 20,                    
+              },
+              formatter: '{c}'
+            }
+        },
+        force: {
+          gravity: 0.01,
+          repulsion: 100,
+          edgeLength: 200
+        },
+        data: [
+            {
+              name: '10 node',
+              id: '1',
+              symbolSize: 20,
+              itemStyle: {
+                  color: '#9400D3'
+              },
+              // x: -10,
+              // y: -10,
+            },         
+            {
+              name: '1 node',
+              id: '2',
+              symbolSize: 20,
+              itemStyle: {
+                  color: '#9400D3'
+              },
+              // x: 5,
+              // y: 5,
+            },         
+
+        ],
+        links: [ 
+          {
+            source: '1',
+            target: '2',
+            value: 'hello',
+            lineStyle: {
+                normal: {
+                    width: 1.5,
+                    color: '#5B5B5B'
+
+                }
+            },
+          },
+            
+
+        ],
+        lineStyle: {
+            normal: {
+                opacity: 0.9,
+                width: 2,
+                curveness: 0
+            }
+        }
+    }]
+    }
+    myChart.setOption(option);
+  </script>
+</body>
+</html>

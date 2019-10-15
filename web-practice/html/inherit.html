@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <!-- <script>
+    // ES5 inherit
+  function Parent(name) {
+    this.name = name
+    this.habit = ['read', 'write']
+    this.getName = function() {
+      console.log(this.name)
+    }
+  }  
+  // Parent.prototype.habit = ['read', 'write']
+  Parent.prototype.addHabit = function(value) {
+    this.habit.push(value)
+  }
+  Parent.prototype.showHabit = function() {
+    console.log(`${this.name} habit is: ${JSON.stringify(this.habit)}`)
+  }
+  function Child(age, name) {
+    this.age = age
+    Parent.call(this, name)
+  }
+  Child.prototype = Object.create(Parent.prototype)
+  Child.prototype.constructor = Child
+  Child.prototype.sayAge = function() {
+    console.log(this.age)
+  }
+  let child = new Child(10, 'child')
+  console.log('child prototype is :', Child.prototype)
+  console.log('child is :', child)
+  child.addHabit('dance')
+  child.showHabit()
+  child.sayAge()
+  // console.log(child instanceof Child)
+  // console.log(child instanceof Parent)
+  let parent = new Parent('parent')
+  parent.showHabit()
+
+  </script> -->
+  <script>
+  // ES6 inherit
+  class Square {
+    
+    constructor(element){
+      let name = ''
+      this.element = element
+    }
+
+    settName(value)  {
+      this.name = value
+    }
+    gettName(){
+      console.log(this.name)
+    }
+
+  }
+
+  let square = new Square('Parent')
+  console.log('square is:', square)
+  square.settName('square')
+  square.gettName()
+  console.log(square.name)
+  </script>
+</body>
+</html>

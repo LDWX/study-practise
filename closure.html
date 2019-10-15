@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>闭包经典例子详解——huansky</title>
+</head>
+<body>
+    <div id="ttt">
+        <p >000000000000000000</p>
+            <br>
+        <p >111111111111111111</p>
+        <br>
+        <p >222222222222222222</p>
+    </div>
+</body>
+<script>
+
+    var dom=document.getElementsByTagName("p");
+    for(let i=0;i<dom.length;i++){
+        dom[i].onclick=function(){    
+            console.log(i);//3
+        };
+    }
+    
+</script>
+</html>

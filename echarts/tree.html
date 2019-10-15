@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tree</title>
+  <script src="./echarts.js"></script>
+  <style>
+  .graphChart {
+    width:500px; 
+    height: 400px;
+    border: 1px solid black;
+  }
+  </style>
+</head>
+<body>
+  <h1>关系图谱</h1>
+  <div id="graphChart" class="graphChart" ></div>
+
+  <script>
+    var myChart = echarts.init(document.getElementById('graphChart'));
+    // option = {
+    //   series: [
+    //       {
+    //           type: 'tree',
+    //           orient: 'TB',
+    //           top: '50%',
+    //           label: {
+    //               position: 'right'  
+    //           },
+    //           data: [
+    //               {
+    //                   name: 'shenxin',
+    //                   children: [
+    //                       {
+    //                           name: 'ability',
+    //                           children: [
+    //                               {
+    //                                   name: 'html'
+    //                               },
+    //                               {
+    //                                   name: 'css'
+    //                               },
+    //                               {
+    //                                   name: 'js'
+    //                               },
+    //                               {
+    //                                   name: 'vue'
+    //                               }
+    //                           ]
+    //                       }
+    //                   ]
+    //               }
+    //           ]
+    //       },
+    //       {
+    //           type: 'tree',
+    //           orient: 'BT',
+    //           top: '5%',
+    //           bottom: '50%',
+    //           label: {
+    //               position: 'right'  
+    //           },
+    //           data: [
+    //               {
+    //                   name: 'shenxin',
+    //                   children: [
+    //                       {
+    //                           name: 'ability',
+    //                           children: [
+    //                               {
+    //                                   name: 'html'
+    //                               },
+    //                               {
+    //                                   name: 'css'
+    //                               },
+    //                               {
+    //                                   name: 'js'
+    //                               },
+    //                               {
+    //                                   name: 'vue'
+    //                               }
+    //                           ]
+    //                       },
+    //                       {
+    //                           name: 'ability',
+    //                           children: [
+    //                               {
+    //                                   name: 'html'
+    //                               },
+    //                               {
+    //                                   name: 'css'
+    //                               },
+    //                               {
+    //                                   name: 'js'
+    //                               },
+    //                               {
+    //                                   name: 'vue'
+    //                               }
+    //                           ]
+    //                       }
+    //                   ]
+    //               }
+    //           ]
+    //       }
+    //   ]
+    // }
+    let option = {
+        series: [
+          {
+              type: 'tree',
+              data: [
+                {
+                  name: 'shenxin',
+                  children: [
+                    {
+                      name: '能力',
+                      children: [
+                        {
+                          name: '跑步'
+                        },
+                        {
+                          name: '跳远'
+                        }
+                      ]
+                    },
+                    {
+                      name: '外贸',
+                      children: [
+                        {
+                          name: 'nihao'
+                        }
+                      ]
+                  
+                    }
+                  ]
+                }
+              ],
+              top: '18%',
+              bottom: '14%',
+              layout: 'radial',
+              orient: 'TB',
+              symbol: 'emptyCircle',
+              symbolSize: 7,
+              initialTreeDepth: 3,
+              animationDurationUpdate: 750
+
+          }
+        ]
+      }
+    myChart.setOption(option);
+  </script>
+</body>
+</html>

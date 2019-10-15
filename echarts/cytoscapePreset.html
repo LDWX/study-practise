@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://d3js.org/d3.v5.js"></script>
+  <script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+  <title>Document</title>
+  <style>
+  .graph {
+    width: 500px;
+    height: 500px;
+  }
+  </style>
+</head>
+<body>
+  <div id="graph" class='graph'></div>
+
+  <script>
+
+    document.addEventListener('DOMContentLoaded', function() {
+      let container = document.querySelector('#graph') 
+      let cy = cytoscape({
+        container: container,
+        layout: {
+          name: 'preset'
+        },
+        style: [
+          {
+            selector: 'node',
+            style: {
+              shape: 'ellipse',
+              width: 50,
+              height: 50,
+              label: 'data(name)',
+
+            }
+          },
+          {
+            selector: 'edge',
+            style: {
+              'curve-style': 'bezier',
+              
+            }
+          }
+        ],
+        elements: {
+          nodes: [
+            {
+              "data": {
+                "nodeId": '1',
+                "type": 1,
+                "data": {
+                  "obj": {
+                    "id": 1,
+                    "name": "1",
+                    "type": 1,
+                    "labels": null,
+                    "properties": [
+                      "上海鑫融网络科技股份有限公司"
+                    ],
+                    "rootNode": true
+                  },
+                  "showStatus": null,
+                  "color": "#258fff",
+                  "strokeColor": "#258fff",
+                  "image": "./staticImage/graph-company.png"
+                },
+                "image": "./staticImage/graph-company.png",
+                "id": '1',
+                "name": "1",
+                "color": "#258fff",
+                "borderColor": "#258fff",
+                "layout": {
+                  "level": 1,
+                  "singleLinkChildren": []
+                },
+                "d3x": 412.72529070026536,
+                "d3y": 54.04984820168501
+              }
+            },
+            {
+              "data": {
+                "nodeId": '2',
+                "type": 9,
+                "data": {
+                  "obj": {
+                    "id": 2,
+                    "name": "2",
+                    "type": 9,
+                    "labels": null,
+                    "properties": [
+                      "曾德方"
+                    ],
+                    "rootNode": false
+                  },
+                  "showStatus": null,
+                  "color": "#ff7a1b",
+                  "strokeColor": "#ff7a1b",
+                  "image": "./staticImage/graph-house.png"
+                },
+                "image": "./staticImage/graph-house.png",
+                "id": '2',
+                "name": "2",
+                "color": "#ff7a1b",
+                "borderColor": "#ff7a1b",
+                "layout": {
+                  "level": 2,
+                  "singleLinkChildren": [
+                    {
+                      "nodeId": 1,
+                      "data": {
+                        "obj": {
+                          "id": 1,
+                          "name": "1",
+                          "type": 1,
+                          "labels": null,
+                          "properties": [
+                            "上海鑫融网络科技股份有限公司"
+                          ],
+                          "rootNode": true
+                        },
+                        "showStatus": null,
+                        "color": "#258fff",
+                        "strokeColor": "#258fff",
+                        "image": "./staticImage/graph-company.png"
+                      },
+                      "layout": {
+                        "level": 1,
+                        "singleLinkChildren": []
+                      },
+                      "id": 1,
+                      "index": 0,
+                      "x": 412.72529070026536,
+                      "y": 54.04984820168501,
+                      "vy": 2.120595028114918,
+                      "vx": -0.173376943373568
+                    },
+                    {
+                      "nodeId": 3,
+                      "data": {
+                        "obj": {
+                          "id": 3,
+                          "name": "3",
+                          "type": 5,
+                          "labels": null,
+                          "properties": [
+                            "曾德方"
+                          ],
+                          "rootNode": false
+                        },
+                        "showStatus": null,
+                        "color": "#ffa300",
+                        "strokeColor": "#ffa300",
+                        "image": "./staticImage/graph-address.png"
+                      },
+                      "layout": {
+                        "level": 3,
+                        "singleLinkChildren": []
+                      },
+                      "id": 3,
+                      "index": 2,
+                      "x": 212.11622507518604,
+                      "y": -141.4597468150834,
+                      "vy": 0.24958892852577907,
+                      "vx": -2.0791298921421832
+                    }
+                  ]
+                },
+                "d3x": 182.33553610684064,
+                "d3y": 90.33917309187856
+              }
+            },
+            {
+              "data": {
+                "nodeId": '3',
+                "type": 5,
+                "data": {
+                  "obj": {
+                    "id": 3,
+                    "name": "3",
+                    "type": 5,
+                    "labels": null,
+                    "properties": [
+                      "曾德方"
+                    ],
+                    "rootNode": false
+                  },
+                  "showStatus": null,
+                  "color": "#ffa300",
+                  "strokeColor": "#ffa300",
+                  "image": "./staticImage/graph-address.png"
+                },
+                "image": "./staticImage/graph-address.png",
+                "id": '3',
+                "name": "3",
+                "color": "#ffa300",
+                "borderColor": "#ffa300",
+                "layout": {
+                  "level": 3,
+                  "singleLinkChildren": []
+                },
+                "d3x": 212.11622507518604,
+                "d3y": -141.4597468150834
+              }
+            }
+          ],
+          edges: [
+            {
+              "data": {
+                "data": {
+                  "obj": {
+                    "id": 1,
+                    "name": "董监高",
+                    "attr": null,
+                    "startId": 1,
+                    "endId": 2,
+                    "type": 2
+                  },
+                  "showStatus": null
+                },
+                "color": "#258fff",
+                "id": '1',
+                "label": "董监高",
+                "source": '1',
+                "target": '2'
+              },
+              "classes": "autorotate"
+            },
+            {
+              "data": {
+                "data": {
+                  "obj": {
+                    "id": '2',
+                    "name": "董监高",
+                    "attr": null,
+                    "startId": '2',
+                    "endId": '3',
+                    "type": 2
+                  },
+                  "showStatus": null
+                },
+                "color": "#ff7a1b",
+                "id": '2',
+                "label": "董监高",
+                "source": '2',
+                "target": '3'
+              },
+              "classes": "autorotate"
+            }
+          ]
+          // nodes: [
+          //   {
+          //     data: {
+          //       id: 1,
+          //       name: 'shenxin'
+          //     },
+          //     position: {
+          //       vx: 0,
+          //       vy: 0,
+          //       // vx: -0.001238743310836104,
+          //       // vy: -0.0002367536406219811,
+          //       x: 278.1076513457937,
+          //       y: -204.39663793741258
+          //       // x: 10,
+          //       // y: 10
+          //     }
+          //   }, 
+          //   {
+          //     data: {
+          //       id: 2,
+          //       name: 'wangya'
+          //     },
+          //     position: {
+          //       vx: 0,
+          //       vy: 0,
+          //       // vx: -0.001183891203629371,
+          //       // vy: 0.0005311399647374471,
+          //       x: -63.9261896202021,
+          //       y: 211.0938630647518
+          //       // x: 400,
+          //       // y: 400
+          //     }
+          //   },
+          //   {
+          //     data: {
+          //       id: 3,
+          //       name: 'wangzhengao'
+          //     },
+          //     position: {
+          //       vx: 0,
+          //       vy: 0,
+          //       // vx: -0.0013702039447293067,
+          //       // vy: 0.0006487143965415572,
+          //       x: -208.32724326170975,
+          //       y: 246.1479069576142
+          //       // x: 100,
+          //       // y: 100
+          //     }
+          //   },
+          //   {
+          //     data: {
+          //       id: 4,
+          //       name: 'wangkanghua'
+          //     },
+          //     position: {
+          //       vx: 0,
+          //       vy: 0,
+          //       // vx: -0.000690867045614495,
+          //       // vy: 0.0007159329871221403,
+          //       x: -196.15884815310218,
+          //       y: -38.15790199174754
+          //       // x: 0,
+          //       // y: 200
+          //     }
+          //   },
+          //   {
+          //     data: {
+          //       id: 5,
+          //       name: 'shenxiang'
+          //     },
+          //     position: {
+          //       // vx: -0.0008260139701341683,
+          //       // vy: 0.00043451683932161674,
+          //       vx: 0,
+          //       vy: 0,
+          //       x: 58.73241335069132,
+          //       y: 63.525697560469624
+          //       // x: 200,
+          //       // y: 0
+          //     }
+          //   }
+          // ],
+          // edges: [
+          //   {
+          //     data: {
+          //       source: 1,
+          //       target: 5 
+          //     }
+          //   },
+          //   {
+          //     data: {
+          //       source: 2,
+          //       target: 3
+          //     }
+          //   },
+          //   {
+          //     data: {
+          //       source: 2,
+          //       target: 4
+          //     }
+          //   },
+          //   {
+          //     data: {
+          //       source: 2,
+          //       target: 5
+          //     }
+          //   },
+          //   {
+          //     data: {
+          //       source: 5,
+          //       target: 2
+          //     }
+          //   },
+          // ]
+        }
+
+       })
+       
+    })
+
+
+
+  </script>
+</body>
+</html>

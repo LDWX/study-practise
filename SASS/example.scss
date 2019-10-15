@@ -1,0 +1,206 @@
+@import "second.scss";
+@import "table/_table.scss";
+
+$normal-size: 10px;
+$large-size: $normal-size + 20px;
+
+
+.test {
+   & + & {
+    font-size: 12px;
+  }
+  & & {
+    color: white;
+  }
+}
+
+/**
+* !optional
+*/
+h1.notice {
+  @extend %hello !optional;     //不存在时不会报错
+}
+.foo .bar {
+  color: red;
+}
+.baz.test {
+  // @extend .bar;
+  @extend .bar !optional;
+  font-size: 20px;
+}
+
+/*
+* @at-root
+*/
+.parent {
+  color: red;
+  .child {
+    background: steelblue;
+
+    @at-root {
+      .sun {
+        font-size: 20px;
+      }
+      .girl {
+        border: 1px solid black;
+      }
+    }
+  }
+}
+
+@media print {
+  .page {
+    width: 100px;
+    @at-root (without: media) {
+      color: red;
+    }
+    @at-root (with: media) {
+      .with-media {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+
+/**
+*@debug
+*/
+@debug 10em + 22em;
+
+/**
+*@if
+*@warn
+*unitless，用来判断一个值是否带有单位，如果不带单位返回的值为 true，带单位返回的值为 false。
+*/
+@mixin adjust-location($x, $y) {
+  @if unitless($x) {
+    @warn "Assuming #{$x} to be in pixels";
+    // @error "#{x} is not a pixels";     //主动抛出错误之后就无法继续渲染了，可用于验证参数类型
+    $x: 1px * $x;
+  }
+  @if unitless($y) {
+    @warn "Assuming #{$y} to be in pixels";
+    $y: 1px * $y;
+  }
+  position: relative; left: $x; top: $y;
+}
+.mixin-test {
+  @include adjust-location(10, 5);
+}
+
+/**
+*@if @else-if
+*/
+$type: monster;
+p {
+  @if $type == ocean {
+    color: blue;
+  } @else if $type == matador {
+    color: red;
+  } @else if $type == monster {
+    color: green;
+  } @else {
+    color: black;
+  }
+}
+
+/**
+*@for
+*from ... throgh ... 是[ ]
+*from ... to ... 是[ )
+*/
+@for $i from 1 through 3 {
+  .item-#{$i} { width: 2em * $i; }
+}
+@for $i from 5 to 1 {
+  .element-#{$i} {
+    font-size: #{$i} + "px";
+  }
+}
+
+/**
+*@each
+*/
+@each $header, $size in (h1: 2em, h2: 1.5em, h3: 1.2em) {
+  #{$header} {
+    font-size: $size;
+  }
+}
+
+/**
+*@while
+*/
+$i: 6;
+@while $i > 0 {
+  .item-while-#{$i} {
+    width: 2em * $i;
+  }
+  $i: $i - 2;
+}
+
+/**
+*@mixin, variable arguments
+*/
+$test-background:pink 30px 20px;
+@mixin border($color,$borders...) {
+  color: $color;
+  border: $borders;
+}
+.border {
+  @include border(red, 1px, solid, yellow );
+}
+@mixin background($color, $width, $height) {
+  background: $color $width $height;
+}
+.background {
+  @include background($test-background...);   //不加 ... 会报错
+}
+
+/**
+*@mixin, @content
+*/
+@mixin apply-to-ie6 {
+  .test {
+    font-weight: bold;
+    @content      //站位替换符
+  }
+}
+html {
+  color: black;
+  @include apply-to-ie6 {
+    .ie6-font {
+      font-size: 16px;
+      line-height: 2;
+    }
+  }
+}
+
+$color: white;
+@mixin mix-color($color: blue) {
+  background-color: $color;     //传入变量值
+  @content;
+  border-color: $color;        //传入变量值
+}
+.colors {
+  @include mix-color(red) {
+    font-size: 20px;
+    color: $color;      //全局变量值
+  }
+}
+
+/**
+*@function
+*define function
+*functions can access any globally defined variables 
+*as well as accept arguments just like a mixin
+*/
+$grid-width: 40px;
+$gutter-width: 10px;
+@function -sx-grid-width($s,$n) {     //加上namespace,防止命名冲突
+  @return $n * $grid-width + ($n - 1) * $gutter-width
+}
+#sidebar {
+  width: -sx-grid-width($n:5, $s: 1)    //使用keyword指明传参可以修改传参顺序
+  // width: -sx-grid-width(1, 5)        //否则，只能按顺序传参
+}

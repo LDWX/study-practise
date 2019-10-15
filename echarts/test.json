@@ -1,0 +1,2924 @@
+{
+  "success": {
+    "results": [{
+      "columns": ["value"],
+      "data": [{
+        "graph": {
+          "nodes": [{
+            "id": "93158537",
+            "labels": ["Person"],
+            "properties": {
+              "keyNo": "p5453ca8fb1c0a7747e3acab74d8f57a",
+              "role": "\u76d1\u4e8b",
+              "name": "\u90d1\u5a01",
+              "hasImage": false
+            }
+          }, {
+            "id": "22204247",
+            "labels": ["Company"],
+            "properties": {
+              "keyNo": "59e72801e428e9b5471cbe460541915b",
+              "registCapi": "131.427",
+              "name": "\u4fe1\u67cf(\u4e0a\u6d77)\u4fe1\u606f\u79d1\u6280\u6709\u9650\u516c\u53f8",
+              "econKind": "\u6709\u9650\u8d23\u4efb\u516c\u53f8(\u81ea\u7136\u4eba\u6295\u8d44\u6216\u63a7\u80a1)",
+              "hasImage": true,
+              "status": "\u5b58\u7eed"
+            }
+          }, {
+            "id": "7454075",
+            "labels": ["Company"],
+            "properties": {
+              "keyNo": "1e105ffccf1328da67fa4e4120141faf",
+              "registCapi": "1000.000",
+              "name": "\u676d\u5dde\u4f70\u5206\u70b9\u4fe1\u606f\u79d1\u6280\u6709\u9650\u516c\u53f8",
+              "econKind": "\u6709\u9650\u8d23\u4efb\u516c\u53f8\uff08\u975e\u81ea\u7136\u4eba\u6295\u8d44\u6216\u63a7\u80a1\u7684\u6cd5\u4eba\u72ec\u8d44\uff09",
+              "hasImage": false,
+              "status": "\u5b58\u7eed"
+            }
+          }, {
+            "id": "63448540",
+            "labels": ["Company"],
+            "properties": {
+              "keyNo": "ff3731296c87461af2bdb4e4140552e0",
+              "registCapi": "3500.000",
+              "name": "\u871c\u5c0f\u8702\u667a\u6167(\u5317\u4eac)\u79d1\u6280\u6709\u9650\u516c\u53f8",
+              "econKind": "\u5176\u4ed6\u6709\u9650\u8d23\u4efb\u516c\u53f8",
+              "hasImage": true,
+              "status": "\u5728\u4e1a"
+            }
+          }, {
+            "id": "35198220",
+            "labels": ["Company"],
+            "properties": {
+              "keyNo": "8e11ec9e93aa24bcbd826111636cd968",
+              "registCapi": "1000.000",
+              "name": "\u767e\u878d(\u8d35\u9633)\u91d1\u878d\u4fe1\u606f\u670d\u52a1\u6709\u9650\u516c\u53f8",
+              "econKind": "\u6709\u9650\u8d23\u4efb\u516c\u53f8\uff08\u81ea\u7136\u4eba\u6295\u8d44\u6216\u63a7\u80a1\u7684\u6cd5\u4eba\u72ec\u8d44\uff09",
+              "hasImage": true,
+              "status": "\u5b58\u7eed"
+            }
+          }, {
+            "id": "43988615",
+            "labels": ["Company"],
+            "properties": {
+              "keyNo": "b13ddfe99d19c5633a8ad8ecca2e000e",
+              "registCapi": "10000.000",
+              "name": "\u5929\u6d25\u767e\u878d\u79d1\u6280\u6709\u9650\u516c\u53f8",
+              "econKind": "\u6709\u9650\u8d23\u4efb\u516c\u53f8(\u53f0\u6e2f\u6fb3\u6cd5\u4eba\u72ec\u8d44)",
+              "hasImage": false,
+              "status": "\u5b58\u7eed"
+            }
+          }, {
+            "id": "43176842",
+            "labels": ["Company"],
+            "properties": {
+              "keyNo": "ae0071aed06991a2be0c0910b194df69",
+              "registCapi": "300.000",
+              "name": "\u5317\u4eac\u6b63\u4e1c\u5a01\u76fe\u79d1\u6280\u6709\u9650\u8d23\u4efb\u516c\u53f8",
+              "econKind": "\u6709\u9650\u8d23\u4efb\u516c\u53f8(\u81ea\u7136\u4eba\u6295\u8d44\u6216\u63a7\u80a1)",
+              "hasImage": true,
+              "status": "\u5728\u4e1a"
+            }
+          }, {
+            "id": "122783821",
+            "labels": ["Person"],
+            "properties": {
+              "keyNo": "pb1169d932bbe0ff83db3bfe7cfa1789",
+              "role": "\u81ea\u7136\u4eba\u80a1\u4e1c",
+              "name": "\u67cf\u6797\u68ee",
+              "hasImage": true
+            }
+          }, {
+            "id": "24495977",
+            "labels": ["Company"],
+            "properties": {
+              "keyNo": "634aec653fe2627c113fc9b027be0357",
+              "registCapi": "500.000",
+              "name": "\u5c71\u4e1c\u65e5\u6708\u4fdd\u76d2\u4fe1\u606f\u79d1\u6280\u6709\u9650\u516c\u53f8",
+              "econKind": "\u6709\u9650\u8d23\u4efb\u516c\u53f8(\u975e\u81ea\u7136\u4eba\u6295\u8d44\u6216\u63a7\u80a1\u7684\u6cd5\u4eba\u72ec\u8d44)",
+              "hasImage": false,
+              "status": "\u5728\u4e1a"
+            }
+          }, {
+            "id": "34483502",
+            "labels": ["Company"],
+            "properties": {
+              "keyNo": "8b3620fceceff63cdc1535c97cf6a8cc",
+              "registCapi": "5000.000",
+              "name": "\u5317\u4eac\u53cc\u6e56\u6295\u8d44\u7ba1\u7406\u6709\u9650\u516c\u53f8",
+              "econKind": "\u6709\u9650\u8d23\u4efb\u516c\u53f8(\u81ea\u7136\u4eba\u6295\u8d44\u6216\u63a7\u80a1)",
+              "hasImage": true,
+              "status": "\u5728\u4e1a"
+            }
+          }, {
+            "id": "48746179",
+            "labels": ["Company"],
+            "properties": {
+              "keyNo": "c44d3ab6a81d9c4b3435250391625a17",
+              "registCapi": "102.041",
+              "name": "\u5317\u4eac\u5d14\u7389\u6d9b\u513f\u7ae5\u5065\u5eb7\u7ba1\u7406\u4e2d\u5fc3\u6709\u9650\u516c\u53f8",
+              "econKind": "\u6709\u9650\u8d23\u4efb\u516c\u53f8(\u81ea\u7136\u4eba\u6295\u8d44\u6216\u63a7\u80a1)",
+              "hasImage": true,
+              "status": "\u5728\u4e1a"
+            }
+          }, {
+            "id": "9130671",
+            "labels": ["Company"],
+            "properties": {
+              "keyNo": "24dab80d0b2b09afd5a8514e976f3479",
+              "registCapi": "1.735",
+              "name": "\u5317\u4eac\u4e09\u539a\u79d1\u6280\u6709\u9650\u516c\u53f8",
+              "econKind": "\u6709\u9650\u8d23\u4efb\u516c\u53f8(\u81ea\u7136\u4eba\u6295\u8d44\u6216\u63a7\u80a1)",
+              "hasImage": true,
+              "status": "\u5728\u4e1a"
+            }
+          }, {
+            "id": "41566034",
+            "labels": ["Company"],
+            "properties": {
+              "keyNo": "a78e8cfc3324dd82bc09ce4428344842",
+              "registCapi": "0.000",
+              "name": "\u4e0a\u6d77\u62dc\u9c7c\u9716\u7b51\u6295\u8d44\u7ba1\u7406\u4e2d\u5fc3(\u6709\u9650\u5408\u4f19)",
+              "econKind": "\u6709\u9650\u5408\u4f19\u4f01\u4e1a",
+              "hasImage": false,
+              "status": "\u5b58\u7eed"
+            }
+          }, {
+            "id": "34449187",
+            "labels": ["Company"],
+            "properties": {
+              "keyNo": "8b13192ecafb27561aa47fd46f8179b5",
+              "registCapi": "500.000",
+              "name": "\u4e0a\u6d77\u6052\u7545\u6c7d\u8f66\u79df\u8d41\u670d\u52a1\u6709\u9650\u516c\u53f8",
+              "econKind": "\u6709\u9650\u8d23\u4efb\u516c\u53f8\uff08\u81ea\u7136\u4eba\u6295\u8d44\u6216\u63a7\u80a1\u7684\u6cd5\u4eba\u72ec\u8d44\uff09",
+              "hasImage": false,
+              "status": "\u5b58\u7eed"
+            }
+          }, {
+            "id": "21797731",
+            "labels": ["Company"],
+            "properties": {
+              "keyNo": "583b2474b98080a68b4558b7186c138b",
+              "registCapi": "1123.777",
+              "name": "\u5317\u4eac\u767e\u5206\u70b9\u4fe1\u606f\u79d1\u6280\u6709\u9650\u516c\u53f8",
+              "econKind": "\u5176\u4ed6\u6709\u9650\u8d23\u4efb\u516c\u53f8",
+              "hasImage": true,
+              "status": "\u5728\u4e1a"
+            }
+          }, {
+            "id": "125893555",
+            "labels": ["Person"],
+            "properties": {
+              "keyNo": "pbad511f00c5d2e41848d173eacfb323",
+              "role": "\u81ea\u7136\u4eba\u80a1\u4e1c",
+              "name": "\u5f20\u97f6\u5cf0",
+              "hasImage": true
+            }
+          }, {
+            "id": "114226",
+            "labels": ["Company"],
+            "properties": {
+              "keyNo": "00781fbf266d4ded91f3647908f31104",
+              "registCapi": "100.000",
+              "name": "\u5317\u4eac\u8363\u8fbe\u5929\u4e0b\u4fe1\u606f\u79d1\u6280\u6709\u9650\u516c\u53f8",
+              "econKind": "\u6709\u9650\u8d23\u4efb\u516c\u53f8(\u6cd5\u4eba\u72ec\u8d44)",
+              "hasImage": false,
+              "status": "\u5728\u4e1a"
+            }
+          }, {
+            "id": "49176273",
+            "labels": ["Company"],
+            "properties": {
+              "keyNo": "c606d363acdfc967c21e7fa63eea383a",
+              "registCapi": "10000.000",
+              "name": "\u6d59\u6c5f\u5927\u6570\u636e\u4ea4\u6613\u4e2d\u5fc3\u6709\u9650\u516c\u53f8",
+              "econKind": "\u5176\u4ed6\u6709\u9650\u8d23\u4efb\u516c\u53f8",
+              "hasImage": true,
+              "status": "\u5b58\u7eed"
+            }
+          }, {
+            "id": "35278936",
+            "labels": ["Company"],
+            "properties": {
+              "keyNo": "8e64dc9fb14c456821a04fb9623c720c",
+              "registCapi": "10000.000",
+              "name": "\u5929\u6d25\u6995\u6811\u79d1\u6280\u6709\u9650\u516c\u53f8",
+              "econKind": "\u6709\u9650\u8d23\u4efb\u516c\u53f8(\u53f0\u6e2f\u6fb3\u6cd5\u4eba\u72ec\u8d44)",
+              "hasImage": false,
+              "status": "\u5b58\u7eed"
+            }
+          }, {
+            "id": "97725339",
+            "labels": ["Person"],
+            "properties": {
+              "keyNo": "p629cfeb30ccef20eaad495f48b8a3db",
+              "role": "",
+              "name": "\u5434\u950b\u6d77",
+              "hasImage": false
+            }
+          }, {
+            "id": "3204217",
+            "labels": ["Company"],
+            "properties": {
+              "keyNo": "0cfb7b8f1ac013f7f1d00bf3e351f13e",
+              "registCapi": "497.157",
+              "name": "\u4e0a\u6d77\u94ed\u8bd7\u6559\u80b2\u79d1\u6280\u6709\u9650\u516c\u53f8",
+              "econKind": "\u6709\u9650\u8d23\u4efb\u516c\u53f8(\u81ea\u7136\u4eba\u6295\u8d44\u6216\u63a7\u80a1)",
+              "hasImage": true,
+              "status": "\u5b58\u7eed"
+            }
+          }, {
+            "id": "43812048",
+            "labels": ["Company"],
+            "properties": {
+              "keyNo": "b0897ff68b2a06b4b7593a40bc20bfb8",
+              "registCapi": "100000.000",
+              "name": "\u4e0a\u6d77\u5408\u6bd3\u6295\u8d44\u7ba1\u7406\u6709\u9650\u516c\u53f8",
+              "econKind": "\u6709\u9650\u8d23\u4efb\u516c\u53f8(\u81ea\u7136\u4eba\u6295\u8d44\u6216\u63a7\u80a1)",
+              "hasImage": false,
+              "status": "\u5b58\u7eed"
+            }
+          }, {
+            "id": "37868556",
+            "labels": ["Company"],
+            "properties": {
+              "keyNo": "98c37036d872b0d47520d20d3f2710a0",
+              "registCapi": "0.000",
+              "name": "\u4e0a\u6d77\u867e\u5175\u87f9\u5c06\u8086\u6295\u8d44\u7ba1\u7406\u4e2d\u5fc3(\u6709\u9650\u5408\u4f19)",
+              "econKind": "\u6709\u9650\u5408\u4f19\u4f01\u4e1a",
+              "hasImage": false,
+              "status": "\u5b58\u7eed"
+            }
+          }, {
+            "id": "93422047",
+            "labels": ["Person"],
+            "properties": {
+              "keyNo": "p552696b21da36eacf6339db7aa1f86f",
+              "role": "\u81ea\u7136\u4eba\u80a1\u4e1c",
+              "name": "\u6c6a\u6eaa\u6c99",
+              "hasImage": false
+            }
+          }, {
+            "id": "60336840",
+            "labels": ["Company"],
+            "properties": {
+              "keyNo": "f2af1cba720a5a6163b9bbbc83de6577",
+              "registCapi": "0.000",
+              "name": "\u4e0a\u6d77\u867e\u5175\u87f9\u5c06\u58f9\u6295\u8d44\u7ba1\u7406\u4e2d\u5fc3(\u6709\u9650\u5408\u4f19)",
+              "econKind": "\u6709\u9650\u5408\u4f19\u4f01\u4e1a",
+              "hasImage": false,
+              "status": "\u5b58\u7eed"
+            }
+          }, {
+            "id": "40937248",
+            "labels": ["Company"],
+            "properties": {
+              "keyNo": "a50aa725a0512d78eefe2493718c492f",
+              "registCapi": "50.000",
+              "name": "\u65b0\u4f59\u6d77\u7f51\u884c\u8bda\u4f01\u4e1a\u7ba1\u7406\u6709\u9650\u8d23\u4efb\u516c\u53f8",
+              "econKind": "\u6709\u9650\u8d23\u4efb\u516c\u53f8(\u81ea\u7136\u4eba\u6295\u8d44\u6216\u63a7\u80a1)",
+              "hasImage": false,
+              "status": "\u5b58\u7eed"
+            }
+          }, {
+            "id": "53484902",
+            "labels": ["Company"],
+            "properties": {
+              "keyNo": "d74458be56634042cfeaa5c9988bbb12",
+              "registCapi": "16000.000",
+              "name": "\u4e0a\u6d77\u745e\u6cfd\u5b9e\u4e1a\u96c6\u56e2\u6709\u9650\u516c\u53f8",
+              "econKind": "\u6709\u9650\u8d23\u4efb\u516c\u53f8(\u81ea\u7136\u4eba\u6295\u8d44\u6216\u63a7\u80a1)",
+              "hasImage": false,
+              "status": "\u5b58\u7eed"
+            }
+          }, {
+            "id": "33318827",
+            "labels": ["Company"],
+            "properties": {
+              "keyNo": "868c6c9a1d21fef47fc9576eede91985",
+              "registCapi": "1000.000",
+              "name": "\u4e0a\u6d77\u98de\u89c2\u4fe1\u606f\u79d1\u6280\u6709\u9650\u516c\u53f8",
+              "econKind": "\u5176\u4ed6\u6709\u9650\u8d23\u4efb\u516c\u53f8",
+              "hasImage": true,
+              "status": "\u5b58\u7eed"
+            }
+          }, {
+            "id": "29651103",
+            "labels": ["Company"],
+            "properties": {
+              "keyNo": "77edee9f133cd3d9cd63c1fa7df16b61",
+              "registCapi": "0.000",
+              "name": "\u4e0a\u6d77\u867e\u5175\u87f9\u5c06\u4f0d\u6295\u8d44\u7ba1\u7406\u4e2d\u5fc3(\u6709\u9650\u5408\u4f19)",
+              "econKind": "\u6709\u9650\u5408\u4f19\u4f01\u4e1a",
+              "hasImage": false,
+              "status": "\u5b58\u7eed"
+            }
+          }, {
+            "id": "11628525",
+            "labels": ["Company"],
+            "properties": {
+              "keyNo": "2ef954f25405796b8aae2898acc47475",
+              "registCapi": "200.000",
+              "name": "\u5317\u4eac\u80bd\u79ef\u6728\u79d1\u6280\u6709\u9650\u516c\u53f8",
+              "econKind": "\u5176\u4ed6\u6709\u9650\u8d23\u4efb\u516c\u53f8",
+              "hasImage": true,
+              "status": "\u5728\u4e1a"
+            }
+          }, {
+            "id": "31506622",
+            "labels": ["Company"],
+            "properties": {
+              "keyNo": "7f4e4d9110404c9524a1393690e85f5c",
+              "registCapi": "426.257",
+              "name": "\u5317\u4eac\u6709\u517b\u6210\u957f\u4f20\u5a92\u6709\u9650\u516c\u53f8",
+              "econKind": "\u6709\u9650\u8d23\u4efb\u516c\u53f8(\u81ea\u7136\u4eba\u6295\u8d44\u6216\u63a7\u80a1)",
+              "hasImage": true,
+              "status": "\u5728\u4e1a"
+            }
+          }, {
+            "id": "5979964",
+            "labels": ["Company"],
+            "properties": {
+              "keyNo": "181f2231f2152e4853381a686b3a460b",
+              "registCapi": "500.000",
+              "name": "\u5357\u4eac\u67cf\u9035\u4fe1\u606f\u79d1\u6280\u6709\u9650\u516c\u53f8",
+              "econKind": "\u6709\u9650\u8d23\u4efb\u516c\u53f8\uff08\u975e\u81ea\u7136\u4eba\u6295\u8d44\u6216\u63a7\u80a1\u7684\u6cd5\u4eba\u72ec\u8d44\uff09",
+              "hasImage": false,
+              "status": "\u5b58\u7eed"
+            }
+          }, {
+            "id": "14440372",
+            "labels": ["Company"],
+            "properties": {
+              "keyNo": "3a6989e561193dc8264469d1ce4c53f3",
+              "registCapi": "10.000",
+              "name": "\u5317\u4eac\u5343\u767e\u6f3e\u4f01\u4e1a\u7ba1\u7406\u54a8\u8be2\u6709\u9650\u8d23\u4efb\u516c\u53f8",
+              "econKind": "\u6709\u9650\u8d23\u4efb\u516c\u53f8(\u81ea\u7136\u4eba\u6295\u8d44\u6216\u63a7\u80a1)",
+              "hasImage": true,
+              "status": "\u5728\u4e1a"
+            }
+          }, {
+            "id": "102922060",
+            "labels": ["Person"],
+            "properties": {
+              "keyNo": "p72de972cd1b653d6c5142d5b9ba47cd",
+              "role": "\u8463\u4e8b\u957f",
+              "name": "\u82cf\u840c",
+              "hasImage": true
+            }
+          }, {
+            "id": "47613625",
+            "labels": ["Company"],
+            "properties": {
+              "keyNo": "bfc277e01f7b1c61e1a0140982aa8c50",
+              "registCapi": "349.321",
+              "name": "\u4e0a\u6d77\u8fdb\u99a8\u7f51\u7edc\u79d1\u6280\u6709\u9650\u516c\u53f8",
+              "econKind": "\u6709\u9650\u8d23\u4efb\u516c\u53f8(\u81ea\u7136\u4eba\u6295\u8d44\u6216\u63a7\u80a1)",
+              "hasImage": true,
+              "status": "\u5b58\u7eed"
+            }
+          }, {
+            "id": "29373873",
+            "labels": ["Company"],
+            "properties": {
+              "keyNo": "76d43e9693c16287b18c208b23eb3510",
+              "registCapi": "466.000",
+              "name": "\u767e\u878d\u6570\u901a(\u5317\u4eac)\u79d1\u6280\u6709\u9650\u8d23\u4efb\u516c\u53f8",
+              "econKind": "\u6709\u9650\u8d23\u4efb\u516c\u53f8(\u81ea\u7136\u4eba\u6295\u8d44\u6216\u63a7\u80a1)",
+              "hasImage": false,
+              "status": "\u5728\u4e1a"
+            }
+          }, {
+            "id": "17645948",
+            "labels": ["Company"],
+            "properties": {
+              "keyNo": "4765bdd3374f56e38022376b5afdb8ed",
+              "registCapi": "1000.000",
+              "name": "\u6df1\u5733\u767e\u5206\u70b9\u4fe1\u606f\u79d1\u6280\u6709\u9650\u516c\u53f8",
+              "econKind": "\u6709\u9650\u8d23\u4efb\u516c\u53f8\uff08\u81ea\u7136\u4eba\u6295\u8d44\u6216\u63a7\u80a1\u7684\u6cd5\u4eba\u72ec\u8d44\uff09",
+              "hasImage": true,
+              "status": "\u5b58\u7eed"
+            }
+          }, {
+            "id": "54523468",
+            "labels": ["Company"],
+            "properties": {
+              "keyNo": "db6e5eda52d985196d1c1086423f8b12",
+              "registCapi": "0.000",
+              "name": "\u5317\u4eac\u767e\u5206\u4e4b\u4e09\u6295\u8d44\u7ba1\u7406\u4e2d\u5fc3(\u6709\u9650\u5408\u4f19)",
+              "econKind": "\u6709\u9650\u5408\u4f19\u4f01\u4e1a",
+              "hasImage": false,
+              "status": "\u5728\u4e1a"
+            }
+          }, {
+            "id": "3932751",
+            "labels": ["Company"],
+            "properties": {
+              "keyNo": "0fe9dc8b748ebe2ea28d4643b13c8558",
+              "registCapi": "0.000",
+              "name": "\u5317\u4eac\u767e\u8363\u540c\u521b\u4f01\u4e1a\u7ba1\u7406\u54a8\u8be2\u4e2d\u5fc3(\u6709\u9650\u5408\u4f19)",
+              "econKind": "\u6709\u9650\u5408\u4f19\u4f01\u4e1a",
+              "hasImage": false,
+              "status": "\u8fc1\u51fa"
+            }
+          }, {
+            "id": "30822306",
+            "labels": ["Company"],
+            "properties": {
+              "keyNo": "7c95fc9a0ef7e4dbb674f2a0a1f3a74d",
+              "registCapi": "0.000",
+              "name": "\u5929\u6d25\u767e\u8363\u540c\u521b\u4f01\u4e1a\u7ba1\u7406\u54a8\u8be2\u4e2d\u5fc3(\u6709\u9650\u5408\u4f19)",
+              "econKind": "\u6709\u9650\u5408\u4f19\u4f01\u4e1a",
+              "hasImage": false,
+              "status": "\u5b58\u7eed"
+            }
+          }, {
+            "id": "13861540",
+            "labels": ["Company"],
+            "properties": {
+              "keyNo": "38098e17e96e183293592b34df5aa3ab",
+              "registCapi": "1000.000",
+              "name": "\u5317\u4eac\u767e\u5206\u70b9\u6570\u636e\u6280\u672f\u6709\u9650\u516c\u53f8",
+              "econKind": "\u6709\u9650\u8d23\u4efb\u516c\u53f8(\u6cd5\u4eba\u72ec\u8d44)",
+              "hasImage": true,
+              "status": "\u5728\u4e1a"
+            }
+          }, {
+            "id": "11005136",
+            "labels": ["Company"],
+            "properties": {
+              "keyNo": "2c736338edb022f7d03f1c950c9c051b",
+              "registCapi": "102.041",
+              "name": "\u5609\u5584\u80b2\u5b66\u56ed\u5065\u5eb7\u7ba1\u7406\u6709\u9650\u516c\u53f8",
+              "econKind": "\u6709\u9650\u8d23\u4efb\u516c\u53f8(\u81ea\u7136\u4eba\u6295\u8d44\u6216\u63a7\u80a1)",
+              "hasImage": false,
+              "status": "\u5b58\u7eed"
+            }
+          }, {
+            "id": "38171197",
+            "labels": ["Company"],
+            "properties": {
+              "keyNo": "99f977e1378134baacd84b9606f091fb",
+              "registCapi": "8281.439",
+              "name": "\u767e\u878d\u4e91\u521b\u79d1\u6280\u80a1\u4efd\u6709\u9650\u516c\u53f8",
+              "econKind": "\u80a1\u4efd\u6709\u9650\u516c\u53f8(\u975e\u4e0a\u5e02\u3001\u81ea\u7136\u4eba\u6295\u8d44\u6216\u63a7\u80a1)",
+              "hasImage": true,
+              "status": "\u5728\u4e1a"
+            }
+          }, {
+            "id": "131719842",
+            "labels": ["Person"],
+            "properties": {
+              "keyNo": "pcd1c198ee3688adfb0b80460dd57793",
+              "role": "\u76d1\u4e8b",
+              "name": "\u6797\u82b8",
+              "hasImage": false
+            }
+          }, {
+            "id": "56821985",
+            "labels": ["Company"],
+            "properties": {
+              "keyNo": "e4a5263d7b024988134f35b69997db91",
+              "registCapi": "0.000",
+              "name": "\u4e0a\u6d77\u867e\u5175\u87f9\u5c06\u6295\u8d44\u7ba1\u7406\u4e2d\u5fc3(\u6709\u9650\u5408\u4f19)",
+              "econKind": "\u6709\u9650\u5408\u4f19\u4f01\u4e1a",
+              "hasImage": false,
+              "status": "\u5b58\u7eed"
+            }
+          }, {
+            "id": "35546262",
+            "labels": ["Company"],
+            "properties": {
+              "keyNo": "8f766077fb014c02862aa3b570120eff",
+              "registCapi": "1000.000",
+              "name": "\u767e\u878d\u81f3\u8bda(\u5317\u4eac)\u4fe1\u7528\u7ba1\u7406\u6709\u9650\u516c\u53f8",
+              "econKind": "\u6709\u9650\u8d23\u4efb\u516c\u53f8(\u6cd5\u4eba\u72ec\u8d44)",
+              "hasImage": false,
+              "status": "\u5728\u4e1a"
+            }
+          }, {
+            "id": "12150579",
+            "labels": ["Company"],
+            "properties": {
+              "keyNo": "31147239f4a8f6484296d8210af78b08",
+              "registCapi": "6000.000",
+              "name": "\u5317\u4eac\u6570\u738b\u79d1\u6280\u6709\u9650\u516c\u53f8",
+              "econKind": "\u5176\u4ed6\u6709\u9650\u8d23\u4efb\u516c\u53f8",
+              "hasImage": true,
+              "status": "\u5728\u4e1a"
+            }
+          }, {
+            "id": "57145835",
+            "labels": ["Company"],
+            "properties": {
+              "keyNo": "e5efe404c0f0f7d63eba4e92d86f4882",
+              "registCapi": "121.572",
+              "name": "\u5317\u4eac\u767e\u5206\u4e4b\u4e00\u6295\u8d44\u7ba1\u7406\u4e2d\u5fc3(\u6709\u9650\u5408\u4f19)",
+              "econKind": "\u6709\u9650\u5408\u4f19\u4f01\u4e1a",
+              "hasImage": false,
+              "status": "\u5728\u4e1a"
+            }
+          }, {
+            "id": "2205101",
+            "labels": ["Company"],
+            "properties": {
+              "keyNo": "08f9e50d676fd8f39f2aadcc69d3b8bf",
+              "registCapi": "1000.000",
+              "name": "\u5317\u4eac\u7965\u6bd3\u548c\u6cf0\u6295\u8d44\u6709\u9650\u516c\u53f8",
+              "econKind": "\u5176\u4ed6\u6709\u9650\u8d23\u4efb\u516c\u53f8",
+              "hasImage": false,
+              "status": "\u5728\u4e1a"
+            }
+          }, {
+            "id": "145722686",
+            "labels": ["Person"],
+            "properties": {
+              "keyNo": "pf91fdce5242604303674e126a05af64",
+              "role": "\u81ea\u7136\u4eba\u80a1\u4e1c",
+              "name": "\u6731\u5cfb\u6d9b",
+              "hasImage": false
+            }
+          }, {
+            "id": "54266539",
+            "labels": ["Company"],
+            "properties": {
+              "keyNo": "da6720887b485016705b12557eddc142",
+              "registCapi": "0.000",
+              "name": "\u65b0\u4f59\u5e03\u9c81\u5fae\u800c\u4e92\u8054\u7f51\u6295\u8d44\u5408\u4f19\u4f01\u4e1a(\u6709\u9650\u5408\u4f19)",
+              "econKind": "\u6709\u9650\u5408\u4f19\u4f01\u4e1a",
+              "hasImage": false,
+              "status": "\u5b58\u7eed"
+            }
+          }, {
+            "id": "10485255",
+            "labels": ["Company"],
+            "properties": {
+              "keyNo": "2a59a5746e3c1255b36ff26fb06230fe",
+              "registCapi": "589.000",
+              "name": "\u5317\u4eac\u516d\u5ea6\u516b\u7ef4\u6295\u8d44\u7ba1\u7406\u6709\u9650\u516c\u53f8",
+              "econKind": "\u6709\u9650\u8d23\u4efb\u516c\u53f8(\u81ea\u7136\u4eba\u72ec\u8d44)",
+              "hasImage": false,
+              "status": "\u5728\u4e1a"
+            }
+          }, {
+            "id": "4109475",
+            "labels": ["Company"],
+            "properties": {
+              "keyNo": "109fcc184d54f954a50f0a5d42e6634e",
+              "registCapi": "3740.000",
+              "name": "\u5929\u6d25\u7279\u7f8e\u8fea\u65b0\u6587\u5316\u4f20\u64ad\u6709\u9650\u516c\u53f8",
+              "econKind": "\u6709\u9650\u8d23\u4efb\u516c\u53f8",
+              "hasImage": false,
+              "status": "\u5b58\u7eed"
+            }
+          }, {
+            "id": "136311998",
+            "labels": ["Person"],
+            "properties": {
+              "keyNo": "pdb8832c97146a7c684369c4268038d8",
+              "role": "\u76d1\u4e8b",
+              "name": "\u5510\u9510",
+              "hasImage": false
+            }
+          }, {
+            "id": "58329309",
+            "labels": ["Company"],
+            "properties": {
+              "keyNo": "eaa80bc4ed8118af63b5ffcdfa41e2e9",
+              "registCapi": "10000.000",
+              "name": "\u5e7f\u5dde\u6570\u878d\u4e92\u8054\u7f51\u5c0f\u989d\u8d37\u6b3e\u6709\u9650\u516c\u53f8",
+              "econKind": "\u6709\u9650\u8d23\u4efb\u516c\u53f8(\u6cd5\u4eba\u72ec\u8d44)",
+              "hasImage": false,
+              "status": "\u5728\u4e1a"
+            }
+          }, {
+            "id": "111497740",
+            "labels": ["Person"],
+            "properties": {
+              "keyNo": "p8db413a27641bcffd451e1922e36516",
+              "role": "\u76d1\u4e8b",
+              "name": "\u5218\u5ff5\u5e73",
+              "hasImage": false
+            }
+          }, {
+            "id": "29746030",
+            "labels": ["Company"],
+            "properties": {
+              "keyNo": "784dfe291166af704b039fa7e880133a",
+              "registCapi": "300.000",
+              "name": "\u5357\u4eac\u767e\u5206\u70b9\u4fe1\u606f\u79d1\u6280\u6709\u9650\u516c\u53f8",
+              "econKind": "\u6709\u9650\u8d23\u4efb\u516c\u53f8\uff08\u975e\u81ea\u7136\u4eba\u6295\u8d44\u6216\u63a7\u80a1\u7684\u6cd5\u4eba\u72ec\u8d44\uff09",
+              "hasImage": true,
+              "status": "\u5b58\u7eed"
+            }
+          }, {
+            "id": "92028625",
+            "labels": ["Person"],
+            "properties": {
+              "keyNo": "p50cccd287e01b93c653d5e0c46307a8",
+              "role": "\u76d1\u4e8b",
+              "name": "\u5f20\u8273",
+              "hasImage": false
+            }
+          }, {
+            "id": "25786916",
+            "labels": ["Company"],
+            "properties": {
+              "keyNo": "68813c9f1d5d2cf4df4ed8317ef23585",
+              "registCapi": "500.000",
+              "name": "\u8d35\u5dde\u9633\u660e\u666e\u60e0\u91d1\u878d\u79d1\u6280\u6709\u9650\u516c\u53f8",
+              "econKind": "\u6709\u9650\u8d23\u4efb\u516c\u53f8\uff08\u975e\u81ea\u7136\u4eba\u6295\u8d44\u6216\u63a7\u80a1\u7684\u6cd5\u4eba\u72ec\u8d44\uff09",
+              "hasImage": false,
+              "status": "\u5b58\u7eed"
+            }
+          }, {
+            "id": "61133322",
+            "labels": ["Company"],
+            "properties": {
+              "keyNo": "f5df64361d1639ef4c170a3cacbe8a81",
+              "registCapi": "500.000",
+              "name": "\u6df1\u5733\u6570\u8da3\u4fe1\u606f\u79d1\u6280\u6709\u9650\u516c\u53f8",
+              "econKind": "\u6709\u9650\u8d23\u4efb\u516c\u53f8\uff08\u81ea\u7136\u4eba\u6295\u8d44\u6216\u63a7\u80a1\u7684\u6cd5\u4eba\u72ec\u8d44\uff09",
+              "hasImage": true,
+              "status": "\u5b58\u7eed"
+            }
+          }, {
+            "id": "47332988",
+            "labels": ["Company"],
+            "properties": {
+              "keyNo": "bea148c5ac8693166815cb814b1f53b1",
+              "registCapi": "0.000",
+              "name": "\u5317\u4eac\u767e\u5206\u4e4b\u4e8c\u6295\u8d44\u7ba1\u7406\u4e2d\u5fc3(\u6709\u9650\u5408\u4f19)",
+              "econKind": "\u6709\u9650\u5408\u4f19\u4f01\u4e1a",
+              "hasImage": false,
+              "status": "\u5728\u4e1a"
+            }
+          }, {
+            "id": "140381420",
+            "labels": ["Person"],
+            "properties": {
+              "keyNo": "pe853932cf1593c96c4973ac04468f0b",
+              "role": "",
+              "name": "\u4f55\u6d9b",
+              "hasImage": false
+            }
+          }, {
+            "id": "78510623",
+            "labels": ["Person"],
+            "properties": {
+              "keyNo": "p269bf4d2552625f97ad1ca02188b866",
+              "role": "",
+              "name": "\u5c1a\u6d0b",
+              "hasImage": false
+            }
+          }, {
+            "id": "93167679",
+            "labels": ["Person"],
+            "properties": {
+              "keyNo": "p545b18c1d3f2f29315690a747523f95",
+              "role": "\u76d1\u4e8b",
+              "name": "\u6768\u51cc\u4e91",
+              "hasImage": false
+            }
+          }, {
+            "id": "59103537",
+            "labels": ["Company"],
+            "properties": {
+              "keyNo": "edc08b622cd02ca1f9ed7ae61fdd199e",
+              "registCapi": "500.000",
+              "name": "\u4e0a\u6d77\u4fdd\u7b51\u4fe1\u606f\u79d1\u6280\u6709\u9650\u516c\u53f8",
+              "econKind": "\u6709\u9650\u8d23\u4efb\u516c\u53f8\uff08\u81ea\u7136\u4eba\u6295\u8d44\u6216\u63a7\u80a1\u7684\u6cd5\u4eba\u72ec\u8d44\uff09",
+              "hasImage": false,
+              "status": "\u5b58\u7eed"
+            }
+          }, {
+            "id": "42816817",
+            "labels": ["Company"],
+            "properties": {
+              "keyNo": "ac9038d2920ff0c819df965f6be7b646",
+              "registCapi": "0.000",
+              "name": "\u4e0a\u6d77\u867e\u5175\u87f9\u5c06\u53c1\u6295\u8d44\u7ba1\u7406\u4e2d\u5fc3(\u6709\u9650\u5408\u4f19)",
+              "econKind": "\u6709\u9650\u5408\u4f19\u4f01\u4e1a",
+              "hasImage": false,
+              "status": "\u5b58\u7eed"
+            }
+          }, {
+            "id": "76515151",
+            "labels": ["Person"],
+            "properties": {
+              "keyNo": "p2062ef34ff5dea453fcbfd16dc407b7",
+              "role": "\u81ea\u7136\u4eba\u80a1\u4e1c",
+              "name": "\u7ae0\u7fd4\u51cc",
+              "hasImage": false
+            }
+          }, {
+            "id": "18674909",
+            "labels": ["Company"],
+            "properties": {
+              "keyNo": "4b8ea40e5121bf596296d483d5a50f90",
+              "registCapi": "9091.000",
+              "name": "\u65b0\u534e\u89c6\u8baf\u624b\u673a\u7535\u89c6\u53f0\u6709\u9650\u516c\u53f8",
+              "econKind": "\u5176\u4ed6\u6709\u9650\u8d23\u4efb\u516c\u53f8",
+              "hasImage": true,
+              "status": "\u5728\u4e1a"
+            }
+          }, {
+            "id": "57092013",
+            "labels": ["Company"],
+            "properties": {
+              "keyNo": "e5b8f4d164753c186869bafeab1867ba",
+              "registCapi": "0.000",
+              "name": "\u5b81\u6ce2\u5965\u8fbe\u5171\u521b\u6295\u8d44\u5408\u4f19\u4f01\u4e1a(\u6709\u9650\u5408\u4f19)",
+              "econKind": "\u6709\u9650\u5408\u4f19\u4f01\u4e1a",
+              "hasImage": false,
+              "status": "\u5b58\u7eed"
+            }
+          }, {
+            "id": "54633107",
+            "labels": ["Company"],
+            "properties": {
+              "keyNo": "dbde8372e18baf8e693e7a38a180d7c5",
+              "registCapi": "0.000",
+              "name": "\u5171\u9752\u57ce\u5927\u4fdd\u6295\u8d44\u5408\u4f19\u4f01\u4e1a(\u6709\u9650\u5408\u4f19)",
+              "econKind": "\u6709\u9650\u5408\u4f19\u4f01\u4e1a",
+              "hasImage": false,
+              "status": "\u5b58\u7eed"
+            }
+          }, {
+            "id": "26593606",
+            "labels": ["Company"],
+            "properties": {
+              "keyNo": "6bc26bd437b9f48c34f9c9ab685ca33f",
+              "registCapi": "111.111",
+              "name": "\u5317\u4eac\u5b81\u8299\u4fe1\u606f\u79d1\u6280\u6709\u9650\u516c\u53f8",
+              "econKind": "\u6709\u9650\u8d23\u4efb\u516c\u53f8(\u81ea\u7136\u4eba\u6295\u8d44\u6216\u63a7\u80a1)",
+              "hasImage": true,
+              "status": "\u5728\u4e1a"
+            }
+          }, {
+            "id": "29357416",
+            "labels": ["Company"],
+            "properties": {
+              "keyNo": "76c35fad8ef62950e925967c38d77c37",
+              "registCapi": "1000.000",
+              "name": "\u6c88\u9633\u667a\u80fd\u5927\u6570\u636e\u79d1\u6280\u6709\u9650\u516c\u53f8",
+              "econKind": "\u6709\u9650\u8d23\u4efb\u516c\u53f8\uff08\u975e\u81ea\u7136\u4eba\u6295\u8d44\u6216\u63a7\u80a1\u7684\u6cd5\u4eba\u72ec\u8d44\uff09",
+              "hasImage": false,
+              "status": "\u5b58\u7eed"
+            }
+          }, {
+            "id": "61020798",
+            "labels": ["Company"],
+            "properties": {
+              "keyNo": "f56caf93a9b831954fbfb61bc2516a61",
+              "registCapi": "5555.550",
+              "name": "\u9ece\u660e\u4fdd\u9669\u7ecf\u7eaa\u6709\u9650\u516c\u53f8",
+              "econKind": "\u5176\u4ed6\u6709\u9650\u8d23\u4efb\u516c\u53f8",
+              "hasImage": true,
+              "status": "\u5728\u4e1a"
+            }
+          }, {
+            "id": "87715539",
+            "labels": ["Person"],
+            "properties": {
+              "keyNo": "p4354976195a513ed8484ad35c0fc459",
+              "role": "",
+              "name": "\u738b\u4e1c",
+              "hasImage": false
+            }
+          }, {
+            "id": "41400987",
+            "labels": ["Company"],
+            "properties": {
+              "keyNo": "a6e59309b392e42ee75385b4501378df",
+              "registCapi": "10000.000",
+              "name": "\u5929\u6d25\u4fdd\u6570\u79d1\u6280\u6709\u9650\u516c\u53f8",
+              "econKind": "\u6709\u9650\u8d23\u4efb\u516c\u53f8(\u53f0\u6e2f\u6fb3\u6cd5\u4eba\u72ec\u8d44)",
+              "hasImage": false,
+              "status": "\u5b58\u7eed"
+            }
+          }, {
+            "id": "27984198",
+            "labels": ["Company"],
+            "properties": {
+              "keyNo": "714ef5838dc7769abc623b40ddc66692",
+              "registCapi": "1000.000",
+              "name": "\u6df1\u6d77\u68f1\u955c(\u5317\u4eac)\u6570\u636e\u79d1\u6280\u6709\u9650\u516c\u53f8",
+              "econKind": "\u5176\u4ed6\u6709\u9650\u8d23\u4efb\u516c\u53f8",
+              "hasImage": true,
+              "status": "\u5728\u4e1a"
+            }
+          }, {
+            "id": "67796965",
+            "labels": ["Person"],
+            "properties": {
+              "keyNo": "p0539ac91925aeb6c0ab0258e05d6c8a",
+              "role": "\u8463\u4e8b",
+              "name": "\u4efb\u96ea\u5cf0",
+              "hasImage": false
+            }
+          }, {
+            "id": "10629718",
+            "labels": ["Company"],
+            "properties": {
+              "keyNo": "2aef4092f0bd10b8257c413c96bbbdba",
+              "registCapi": "5000.000",
+              "name": "\u767e\u878d\u81f3\u4fe1(\u5317\u4eac)\u5f81\u4fe1\u6709\u9650\u516c\u53f8",
+              "econKind": "\u6709\u9650\u8d23\u4efb\u516c\u53f8(\u6cd5\u4eba\u72ec\u8d44)",
+              "hasImage": false,
+              "status": "\u5728\u4e1a"
+            }
+          }, {
+            "id": "37050049",
+            "labels": ["Company"],
+            "properties": {
+              "keyNo": "957b332042858548dcfa0a5fae1eb6ff",
+              "registCapi": "0.000",
+              "name": "\u4e0a\u6d77\u867e\u5175\u87f9\u5c06\u8d30\u6295\u8d44\u7ba1\u7406\u4e2d\u5fc3(\u6709\u9650\u5408\u4f19)",
+              "econKind": "\u6709\u9650\u5408\u4f19\u4f01\u4e1a",
+              "hasImage": false,
+              "status": "\u5b58\u7eed"
+            }
+          }, {
+            "id": "7800707",
+            "labels": ["Company"],
+            "properties": {
+              "keyNo": "1f7728754f49c35bccffa1de54b193f1",
+              "registCapi": "30000.000",
+              "name": "\u91cd\u5e86\u4f51\u4f51\u5b9d\u8d1d\u5987\u513f\u533b\u9662\u6709\u9650\u516c\u53f8",
+              "econKind": "\u6709\u9650\u8d23\u4efb\u516c\u53f8(\u53f0\u6e2f\u6fb3\u4e0e\u5883\u5185\u5408\u8d44)",
+              "hasImage": true,
+              "status": "\u5b58\u7eed"
+            }
+          }, {
+            "id": "33469188",
+            "labels": ["Company"],
+            "properties": {
+              "keyNo": "87274a905e82a926bfdece39aaca6db4",
+              "registCapi": "10000.000",
+              "name": "\u5929\u6d25\u8d5b\u5409\u79d1\u6280\u6709\u9650\u8d23\u4efb\u516c\u53f8",
+              "econKind": "\u6709\u9650\u8d23\u4efb\u516c\u53f8(\u81ea\u7136\u4eba\u72ec\u8d44)",
+              "hasImage": false,
+              "status": "\u5b58\u7eed"
+            }
+          }, {
+            "id": "51087095",
+            "labels": ["Company"],
+            "properties": {
+              "keyNo": "cdacd6a66d427a9141dea6b710e3ad0d",
+              "registCapi": "100.000",
+              "name": "\u8d35\u5dde\u5bf0\u667a\u6c47\u534e\u79d1\u6280\u6709\u9650\u516c\u53f8",
+              "econKind": "\u6709\u9650\u8d23\u4efb\u516c\u53f8(\u81ea\u7136\u4eba\u6295\u8d44\u6216\u63a7\u80a1)",
+              "hasImage": false,
+              "status": "\u5b58\u7eed"
+            }
+          }, {
+            "id": "93170801",
+            "labels": ["Person"],
+            "properties": {
+              "keyNo": "p545d9312c68395ccbc5061e8d72a928",
+              "role": "\u603b\u7ecf\u7406",
+              "name": "\u6bb5\u83b9",
+              "hasImage": false
+            }
+          }, {
+            "id": "39783075",
+            "labels": ["Company"],
+            "properties": {
+              "keyNo": "a06c4a877353cd53c50983bb908f601a",
+              "registCapi": "50.000",
+              "name": "\u5b81\u6ce2\u4fdd\u7a0e\u533a\u5fb7\u5de1\u4f01\u4e1a\u7ba1\u7406\u6709\u9650\u516c\u53f8",
+              "econKind": "\u6709\u9650\u8d23\u4efb\u516c\u53f8(\u81ea\u7136\u4eba\u6295\u8d44\u6216\u63a7\u80a1)",
+              "hasImage": false,
+              "status": "\u5b58\u7eed"
+            }
+          }, {
+            "id": "20730048",
+            "labels": ["Company"],
+            "properties": {
+              "keyNo": "53e58c6aa1b9ba7fabdb6420e4ee17e3",
+              "registCapi": "500.000",
+              "name": "\u4e0a\u6d77\u6797\u67cf\u6559\u80b2\u79d1\u6280\u6709\u9650\u516c\u53f8",
+              "econKind": "\u6709\u9650\u8d23\u4efb\u516c\u53f8(\u81ea\u7136\u4eba\u6295\u8d44\u6216\u63a7\u80a1)",
+              "hasImage": false,
+              "status": "\u5b58\u7eed"
+            }
+          }, {
+            "id": "25501048",
+            "labels": ["Company"],
+            "properties": {
+              "keyNo": "675a4470c5523ec5dbdece1ac3532355",
+              "registCapi": "1090.000",
+              "name": "\u897f\u85cf\u7965\u6bd3\u548c\u6cf0\u4f01\u4e1a\u7ba1\u7406\u6709\u9650\u516c\u53f8",
+              "econKind": "\u6709\u9650\u8d23\u4efb\u516c\u53f8(\u81ea\u7136\u4eba\u72ec\u8d44)",
+              "hasImage": false,
+              "status": "\u5b58\u7eed"
+            }
+          }],
+          "relationships": [{
+            "id": "232523741",
+            "type": "EMPLOY",
+            "startNode": "92028625",
+            "endNode": "43812048",
+            "properties": {
+              "role": ""
+            }
+          }, {
+            "id": "3383858",
+            "type": "INVEST",
+            "startNode": "22204247",
+            "endNode": "27984198",
+            "properties": {
+              "role": "\u6cd5\u4eba\u80a1\u4e1c",
+              "stockPercent": 80,
+              "shouldCapi": 800
+            }
+          }, {
+            "id": "63284164",
+            "type": "INVEST",
+            "startNode": "93158537",
+            "endNode": "54633107",
+            "properties": {
+              "role": "\u81ea\u7136\u4eba\u80a1\u4e1c",
+              "stockPercent": 25,
+              "shouldCapi": 25
+            }
+          }, {
+            "id": "63284166",
+            "type": "INVEST",
+            "startNode": "111497740",
+            "endNode": "54633107",
+            "properties": {
+              "role": "\u81ea\u7136\u4eba\u80a1\u4e1c",
+              "stockPercent": 25,
+              "shouldCapi": 25
+            }
+          }, {
+            "id": "1305623",
+            "type": "INVEST",
+            "startNode": "4109475",
+            "endNode": "18674909",
+            "properties": {
+              "role": "\u6cd5\u4eba\u80a1\u4e1c",
+              "stockPercent": 13,
+              "shouldCapi": 1181.83
+            }
+          }, {
+            "id": "437257",
+            "type": "INVEST",
+            "startNode": "21797731",
+            "endNode": "33318827",
+            "properties": {
+              "role": "\u4f01\u4e1a\u6cd5\u4eba",
+              "stockPercent": 100,
+              "shouldCapi": 1000
+            }
+          }, {
+            "id": "249786613",
+            "type": "EMPLOY",
+            "startNode": "92028625",
+            "endNode": "48746179",
+            "properties": {
+              "role": "\u8463\u4e8b"
+            }
+          }, {
+            "id": "124605818",
+            "type": "LEGAL",
+            "startNode": "125893555",
+            "endNode": "33469188",
+            "properties": {
+              "role": ""
+            }
+          }, {
+            "id": "154315566",
+            "type": "EMPLOY",
+            "startNode": "92028625",
+            "endNode": "34449187",
+            "properties": {
+              "role": "\u76d1\u4e8b"
+            }
+          }, {
+            "id": "66588",
+            "type": "INVEST",
+            "startNode": "53484902",
+            "endNode": "34449187",
+            "properties": {
+              "role": "\u4f01\u4e1a\u6cd5\u4eba",
+              "stockPercent": 100,
+              "shouldCapi": 500
+            }
+          }, {
+            "id": "135667208",
+            "type": "LEGAL",
+            "startNode": "102922060",
+            "endNode": "10485255",
+            "properties": {
+              "role": ""
+            }
+          }, {
+            "id": "1037870",
+            "type": "INVEST",
+            "startNode": "21797731",
+            "endNode": "13861540",
+            "properties": {
+              "role": "\u4f01\u4e1a\u6cd5\u4eba",
+              "stockPercent": 100,
+              "shouldCapi": 1000
+            }
+          }, {
+            "id": "279403652",
+            "type": "EMPLOY",
+            "startNode": "102922060",
+            "endNode": "49176273",
+            "properties": {
+              "role": "\u8463\u4e8b"
+            }
+          }, {
+            "id": "109077667",
+            "type": "LEGAL",
+            "startNode": "125893555",
+            "endNode": "3932751",
+            "properties": {
+              "role": ""
+            }
+          }, {
+            "id": "120318735",
+            "type": "LEGAL",
+            "startNode": "122783821",
+            "endNode": "27984198",
+            "properties": {
+              "role": ""
+            }
+          }, {
+            "id": "4158997",
+            "type": "INVEST",
+            "startNode": "38171197",
+            "endNode": "29373873",
+            "properties": {
+              "role": "\u6cd5\u4eba\u80a1\u4e1c",
+              "stockPercent": 39.91,
+              "shouldCapi": 186
+            }
+          }, {
+            "id": "128207247",
+            "type": "LEGAL",
+            "startNode": "92028625",
+            "endNode": "4109475",
+            "properties": {
+              "role": ""
+            }
+          }, {
+            "id": "4158996",
+            "type": "INVEST",
+            "startNode": "43176842",
+            "endNode": "29373873",
+            "properties": {
+              "role": "\u6cd5\u4eba\u80a1\u4e1c",
+              "stockPercent": 60.09,
+              "shouldCapi": 280
+            }
+          }, {
+            "id": "31481808",
+            "type": "INVEST",
+            "startNode": "125893555",
+            "endNode": "3932751",
+            "properties": {
+              "role": "\u81ea\u7136\u4eba\u80a1\u4e1c",
+              "stockPercent": 99,
+              "shouldCapi": 29.7
+            }
+          }, {
+            "id": "31481812",
+            "type": "INVEST",
+            "startNode": "131719842",
+            "endNode": "3932751",
+            "properties": {
+              "role": "\u81ea\u7136\u4eba\u80a1\u4e1c",
+              "stockPercent": 1,
+              "shouldCapi": 0.3
+            }
+          }, {
+            "id": "315440",
+            "type": "INVEST",
+            "startNode": "25501048",
+            "endNode": "3204217",
+            "properties": {
+              "role": "\u4f01\u4e1a\u6cd5\u4eba",
+              "stockPercent": 13.54,
+              "shouldCapi": 67.3214
+            }
+          }, {
+            "id": "215119077",
+            "type": "EMPLOY",
+            "startNode": "122783821",
+            "endNode": "27984198",
+            "properties": {
+              "role": "\u7ecf\u7406"
+            }
+          }, {
+            "id": "79082126",
+            "type": "INVEST",
+            "startNode": "102922060",
+            "endNode": "54523468",
+            "properties": {
+              "role": "\u81ea\u7136\u4eba\u80a1\u4e1c",
+              "stockPercent": 0,
+              "shouldCapi": 0
+            }
+          }, {
+            "id": "181791983",
+            "type": "EMPLOY",
+            "startNode": "92028625",
+            "endNode": "47613625",
+            "properties": {
+              "role": "\u8463\u4e8b"
+            }
+          }, {
+            "id": "215119081",
+            "type": "EMPLOY",
+            "startNode": "122783821",
+            "endNode": "27984198",
+            "properties": {
+              "role": "\u6267\u884c\u8463\u4e8b"
+            }
+          }, {
+            "id": "152745767",
+            "type": "LEGAL",
+            "startNode": "92028625",
+            "endNode": "34483502",
+            "properties": {
+              "role": ""
+            }
+          }, {
+            "id": "4862986",
+            "type": "INVEST",
+            "startNode": "14440372",
+            "endNode": "29651103",
+            "properties": {
+              "role": "\u4f01\u4e1a\u6cd5\u4eba",
+              "stockPercent": 99,
+              "shouldCapi": 9.9
+            }
+          }, {
+            "id": "197481348",
+            "type": "EMPLOY",
+            "startNode": "122783821",
+            "endNode": "5979964",
+            "properties": {
+              "role": "\u6267\u884c\u8463\u4e8b"
+            }
+          }, {
+            "id": "120039781",
+            "type": "LEGAL",
+            "startNode": "92028625",
+            "endNode": "25501048",
+            "properties": {
+              "role": ""
+            }
+          }, {
+            "id": "116019881",
+            "type": "LEGAL",
+            "startNode": "93167679",
+            "endNode": "35546262",
+            "properties": {
+              "role": ""
+            }
+          }, {
+            "id": "127577555",
+            "type": "LEGAL",
+            "startNode": "140381420",
+            "endNode": "51087095",
+            "properties": {
+              "role": ""
+            }
+          }, {
+            "id": "571459",
+            "type": "INVEST",
+            "startNode": "14440372",
+            "endNode": "37050049",
+            "properties": {
+              "role": "\u4f01\u4e1a\u6cd5\u4eba",
+              "stockPercent": 99,
+              "shouldCapi": 9.9
+            }
+          }, {
+            "id": "2889343",
+            "type": "INVEST",
+            "startNode": "38171197",
+            "endNode": "35546262",
+            "properties": {
+              "role": "\u6cd5\u4eba\u80a1\u4e1c",
+              "stockPercent": 100,
+              "shouldCapi": 1000
+            }
+          }, {
+            "id": "223144223",
+            "type": "EMPLOY",
+            "startNode": "131719842",
+            "endNode": "41400987",
+            "properties": {
+              "role": "\u76d1\u4e8b"
+            }
+          }, {
+            "id": "5337605",
+            "type": "INVEST",
+            "startNode": "14440372",
+            "endNode": "41566034",
+            "properties": {
+              "role": "\u4f01\u4e1a\u6cd5\u4eba",
+              "stockPercent": 99,
+              "shouldCapi": 9.9
+            }
+          }, {
+            "id": "132765116",
+            "type": "LEGAL",
+            "startNode": "111497740",
+            "endNode": "54633107",
+            "properties": {
+              "role": ""
+            }
+          }, {
+            "id": "178564804",
+            "type": "EMPLOY",
+            "startNode": "122783821",
+            "endNode": "14440372",
+            "properties": {
+              "role": "\u7ecf\u7406"
+            }
+          }, {
+            "id": "202231916",
+            "type": "EMPLOY",
+            "startNode": "111497740",
+            "endNode": "61020798",
+            "properties": {
+              "role": "\u7ecf\u7406"
+            }
+          }, {
+            "id": "202231919",
+            "type": "EMPLOY",
+            "startNode": "93167679",
+            "endNode": "61020798",
+            "properties": {
+              "role": "\u76d1\u4e8b"
+            }
+          }, {
+            "id": "202231912",
+            "type": "EMPLOY",
+            "startNode": "93158537",
+            "endNode": "61020798",
+            "properties": {
+              "role": "\u6267\u884c\u8463\u4e8b"
+            }
+          }, {
+            "id": "178564803",
+            "type": "EMPLOY",
+            "startNode": "122783821",
+            "endNode": "14440372",
+            "properties": {
+              "role": "\u6267\u884c\u8463\u4e8b"
+            }
+          }, {
+            "id": "223144226",
+            "type": "EMPLOY",
+            "startNode": "125893555",
+            "endNode": "41400987",
+            "properties": {
+              "role": "\u6267\u884c\u8463\u4e8b"
+            }
+          }, {
+            "id": "223144227",
+            "type": "EMPLOY",
+            "startNode": "93158537",
+            "endNode": "41400987",
+            "properties": {
+              "role": "\u603b\u7ecf\u7406"
+            }
+          }, {
+            "id": "19090259",
+            "type": "INVEST",
+            "startNode": "102922060",
+            "endNode": "47332988",
+            "properties": {
+              "role": "\u81ea\u7136\u4eba\u80a1\u4e1c",
+              "stockPercent": 0,
+              "shouldCapi": 0
+            }
+          }, {
+            "id": "90583831",
+            "type": "LEGAL",
+            "startNode": "14440372",
+            "endNode": "37050049",
+            "properties": {
+              "role": ""
+            }
+          }, {
+            "id": "3462721",
+            "type": "INVEST",
+            "startNode": "22204247",
+            "endNode": "11628525",
+            "properties": {
+              "role": "\u4f01\u4e1a\u6cd5\u4eba",
+              "stockPercent": 15.71,
+              "shouldCapi": 31.42
+            }
+          }, {
+            "id": "6962716",
+            "type": "INVEST",
+            "startNode": "38171197",
+            "endNode": "114226",
+            "properties": {
+              "role": "\u6cd5\u4eba\u80a1\u4e1c",
+              "stockPercent": 100,
+              "shouldCapi": 100
+            }
+          }, {
+            "id": "90780950",
+            "type": "LEGAL",
+            "startNode": "14440372",
+            "endNode": "29651103",
+            "properties": {
+              "role": ""
+            }
+          }, {
+            "id": "132220318",
+            "type": "LEGAL",
+            "startNode": "87715539",
+            "endNode": "43176842",
+            "properties": {
+              "role": ""
+            }
+          }, {
+            "id": "7113452",
+            "type": "INVEST",
+            "startNode": "25501048",
+            "endNode": "34483502",
+            "properties": {
+              "role": "\u4f01\u4e1a\u6cd5\u4eba",
+              "stockPercent": 50,
+              "shouldCapi": 2500
+            }
+          }, {
+            "id": "3938490",
+            "type": "INVEST",
+            "startNode": "38171197",
+            "endNode": "35198220",
+            "properties": {
+              "role": "\u6cd5\u4eba\u80a1\u4e1c",
+              "stockPercent": 100,
+              "shouldCapi": 1000
+            }
+          }, {
+            "id": "107346658",
+            "type": "LEGAL",
+            "startNode": "125893555",
+            "endNode": "10629718",
+            "properties": {
+              "role": ""
+            }
+          }, {
+            "id": "18311583",
+            "type": "INVEST",
+            "startNode": "122783821",
+            "endNode": "40937248",
+            "properties": {
+              "role": "\u81ea\u7136\u4eba\u80a1\u4e1c",
+              "stockPercent": 60,
+              "shouldCapi": 30
+            }
+          }, {
+            "id": "205034666",
+            "type": "EMPLOY",
+            "startNode": "92028625",
+            "endNode": "7800707",
+            "properties": {
+              "role": "\u8463\u4e8b\u957f"
+            }
+          }, {
+            "id": "276729064",
+            "type": "EMPLOY",
+            "startNode": "102922060",
+            "endNode": "29357416",
+            "properties": {
+              "role": "\u6267\u884c\u8463\u4e8b\u517c\u7ecf\u7406"
+            }
+          }, {
+            "id": "139505863",
+            "type": "LEGAL",
+            "startNode": "140381420",
+            "endNode": "12150579",
+            "properties": {
+              "role": ""
+            }
+          }, {
+            "id": "168003231",
+            "type": "EMPLOY",
+            "startNode": "131719842",
+            "endNode": "25786916",
+            "properties": {
+              "role": "\u76d1\u4e8b"
+            }
+          }, {
+            "id": "2681013",
+            "type": "INVEST",
+            "startNode": "38171197",
+            "endNode": "61020798",
+            "properties": {
+              "role": "\u6cd5\u4eba\u80a1\u4e1c",
+              "stockPercent": 63,
+              "shouldCapi": 3500
+            }
+          }, {
+            "id": "2681015",
+            "type": "INVEST",
+            "startNode": "54633107",
+            "endNode": "61020798",
+            "properties": {
+              "role": "\u6cd5\u4eba\u80a1\u4e1c",
+              "stockPercent": 10,
+              "shouldCapi": 555.55
+            }
+          }, {
+            "id": "140369149",
+            "type": "LEGAL",
+            "startNode": "125893555",
+            "endNode": "38171197",
+            "properties": {
+              "role": ""
+            }
+          }, {
+            "id": "187749777",
+            "type": "EMPLOY",
+            "startNode": "125893555",
+            "endNode": "10629718",
+            "properties": {
+              "role": "\u6267\u884c\u8463\u4e8b"
+            }
+          }, {
+            "id": "90802635",
+            "type": "LEGAL",
+            "startNode": "14440372",
+            "endNode": "41566034",
+            "properties": {
+              "role": ""
+            }
+          }, {
+            "id": "2833545",
+            "type": "INVEST",
+            "startNode": "25501048",
+            "endNode": "7800707",
+            "properties": {
+              "role": "\u4f01\u4e1a\u6cd5\u4eba",
+              "stockPercent": 30,
+              "shouldCapi": 9000
+            }
+          }, {
+            "id": "6888647",
+            "type": "INVEST",
+            "startNode": "21797731",
+            "endNode": "49176273",
+            "properties": {
+              "role": "\u4f01\u4e1a\u6cd5\u4eba",
+              "stockPercent": 22,
+              "shouldCapi": 2200
+            }
+          }, {
+            "id": "4290289",
+            "type": "INVEST",
+            "startNode": "25501048",
+            "endNode": "4109475",
+            "properties": {
+              "role": "\u4f01\u4e1a\u6cd5\u4eba",
+              "stockPercent": 63,
+              "shouldCapi": 2356.2
+            }
+          }, {
+            "id": "158878153",
+            "type": "EMPLOY",
+            "startNode": "92028625",
+            "endNode": "3204217",
+            "properties": {
+              "role": "\u8463\u4e8b"
+            }
+          }, {
+            "id": "5377251",
+            "type": "INVEST",
+            "startNode": "21797731",
+            "endNode": "29746030",
+            "properties": {
+              "role": "\u4f01\u4e1a\u6cd5\u4eba",
+              "stockPercent": 100,
+              "shouldCapi": 300
+            }
+          }, {
+            "id": "18311586",
+            "type": "INVEST",
+            "startNode": "125893555",
+            "endNode": "40937248",
+            "properties": {
+              "role": "\u81ea\u7136\u4eba\u80a1\u4e1c",
+              "stockPercent": 40,
+              "shouldCapi": 20
+            }
+          }, {
+            "id": "220331415",
+            "type": "EMPLOY",
+            "startNode": "92028625",
+            "endNode": "9130671",
+            "properties": {
+              "role": "\u8463\u4e8b"
+            }
+          }, {
+            "id": "212151314",
+            "type": "EMPLOY",
+            "startNode": "92028625",
+            "endNode": "11005136",
+            "properties": {
+              "role": "\u8463\u4e8b"
+            }
+          }, {
+            "id": "187749773",
+            "type": "EMPLOY",
+            "startNode": "125893555",
+            "endNode": "10629718",
+            "properties": {
+              "role": "\u7ecf\u7406"
+            }
+          }, {
+            "id": "187749774",
+            "type": "EMPLOY",
+            "startNode": "131719842",
+            "endNode": "10629718",
+            "properties": {
+              "role": "\u76d1\u4e8b"
+            }
+          }, {
+            "id": "137646219",
+            "type": "LEGAL",
+            "startNode": "102922060",
+            "endNode": "29746030",
+            "properties": {
+              "role": ""
+            }
+          }, {
+            "id": "165526301",
+            "type": "EMPLOY",
+            "startNode": "97725339",
+            "endNode": "39783075",
+            "properties": {
+              "role": "\u6267\u884c\u8463\u4e8b"
+            }
+          }, {
+            "id": "241322144",
+            "type": "EMPLOY",
+            "startNode": "102922060",
+            "endNode": "21797731",
+            "properties": {
+              "role": "\u7ecf\u7406"
+            }
+          }, {
+            "id": "225280942",
+            "type": "EMPLOY",
+            "startNode": "131719842",
+            "endNode": "35198220",
+            "properties": {
+              "role": "\u76d1\u4e8b"
+            }
+          }, {
+            "id": "165526299",
+            "type": "EMPLOY",
+            "startNode": "97725339",
+            "endNode": "39783075",
+            "properties": {
+              "role": "\u7ecf\u7406"
+            }
+          }, {
+            "id": "99916595",
+            "type": "LEGAL",
+            "startNode": "102922060",
+            "endNode": "13861540",
+            "properties": {
+              "role": ""
+            }
+          }, {
+            "id": "132754212",
+            "type": "LEGAL",
+            "startNode": "102922060",
+            "endNode": "21797731",
+            "properties": {
+              "role": ""
+            }
+          }, {
+            "id": "111952508",
+            "type": "LEGAL",
+            "startNode": "122783821",
+            "endNode": "5979964",
+            "properties": {
+              "role": ""
+            }
+          }, {
+            "id": "242487462",
+            "type": "EMPLOY",
+            "startNode": "136311998",
+            "endNode": "61133322",
+            "properties": {
+              "role": "\u76d1\u4e8b"
+            }
+          }, {
+            "id": "206044820",
+            "type": "EMPLOY",
+            "startNode": "131719842",
+            "endNode": "35546262",
+            "properties": {
+              "role": "\u76d1\u4e8b"
+            }
+          }, {
+            "id": "242651301",
+            "type": "EMPLOY",
+            "startNode": "93170801",
+            "endNode": "58329309",
+            "properties": {
+              "role": "\u8463\u4e8b"
+            }
+          }, {
+            "id": "67180244",
+            "type": "INVEST",
+            "startNode": "102922060",
+            "endNode": "10485255",
+            "properties": {
+              "role": "\u81ea\u7136\u4eba\u80a1\u4e1c",
+              "stockPercent": 100,
+              "shouldCapi": 589
+            }
+          }, {
+            "id": "206044818",
+            "type": "EMPLOY",
+            "startNode": "93167679",
+            "endNode": "35546262",
+            "properties": {
+              "role": "\u7ecf\u7406,\u6267\u884c\u8463\u4e8b"
+            }
+          }, {
+            "id": "111629439",
+            "type": "LEGAL",
+            "startNode": "102922060",
+            "endNode": "57145835",
+            "properties": {
+              "role": ""
+            }
+          }, {
+            "id": "224139650",
+            "type": "EMPLOY",
+            "startNode": "125893555",
+            "endNode": "33469188",
+            "properties": {
+              "role": "\u7ecf\u7406,\u6267\u884c\u8463\u4e8b"
+            }
+          }, {
+            "id": "224139651",
+            "type": "EMPLOY",
+            "startNode": "131719842",
+            "endNode": "33469188",
+            "properties": {
+              "role": "\u76d1\u4e8b"
+            }
+          }, {
+            "id": "257419191",
+            "type": "EMPLOY",
+            "startNode": "92028625",
+            "endNode": "38171197",
+            "properties": {
+              "role": "\u8463\u4e8b"
+            }
+          }, {
+            "id": "257419190",
+            "type": "EMPLOY",
+            "startNode": "122783821",
+            "endNode": "38171197",
+            "properties": {
+              "role": "\u8463\u4e8b"
+            }
+          }, {
+            "id": "257419189",
+            "type": "EMPLOY",
+            "startNode": "131719842",
+            "endNode": "38171197",
+            "properties": {
+              "role": "\u8463\u4e8b"
+            }
+          }, {
+            "id": "280762965",
+            "type": "EMPLOY",
+            "startNode": "131719842",
+            "endNode": "114226",
+            "properties": {
+              "role": "\u76d1\u4e8b"
+            }
+          }, {
+            "id": "251669485",
+            "type": "EMPLOY",
+            "startNode": "102922060",
+            "endNode": "29746030",
+            "properties": {
+              "role": "\u6267\u884c\u8463\u4e8b"
+            }
+          }, {
+            "id": "6434959",
+            "type": "INVEST",
+            "startNode": "41566034",
+            "endNode": "22204247",
+            "properties": {
+              "role": "\u5408\u4f19\u4f01\u4e1a",
+              "stockPercent": 16.92,
+              "shouldCapi": 22.2355
+            }
+          }, {
+            "id": "1891570",
+            "type": "INVEST",
+            "startNode": "38171197",
+            "endNode": "10629718",
+            "properties": {
+              "role": "\u6cd5\u4eba\u80a1\u4e1c",
+              "stockPercent": 100,
+              "shouldCapi": 5000
+            }
+          }, {
+            "id": "280762962",
+            "type": "EMPLOY",
+            "startNode": "136311998",
+            "endNode": "114226",
+            "properties": {
+              "role": "\u6267\u884c\u8463\u4e8b"
+            }
+          }, {
+            "id": "6434957",
+            "type": "INVEST",
+            "startNode": "14440372",
+            "endNode": "22204247",
+            "properties": {
+              "role": "\u4f01\u4e1a\u6cd5\u4eba",
+              "stockPercent": 40.37,
+              "shouldCapi": 53.0634
+            }
+          }, {
+            "id": "4158672",
+            "type": "INVEST",
+            "startNode": "21797731",
+            "endNode": "17645948",
+            "properties": {
+              "role": "\u5176\u4ed6\u6295\u8d44\u8005",
+              "stockPercent": 100,
+              "shouldCapi": 1000
+            }
+          }, {
+            "id": "280762963",
+            "type": "EMPLOY",
+            "startNode": "136311998",
+            "endNode": "114226",
+            "properties": {
+              "role": "\u7ecf\u7406"
+            }
+          }, {
+            "id": "224825238",
+            "type": "EMPLOY",
+            "startNode": "125893555",
+            "endNode": "35278936",
+            "properties": {
+              "role": "\u6267\u884c\u8463\u4e8b"
+            }
+          }, {
+            "id": "4815032",
+            "type": "INVEST",
+            "startNode": "57145835",
+            "endNode": "21797731",
+            "properties": {
+              "role": "\u6cd5\u4eba\u80a1\u4e1c",
+              "stockPercent": 10.82,
+              "shouldCapi": 121.5716
+            }
+          }, {
+            "id": "216561178",
+            "type": "EMPLOY",
+            "startNode": "122783821",
+            "endNode": "11628525",
+            "properties": {
+              "role": "\u8463\u4e8b\u957f"
+            }
+          }, {
+            "id": "6434961",
+            "type": "INVEST",
+            "startNode": "56821985",
+            "endNode": "22204247",
+            "properties": {
+              "role": "\u5408\u4f19\u4f01\u4e1a",
+              "stockPercent": 6.85,
+              "shouldCapi": 9.0028
+            }
+          }, {
+            "id": "241322136",
+            "type": "EMPLOY",
+            "startNode": "102922060",
+            "endNode": "21797731",
+            "properties": {
+              "role": "\u8463\u4e8b\u957f"
+            }
+          }, {
+            "id": "208955022",
+            "type": "EMPLOY",
+            "startNode": "92028625",
+            "endNode": "20730048",
+            "properties": {
+              "role": "\u76d1\u4e8b"
+            }
+          }, {
+            "id": "4815029",
+            "type": "INVEST",
+            "startNode": "54266539",
+            "endNode": "21797731",
+            "properties": {
+              "role": "\u6cd5\u4eba\u80a1\u4e1c",
+              "stockPercent": 13.67,
+              "shouldCapi": 153.658
+            }
+          }, {
+            "id": "224825242",
+            "type": "EMPLOY",
+            "startNode": "93170801",
+            "endNode": "35278936",
+            "properties": {
+              "role": "\u603b\u7ecf\u7406"
+            }
+          }, {
+            "id": "4815028",
+            "type": "INVEST",
+            "startNode": "10485255",
+            "endNode": "21797731",
+            "properties": {
+              "role": "\u4f01\u4e1a\u6cd5\u4eba",
+              "stockPercent": 53.87,
+              "shouldCapi": 605.4046
+            }
+          }, {
+            "id": "224825240",
+            "type": "EMPLOY",
+            "startNode": "131719842",
+            "endNode": "35278936",
+            "properties": {
+              "role": "\u76d1\u4e8b"
+            }
+          }, {
+            "id": "4815031",
+            "type": "INVEST",
+            "startNode": "54523468",
+            "endNode": "21797731",
+            "properties": {
+              "role": "\u6cd5\u4eba\u80a1\u4e1c",
+              "stockPercent": 10.82,
+              "shouldCapi": 121.5715
+            }
+          }, {
+            "id": "4815030",
+            "type": "INVEST",
+            "startNode": "47332988",
+            "endNode": "21797731",
+            "properties": {
+              "role": "\u6cd5\u4eba\u80a1\u4e1c",
+              "stockPercent": 10.82,
+              "shouldCapi": 121.5716
+            }
+          }, {
+            "id": "5590868",
+            "type": "INVEST",
+            "startNode": "51087095",
+            "endNode": "12150579",
+            "properties": {
+              "role": "\u4f01\u4e1a\u6cd5\u4eba",
+              "stockPercent": 30,
+              "shouldCapi": 1800
+            }
+          }, {
+            "id": "257419349",
+            "type": "EMPLOY",
+            "startNode": "67796965",
+            "endNode": "38171197",
+            "properties": {
+              "role": "\u8463\u4e8b"
+            }
+          }, {
+            "id": "257419346",
+            "type": "EMPLOY",
+            "startNode": "125893555",
+            "endNode": "38171197",
+            "properties": {
+              "role": "\u8463\u4e8b\u957f,\u7ecf\u7406"
+            }
+          }, {
+            "id": "5590867",
+            "type": "INVEST",
+            "startNode": "38171197",
+            "endNode": "12150579",
+            "properties": {
+              "role": "\u4f01\u4e1a\u6cd5\u4eba",
+              "stockPercent": 30,
+              "shouldCapi": 1800
+            }
+          }, {
+            "id": "5533532",
+            "type": "INVEST",
+            "startNode": "14440372",
+            "endNode": "42816817",
+            "properties": {
+              "role": "\u4f01\u4e1a\u6cd5\u4eba",
+              "stockPercent": 99,
+              "shouldCapi": 9.9
+            }
+          }, {
+            "id": "5375838",
+            "type": "INVEST",
+            "startNode": "38171197",
+            "endNode": "59103537",
+            "properties": {
+              "role": "\u4f01\u4e1a\u6cd5\u4eba",
+              "stockPercent": 100,
+              "shouldCapi": 500
+            }
+          }, {
+            "id": "128581285",
+            "type": "LEGAL",
+            "startNode": "92028625",
+            "endNode": "43812048",
+            "properties": {
+              "role": ""
+            }
+          }, {
+            "id": "96782027",
+            "type": "LEGAL",
+            "startNode": "97725339",
+            "endNode": "39783075",
+            "properties": {
+              "role": ""
+            }
+          }, {
+            "id": "7125368",
+            "type": "INVEST",
+            "startNode": "21797731",
+            "endNode": "7454075",
+            "properties": {
+              "role": "\u4f01\u4e1a\u6cd5\u4eba",
+              "stockPercent": 100,
+              "shouldCapi": 1000
+            }
+          }, {
+            "id": "172110676",
+            "type": "EMPLOY",
+            "startNode": "102922060",
+            "endNode": "13861540",
+            "properties": {
+              "role": "\u6267\u884c\u8463\u4e8b"
+            }
+          }, {
+            "id": "814363",
+            "type": "INVEST",
+            "startNode": "35198220",
+            "endNode": "25786916",
+            "properties": {
+              "role": "\u4f01\u4e1a\u6cd5\u4eba",
+              "stockPercent": 100,
+              "shouldCapi": 500
+            }
+          }, {
+            "id": "99223792",
+            "type": "LEGAL",
+            "startNode": "122783821",
+            "endNode": "40937248",
+            "properties": {
+              "role": ""
+            }
+          }, {
+            "id": "231743691",
+            "type": "EMPLOY",
+            "startNode": "92028625",
+            "endNode": "2205101",
+            "properties": {
+              "role": "\u7ecf\u7406,\u6267\u884c\u8463\u4e8b"
+            }
+          }, {
+            "id": "247466464",
+            "type": "EMPLOY",
+            "startNode": "102922060",
+            "endNode": "10485255",
+            "properties": {
+              "role": "\u7ecf\u7406"
+            }
+          }, {
+            "id": "247466467",
+            "type": "EMPLOY",
+            "startNode": "102922060",
+            "endNode": "10485255",
+            "properties": {
+              "role": "\u6267\u884c\u8463\u4e8b"
+            }
+          }, {
+            "id": "63825128",
+            "type": "INVEST",
+            "startNode": "122783821",
+            "endNode": "29651103",
+            "properties": {
+              "role": "\u81ea\u7136\u4eba\u80a1\u4e1c",
+              "stockPercent": 1,
+              "shouldCapi": 0.1
+            }
+          }, {
+            "id": "149531097",
+            "type": "LEGAL",
+            "startNode": "102922060",
+            "endNode": "29357416",
+            "properties": {
+              "role": ""
+            }
+          }, {
+            "id": "72331646",
+            "type": "INVEST",
+            "startNode": "140381420",
+            "endNode": "12150579",
+            "properties": {
+              "role": "\u81ea\u7136\u4eba\u80a1\u4e1c",
+              "stockPercent": 20,
+              "shouldCapi": 1200
+            }
+          }, {
+            "id": "72331645",
+            "type": "INVEST",
+            "startNode": "76515151",
+            "endNode": "12150579",
+            "properties": {
+              "role": "\u81ea\u7136\u4eba\u80a1\u4e1c",
+              "stockPercent": 20,
+              "shouldCapi": 1200
+            }
+          }, {
+            "id": "1746729",
+            "type": "INVEST",
+            "startNode": "61020798",
+            "endNode": "24495977",
+            "properties": {
+              "role": "\u4f01\u4e1a\u6cd5\u4eba",
+              "stockPercent": 100,
+              "shouldCapi": 500
+            }
+          }, {
+            "id": "255593480",
+            "type": "EMPLOY",
+            "startNode": "140381420",
+            "endNode": "12150579",
+            "properties": {
+              "role": "\u6267\u884c\u8463\u4e8b"
+            }
+          }, {
+            "id": "4886898",
+            "type": "INVEST",
+            "startNode": "38171197",
+            "endNode": "58329309",
+            "properties": {
+              "role": "\u6cd5\u4eba\u80a1\u4e1c",
+              "stockPercent": 100,
+              "shouldCapi": 10000
+            }
+          }, {
+            "id": "99807434",
+            "type": "LEGAL",
+            "startNode": "102922060",
+            "endNode": "47332988",
+            "properties": {
+              "role": ""
+            }
+          }, {
+            "id": "255593478",
+            "type": "EMPLOY",
+            "startNode": "140381420",
+            "endNode": "12150579",
+            "properties": {
+              "role": "\u7ecf\u7406"
+            }
+          }, {
+            "id": "69364505",
+            "type": "INVEST",
+            "startNode": "122783821",
+            "endNode": "41566034",
+            "properties": {
+              "role": "\u81ea\u7136\u4eba\u80a1\u4e1c",
+              "stockPercent": 1,
+              "shouldCapi": 0.1
+            }
+          }, {
+            "id": "283520477",
+            "type": "EMPLOY",
+            "startNode": "92028625",
+            "endNode": "34483502",
+            "properties": {
+              "role": "\u7ecf\u7406,\u6267\u884c\u8463\u4e8b"
+            }
+          }, {
+            "id": "255593479",
+            "type": "EMPLOY",
+            "startNode": "131719842",
+            "endNode": "12150579",
+            "properties": {
+              "role": "\u76d1\u4e8b"
+            }
+          }, {
+            "id": "3221873",
+            "type": "INVEST",
+            "startNode": "34483502",
+            "endNode": "11005136",
+            "properties": {
+              "role": "\u4f01\u4e1a\u6cd5\u4eba",
+              "stockPercent": 14.77,
+              "shouldCapi": 15.07
+            }
+          }, {
+            "id": "161112283",
+            "type": "EMPLOY",
+            "startNode": "102922060",
+            "endNode": "33318827",
+            "properties": {
+              "role": "\u8463\u4e8b\u957f"
+            }
+          }, {
+            "id": "34911061",
+            "type": "INVEST",
+            "startNode": "102922060",
+            "endNode": "57145835",
+            "properties": {
+              "role": "\u81ea\u7136\u4eba\u80a1\u4e1c",
+              "stockPercent": 0,
+              "shouldCapi": 0
+            }
+          }, {
+            "id": "71651591",
+            "type": "INVEST",
+            "startNode": "122783821",
+            "endNode": "42816817",
+            "properties": {
+              "role": "\u81ea\u7136\u4eba\u80a1\u4e1c",
+              "stockPercent": 1,
+              "shouldCapi": 0.1
+            }
+          }, {
+            "id": "202227526",
+            "type": "EMPLOY",
+            "startNode": "97725339",
+            "endNode": "63448540",
+            "properties": {
+              "role": "\u6267\u884c\u8463\u4e8b"
+            }
+          }, {
+            "id": "90796071",
+            "type": "LEGAL",
+            "startNode": "14440372",
+            "endNode": "56821985",
+            "properties": {
+              "role": ""
+            }
+          }, {
+            "id": "3669346",
+            "type": "INVEST",
+            "startNode": "34483502",
+            "endNode": "9130671",
+            "properties": {
+              "role": "\u4f01\u4e1a\u6cd5\u4eba",
+              "stockPercent": 3.22,
+              "shouldCapi": 0.0559
+            }
+          }, {
+            "id": "56329729",
+            "type": "INVEST",
+            "startNode": "76515151",
+            "endNode": "51087095",
+            "properties": {
+              "role": "\u81ea\u7136\u4eba\u80a1\u4e1c",
+              "stockPercent": 13.34,
+              "shouldCapi": 13.34
+            }
+          }, {
+            "id": "146848155",
+            "type": "LEGAL",
+            "startNode": "122783821",
+            "endNode": "22204247",
+            "properties": {
+              "role": ""
+            }
+          }, {
+            "id": "214528402",
+            "type": "EMPLOY",
+            "startNode": "92028625",
+            "endNode": "25501048",
+            "properties": {
+              "role": "\u6267\u884c\u8463\u4e8b\u517c\u603b\u7ecf\u7406"
+            }
+          }, {
+            "id": "242766627",
+            "type": "EMPLOY",
+            "startNode": "131719842",
+            "endNode": "43988615",
+            "properties": {
+              "role": "\u76d1\u4e8b"
+            }
+          }, {
+            "id": "56329728",
+            "type": "INVEST",
+            "startNode": "140381420",
+            "endNode": "51087095",
+            "properties": {
+              "role": "\u81ea\u7136\u4eba\u80a1\u4e1c",
+              "stockPercent": 73.34,
+              "shouldCapi": 73.34
+            }
+          }, {
+            "id": "183004598",
+            "type": "EMPLOY",
+            "startNode": "92028625",
+            "endNode": "31506622",
+            "properties": {
+              "role": "\u8463\u4e8b"
+            }
+          }, {
+            "id": "257419319",
+            "type": "EMPLOY",
+            "startNode": "97725339",
+            "endNode": "38171197",
+            "properties": {
+              "role": "\u76d1\u4e8b"
+            }
+          }, {
+            "id": "230402267",
+            "type": "EMPLOY",
+            "startNode": "140381420",
+            "endNode": "51087095",
+            "properties": {
+              "role": "\u6267\u884c\u8463\u4e8b\u517c\u603b\u7ecf\u7406"
+            }
+          }, {
+            "id": "177005551",
+            "type": "EMPLOY",
+            "startNode": "92028625",
+            "endNode": "18674909",
+            "properties": {
+              "role": "\u8463\u4e8b"
+            }
+          }, {
+            "id": "29933228",
+            "type": "INVEST",
+            "startNode": "122783821",
+            "endNode": "60336840",
+            "properties": {
+              "role": "\u81ea\u7136\u4eba\u80a1\u4e1c",
+              "stockPercent": 1,
+              "shouldCapi": 0.1
+            }
+          }, {
+            "id": "242766621",
+            "type": "EMPLOY",
+            "startNode": "125893555",
+            "endNode": "43988615",
+            "properties": {
+              "role": "\u6267\u884c\u8463\u4e8b"
+            }
+          }, {
+            "id": "4715809",
+            "type": "INVEST",
+            "startNode": "39783075",
+            "endNode": "57092013",
+            "properties": {
+              "role": "\u4f01\u4e1a\u6cd5\u4eba",
+              "stockPercent": 0.1,
+              "shouldCapi": 0.5
+            }
+          }, {
+            "id": "13811130",
+            "type": "INVEST",
+            "startNode": "122783821",
+            "endNode": "37050049",
+            "properties": {
+              "role": "\u81ea\u7136\u4eba\u80a1\u4e1c",
+              "stockPercent": 1,
+              "shouldCapi": 0.1
+            }
+          }, {
+            "id": "231740091",
+            "type": "EMPLOY",
+            "startNode": "92028625",
+            "endNode": "4109475",
+            "properties": {
+              "role": "\u7ecf\u7406,\u6267\u884c\u8463\u4e8b"
+            }
+          }, {
+            "id": "67669860",
+            "type": "INVEST",
+            "startNode": "122783821",
+            "endNode": "56821985",
+            "properties": {
+              "role": "\u81ea\u7136\u4eba\u80a1\u4e1c",
+              "stockPercent": 1,
+              "shouldCapi": 0.1
+            }
+          }, {
+            "id": "124134920",
+            "type": "LEGAL",
+            "startNode": "125893555",
+            "endNode": "41400987",
+            "properties": {
+              "role": ""
+            }
+          }, {
+            "id": "257419320",
+            "type": "EMPLOY",
+            "startNode": "93422047",
+            "endNode": "38171197",
+            "properties": {
+              "role": "\u76d1\u4e8b"
+            }
+          }, {
+            "id": "90647058",
+            "type": "LEGAL",
+            "startNode": "14440372",
+            "endNode": "60336840",
+            "properties": {
+              "role": ""
+            }
+          }, {
+            "id": "44872149",
+            "type": "INVEST",
+            "startNode": "125893555",
+            "endNode": "30822306",
+            "properties": {
+              "role": "\u81ea\u7136\u4eba\u80a1\u4e1c",
+              "stockPercent": 99,
+              "shouldCapi": 29.7
+            }
+          }, {
+            "id": "44872150",
+            "type": "INVEST",
+            "startNode": "131719842",
+            "endNode": "30822306",
+            "properties": {
+              "role": "\u81ea\u7136\u4eba\u80a1\u4e1c",
+              "stockPercent": 1,
+              "shouldCapi": 0.3
+            }
+          }, {
+            "id": "4332992",
+            "type": "INVEST",
+            "startNode": "25501048",
+            "endNode": "43812048",
+            "properties": {
+              "role": "\u4f01\u4e1a\u6cd5\u4eba",
+              "stockPercent": 50,
+              "shouldCapi": 50000
+            }
+          }, {
+            "id": "3047850",
+            "type": "INVEST",
+            "startNode": "53484902",
+            "endNode": "20730048",
+            "properties": {
+              "role": "\u4f01\u4e1a\u6cd5\u4eba",
+              "stockPercent": 30,
+              "shouldCapi": 150
+            }
+          }, {
+            "id": "52341400",
+            "type": "INVEST",
+            "startNode": "125893555",
+            "endNode": "33469188",
+            "properties": {
+              "role": "\u81ea\u7136\u4eba\u80a1\u4e1c",
+              "stockPercent": 100,
+              "shouldCapi": 10000
+            }
+          }, {
+            "id": "1957275",
+            "type": "INVEST",
+            "startNode": "14440372",
+            "endNode": "60336840",
+            "properties": {
+              "role": "\u4f01\u4e1a\u6cd5\u4eba",
+              "stockPercent": 99,
+              "shouldCapi": 9.9
+            }
+          }, {
+            "id": "90806497",
+            "type": "LEGAL",
+            "startNode": "14440372",
+            "endNode": "37868556",
+            "properties": {
+              "role": ""
+            }
+          }, {
+            "id": "229324322",
+            "type": "EMPLOY",
+            "startNode": "145722686",
+            "endNode": "29373873",
+            "properties": {
+              "role": "\u8463\u4e8b"
+            }
+          }, {
+            "id": "229324321",
+            "type": "EMPLOY",
+            "startNode": "78510623",
+            "endNode": "29373873",
+            "properties": {
+              "role": "\u76d1\u4e8b"
+            }
+          }, {
+            "id": "5966807",
+            "type": "INVEST",
+            "startNode": "40937248",
+            "endNode": "54266539",
+            "properties": {
+              "role": "\u4f01\u4e1a\u6cd5\u4eba",
+              "stockPercent": 1,
+              "shouldCapi": 0
+            }
+          }, {
+            "id": "62549545",
+            "type": "INVEST",
+            "startNode": "145722686",
+            "endNode": "43176842",
+            "properties": {
+              "role": "\u81ea\u7136\u4eba\u80a1\u4e1c",
+              "stockPercent": 5,
+              "shouldCapi": 15
+            }
+          }, {
+            "id": "12649812",
+            "type": "INVEST",
+            "startNode": "92028625",
+            "endNode": "53484902",
+            "properties": {
+              "role": "\u81ea\u7136\u4eba\u80a1\u4e1c",
+              "stockPercent": 35,
+              "shouldCapi": 5600
+            }
+          }, {
+            "id": "62549551",
+            "type": "INVEST",
+            "startNode": "78510623",
+            "endNode": "43176842",
+            "properties": {
+              "role": "\u81ea\u7136\u4eba\u80a1\u4e1c",
+              "stockPercent": 0.5,
+              "shouldCapi": 1.5
+            }
+          }, {
+            "id": "62549536",
+            "type": "INVEST",
+            "startNode": "87715539",
+            "endNode": "43176842",
+            "properties": {
+              "role": "\u81ea\u7136\u4eba\u80a1\u4e1c",
+              "stockPercent": 59.83,
+              "shouldCapi": 179.5
+            }
+          }, {
+            "id": "76715829",
+            "type": "INVEST",
+            "startNode": "122783821",
+            "endNode": "54266539",
+            "properties": {
+              "role": "\u81ea\u7136\u4eba\u80a1\u4e1c",
+              "stockPercent": 59.4,
+              "shouldCapi": 59.4
+            }
+          }, {
+            "id": "76715832",
+            "type": "INVEST",
+            "startNode": "125893555",
+            "endNode": "54266539",
+            "properties": {
+              "role": "\u81ea\u7136\u4eba\u80a1\u4e1c",
+              "stockPercent": 39.6,
+              "shouldCapi": 39.6
+            }
+          }, {
+            "id": "90811587",
+            "type": "LEGAL",
+            "startNode": "14440372",
+            "endNode": "42816817",
+            "properties": {
+              "role": ""
+            }
+          }, {
+            "id": "62114840",
+            "type": "INVEST",
+            "startNode": "97725339",
+            "endNode": "57092013",
+            "properties": {
+              "role": "\u81ea\u7136\u4eba\u80a1\u4e1c",
+              "stockPercent": 99.9,
+              "shouldCapi": 499.5
+            }
+          }, {
+            "id": "6744522",
+            "type": "INVEST",
+            "startNode": "21797731",
+            "endNode": "29357416",
+            "properties": {
+              "role": "\u4f01\u4e1a\u6cd5\u4eba",
+              "stockPercent": 100,
+              "shouldCapi": 1000
+            }
+          }, {
+            "id": "161754132",
+            "type": "EMPLOY",
+            "startNode": "92028625",
+            "endNode": "53484902",
+            "properties": {
+              "role": "\u76d1\u4e8b"
+            }
+          }, {
+            "id": "229324315",
+            "type": "EMPLOY",
+            "startNode": "87715539",
+            "endNode": "29373873",
+            "properties": {
+              "role": "\u7ecf\u7406"
+            }
+          }, {
+            "id": "5422560",
+            "type": "INVEST",
+            "startNode": "14440372",
+            "endNode": "37868556",
+            "properties": {
+              "role": "\u4f01\u4e1a\u6cd5\u4eba",
+              "stockPercent": 99,
+              "shouldCapi": 9.9
+            }
+          }, {
+            "id": "133438528",
+            "type": "LEGAL",
+            "startNode": "125893555",
+            "endNode": "43988615",
+            "properties": {
+              "role": ""
+            }
+          }, {
+            "id": "229324319",
+            "type": "EMPLOY",
+            "startNode": "87715539",
+            "endNode": "29373873",
+            "properties": {
+              "role": "\u8463\u4e8b"
+            }
+          }, {
+            "id": "128208913",
+            "type": "LEGAL",
+            "startNode": "92028625",
+            "endNode": "2205101",
+            "properties": {
+              "role": ""
+            }
+          }, {
+            "id": "229324318",
+            "type": "EMPLOY",
+            "startNode": "131719842",
+            "endNode": "29373873",
+            "properties": {
+              "role": "\u8463\u4e8b"
+            }
+          }, {
+            "id": "2420625",
+            "type": "INVEST",
+            "startNode": "22204247",
+            "endNode": "5979964",
+            "properties": {
+              "role": "\u4f01\u4e1a\u6cd5\u4eba",
+              "stockPercent": 100,
+              "shouldCapi": 500
+            }
+          }, {
+            "id": "152851627",
+            "type": "LEGAL",
+            "startNode": "102922060",
+            "endNode": "7454075",
+            "properties": {
+              "role": ""
+            }
+          }, {
+            "id": "170651026",
+            "type": "EMPLOY",
+            "startNode": "122783821",
+            "endNode": "40937248",
+            "properties": {
+              "role": "\u6267\u884c\u8463\u4e8b"
+            }
+          }, {
+            "id": "151437500",
+            "type": "LEGAL",
+            "startNode": "136311998",
+            "endNode": "114226",
+            "properties": {
+              "role": ""
+            }
+          }, {
+            "id": "15047006",
+            "type": "INVEST",
+            "startNode": "97725339",
+            "endNode": "39783075",
+            "properties": {
+              "role": "\u81ea\u7136\u4eba\u80a1\u4e1c",
+              "stockPercent": 99.9,
+              "shouldCapi": 49.95
+            }
+          }, {
+            "id": "170651029",
+            "type": "EMPLOY",
+            "startNode": "125893555",
+            "endNode": "40937248",
+            "properties": {
+              "role": "\u76d1\u4e8b"
+            }
+          }, {
+            "id": "73491872",
+            "type": "INVEST",
+            "startNode": "122783821",
+            "endNode": "38171197",
+            "properties": {
+              "role": "\u81ea\u7136\u4eba\u80a1\u4e1c",
+              "stockPercent": 0,
+              "shouldCapi": 0
+            }
+          }, {
+            "id": "271085034",
+            "type": "EMPLOY",
+            "startNode": "122783821",
+            "endNode": "22204247",
+            "properties": {
+              "role": "\u8463\u4e8b\u957f"
+            }
+          }, {
+            "id": "90831533",
+            "type": "LEGAL",
+            "startNode": "40937248",
+            "endNode": "54266539",
+            "properties": {
+              "role": ""
+            }
+          }, {
+            "id": "127061079",
+            "type": "LEGAL",
+            "startNode": "102922060",
+            "endNode": "17645948",
+            "properties": {
+              "role": ""
+            }
+          }, {
+            "id": "5191562",
+            "type": "INVEST",
+            "startNode": "14440372",
+            "endNode": "56821985",
+            "properties": {
+              "role": "\u4f01\u4e1a\u6cd5\u4eba",
+              "stockPercent": 99,
+              "shouldCapi": 9.9
+            }
+          }, {
+            "id": "114209540",
+            "type": "LEGAL",
+            "startNode": "111497740",
+            "endNode": "61020798",
+            "properties": {
+              "role": ""
+            }
+          }, {
+            "id": "144538963",
+            "type": "LEGAL",
+            "startNode": "102922060",
+            "endNode": "54523468",
+            "properties": {
+              "role": ""
+            }
+          }, {
+            "id": "185067735",
+            "type": "EMPLOY",
+            "startNode": "111497740",
+            "endNode": "24495977",
+            "properties": {
+              "role": "\u6267\u884c\u8463\u4e8b\u517c\u7ecf\u7406"
+            }
+          }, {
+            "id": "90774201",
+            "type": "LEGAL",
+            "startNode": "39783075",
+            "endNode": "57092013",
+            "properties": {
+              "role": ""
+            }
+          }, {
+            "id": "102983666",
+            "type": "LEGAL",
+            "startNode": "122783821",
+            "endNode": "14440372",
+            "properties": {
+              "role": ""
+            }
+          }, {
+            "id": "185067733",
+            "type": "EMPLOY",
+            "startNode": "93158537",
+            "endNode": "24495977",
+            "properties": {
+              "role": "\u76d1\u4e8b"
+            }
+          }, {
+            "id": "124928679",
+            "type": "LEGAL",
+            "startNode": "125893555",
+            "endNode": "35278936",
+            "properties": {
+              "role": ""
+            }
+          }, {
+            "id": "106077575",
+            "type": "LEGAL",
+            "startNode": "111497740",
+            "endNode": "24495977",
+            "properties": {
+              "role": ""
+            }
+          }, {
+            "id": "70360551",
+            "type": "INVEST",
+            "startNode": "122783821",
+            "endNode": "37868556",
+            "properties": {
+              "role": "\u81ea\u7136\u4eba\u80a1\u4e1c",
+              "stockPercent": 1,
+              "shouldCapi": 0.1
+            }
+          }, {
+            "id": "23340220",
+            "type": "INVEST",
+            "startNode": "122783821",
+            "endNode": "14440372",
+            "properties": {
+              "role": "\u81ea\u7136\u4eba\u80a1\u4e1c",
+              "stockPercent": 77.5,
+              "shouldCapi": 7.75
+            }
+          }, {
+            "id": "23340221",
+            "type": "INVEST",
+            "startNode": "125893555",
+            "endNode": "14440372",
+            "properties": {
+              "role": "\u81ea\u7136\u4eba\u80a1\u4e1c",
+              "stockPercent": 22.5,
+              "shouldCapi": 2.25
+            }
+          }, {
+            "id": "4878251",
+            "type": "INVEST",
+            "startNode": "38171197",
+            "endNode": "61133322",
+            "properties": {
+              "role": "\u4f01\u4e1a\u6cd5\u4eba",
+              "stockPercent": 100,
+              "shouldCapi": 500
+            }
+          }, {
+            "id": "229318223",
+            "type": "EMPLOY",
+            "startNode": "102922060",
+            "endNode": "17645948",
+            "properties": {
+              "role": "\u6267\u884c\u8463\u4e8b"
+            }
+          }, {
+            "id": "229318221",
+            "type": "EMPLOY",
+            "startNode": "102922060",
+            "endNode": "17645948",
+            "properties": {
+              "role": "\u603b\u7ecf\u7406"
+            }
+          }, {
+            "id": "240195001",
+            "type": "EMPLOY",
+            "startNode": "145722686",
+            "endNode": "43176842",
+            "properties": {
+              "role": "\u7ecf\u7406"
+            }
+          }, {
+            "id": "5275576",
+            "type": "INVEST",
+            "startNode": "34483502",
+            "endNode": "48746179",
+            "properties": {
+              "role": "\u5176\u4ed6\u6295\u8d44\u8005",
+              "stockPercent": 15.66,
+              "shouldCapi": 15.978909
+            }
+          }, {
+            "id": "240195004",
+            "type": "EMPLOY",
+            "startNode": "87715539",
+            "endNode": "43176842",
+            "properties": {
+              "role": "\u6267\u884c\u8463\u4e8b"
+            }
+          }, {
+            "id": "283744539",
+            "type": "EMPLOY",
+            "startNode": "102922060",
+            "endNode": "7454075",
+            "properties": {
+              "role": "\u6267\u884c\u8463\u4e8b"
+            }
+          }, {
+            "id": "2680794",
+            "type": "INVEST",
+            "startNode": "57092013",
+            "endNode": "63448540",
+            "properties": {
+              "role": "\u4f01\u4e1a\u6cd5\u4eba",
+              "stockPercent": 10,
+              "shouldCapi": 350
+            }
+          }, {
+            "id": "1634794",
+            "type": "INVEST",
+            "startNode": "25501048",
+            "endNode": "31506622",
+            "properties": {
+              "role": "\u4f01\u4e1a\u6cd5\u4eba",
+              "stockPercent": 15,
+              "shouldCapi": 63.9386
+            }
+          }, {
+            "id": "1568239",
+            "type": "INVEST",
+            "startNode": "25501048",
+            "endNode": "47613625",
+            "properties": {
+              "role": "\u4f01\u4e1a\u6cd5\u4eba",
+              "stockPercent": 13.33,
+              "shouldCapi": 46.5476
+            }
+          }, {
+            "id": "4290493",
+            "type": "INVEST",
+            "startNode": "43812048",
+            "endNode": "2205101",
+            "properties": {
+              "role": "\u4f01\u4e1a\u6cd5\u4eba",
+              "stockPercent": 5,
+              "shouldCapi": 50
+            }
+          }, {
+            "id": "73491868",
+            "type": "INVEST",
+            "startNode": "125893555",
+            "endNode": "38171197",
+            "properties": {
+              "role": "\u81ea\u7136\u4eba\u80a1\u4e1c",
+              "stockPercent": 0,
+              "shouldCapi": 0
+            }
+          }, {
+            "id": "4290492",
+            "type": "INVEST",
+            "startNode": "25501048",
+            "endNode": "2205101",
+            "properties": {
+              "role": "\u4f01\u4e1a\u6cd5\u4eba",
+              "stockPercent": 95,
+              "shouldCapi": 950
+            }
+          }, {
+            "id": "5473708",
+            "type": "INVEST",
+            "startNode": "38171197",
+            "endNode": "26593606",
+            "properties": {
+              "role": "\u4f01\u4e1a\u6cd5\u4eba",
+              "stockPercent": 10,
+              "shouldCapi": 11.1111
+            }
+          }, {
+            "id": "73491870",
+            "type": "INVEST",
+            "startNode": "102922060",
+            "endNode": "38171197",
+            "properties": {
+              "role": "\u81ea\u7136\u4eba\u80a1\u4e1c",
+              "stockPercent": 0,
+              "shouldCapi": 0
+            }
+          }]
+        }
+      }]
+    }],
+    "errors": []
+  }
+}

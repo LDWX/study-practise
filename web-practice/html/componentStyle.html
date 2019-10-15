@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  *,
+  *::after,
+  *::before {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .tab {
+    font-size: 16px;
+    background-color: #f2f2f2;
+    margin-left: 0;
+    margin-right: 0;
+    position: relative;
+  }
+  .tab:hover {
+    background-color: #f9f9f9;
+  }
+  .tab.active {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+
+  .tab-group {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+  }
+  .tab,
+  .tab-group {
+    border: 0 solid #eeeeee;
+  }
+
+  .tab-group {
+    font-size: 0;
+    border-bottom-width: 1px;
+  }
+  .tab-group .tab {
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    bottom: -1px;
+    display: inline-block;
+  }
+  .tab-group .tab:first-child {
+    border-left-width: 1px;
+    border-top-left-radius: 4px;
+  }
+  .tab-group .tab:last-child {
+    border-right-width: 1px;
+    border-top-right-radius: 4px;
+  }
+  .tab-group .tab.active {
+    border-bottom-color: #2196f3;
+  }
+
+  .global-nav {
+    float: left;
+    padding: 5%;
+    width: 80%;
+  }
+
+
+  </style>
+</head>
+<body>
+  <nav class="global-nav">
+    <ul class="tab-group">
+      <li class="tab">Home</li>
+      <li class="tab active">Policy</li>
+      <li class="tab">Documents</li>
+      <li class="tab">API</li>
+    </ul>
+  </nav>
+</body>
+</html>

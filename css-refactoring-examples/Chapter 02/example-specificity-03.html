@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Inline Styles and Specificity</title>
+    <style type="text/css">
+      #nav-global > ul > li > a.nav-link {
+        color: #FFFFFF;
+      }
+      #nav-global > ul > li > a.nav-link {
+        color: #000000;
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="nav-global">
+      <ul>
+        <li>
+          <a href="#" class="nav-link">Link</a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>vertical align test</title>
+  <style>
+  p {
+    border: 1px solid black;
+  }
+  img {
+    width: 100px;
+    height: auto !important;
+    border: 1px solid red;
+  }
+  .v-baseline {
+    vertical-align: baseline;
+  }
+  .v-middle {
+    vertical-align: middle;
+  }
+  .v-bottom {
+    vertical-align: bottom;
+  }
+  .v-top {
+    vertical-align: top;
+  }
+  .v-text-bottom {
+    vertical-align: text-bottom;
+  }
+  .v-text-top {
+    vertical-align: text-top;
+  }
+  </style>
+</head>
+<body>
+  <h1>学习vertical align</h1>
+  <p>The image is baseline<img class="v-baseline" src="./img/router.jpg"> global is good.</p>
+  <p>This image is middle <img class="v-middle" src="./img/router.jpg"> global is good;</p>
+  <p>This image is bottom <img class="v-bottom" src="./img/router.jpg"> global is good;</p>
+  <p>This image is top <img class="v-top" src="./img/router.jpg"> global is good;</p>
+  <p> This image is text-bottom <img class="v-text-bottom" src="./img/router.jpg">h global is good;</p>
+  <p> This image is text-top <img class="v-text-top" src="./img/router.jpg">h global is good;</p>
+  
+</body>
+</html>

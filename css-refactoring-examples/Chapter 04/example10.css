@@ -1,0 +1,58 @@
+/**
+ * Horizontal Tab Groups
+ */
+
+.tab-group {
+  border-bottom: 1px solid #EEEEEE;
+}
+
+.tab-group .tab {
+  border-bottom: 1px solid #EEEEEE;
+  border-top: 1px solid #EEEEEE;
+  bottom: -1px;
+  display: inline-block;
+}
+
+.tab-group .tab:first-child {
+  border-left: 1px solid #EEEEEE;
+  border-top-left-radius: 4px;
+}
+
+.tab-group .tab:last-child {
+  border-right: 1px solid #EEEEEE;
+  border-top-right-radius: 4px;
+}
+
+.tab-group .tab.active {
+  border-bottom: 1px solid #2196F3;
+}
+
+
+/**
+ * Vertical Tab Groups
+ */
+
+.tab-group-vertical {
+  border-left: 1px solid #EEEEEE;
+}
+
+.tab-group-vertical .tab {
+  border-left: 1px solid #EEEEEE;
+  border-right: 1px solid #EEEEEE;
+  left: -1px;
+  display: block;
+}
+
+.tab-group-vertical .tab:first-child {
+  border-top: 1px solid #EEEEEE;
+  border-top-right-radius: 4px;
+}
+
+.tab-group-vertical .tab:last-child {
+  border-bottom: 1px solid #EEEEEE;
+  border-bottom-right-radius: 4px;
+}
+
+.tab-group-vertical .tab.active {
+  border-left: 1px solid #2196F3;
+}

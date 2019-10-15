@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  .test-white-space {
+    display: inline-block;
+    width: 200px;
+    background: pink;
+    white-space: pre-line;
+    /* white-space: pre-wrap; */
+    /* white-space: normal;
+    white-space: nowrap; */
+    word-break: break-all;
+    overflow-wrap: break-word;
+  }
+  </style>
+</head>
+<body>
+  <div class="test-white-space">
+    Hi&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This               is white-space graph
+    我&nbsp;想&nbsp;试&nbsp;试&nbsp;这&nbsp;样能不能解决大段文字分页时，刚好有文字被切分的问题
+    sdfadsfadsfadsfasfdasdfadsfas sfdasfdads dsfasfd
+  </div>
+</body>
+</html>

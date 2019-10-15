@@ -1,0 +1,10 @@
+h1 {
+    font-size: 28px;
+    font-weight: 900;
+}
+
+/* This is a duplicate declaration block */
+h1 {
+    font-size: 28px;
+    font-weight: 900;
+}

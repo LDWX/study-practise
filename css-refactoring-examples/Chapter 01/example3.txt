@@ -1,0 +1,20 @@
+discountTotal = 0
+lineItemTotal = 0
+shippingTotal = 0
+taxTotal = 0
+
+# FOR LOOP 1st iteration:
+lineItemTotal = 0 + (50 * 1) = 50
+shippingTotal = 0 + (10 * 1) = 10
+
+# FOR LOOP 2nd iteration:
+lineItemTotal = 50 + (100 * 2) = 250
+shippingTotal = 10 + (20 * 2) = 50
+
+# discountTotal gets calculated because discountCode equals "20 PERCENT":
+discountTotal = 250 * 0.2 = 50
+
+# taxTotal gets set because customer.shiptoState equals "CA":
+taxTotal = (250 - 50) * 0.08 = 16
+
+total = 250 - 50 + 50 + 16 = 266

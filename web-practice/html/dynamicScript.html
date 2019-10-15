@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h1>动态脚本</h1>
+  <a href="http://www.baidu.com">百度</a>
+  <script src="./js/pdfobject.js"></script>
+  <script>
+  var script = document.createElement('script')
+  // script.type = 'text/javascript';
+  
+  script.onload = function() {
+    console.log('Script onload')
+  }
+
+  script.onreadystatechange = function() {
+    console.log("readyState is: ", script.readyState)
+    if (script.readyState == 'loaded' || script.readyState == 'complete') {
+      script.onreadystatechange = null
+      console.log('this is script.ready')
+    }
+  }
+
+  script.src = "./js/echarts.js";
+  document.getElementsByTagName('head')[0].appendChild(script);
+
+  window.onload = function() {
+    console.log('this is window.onload')
+  }
+
+  document.onreadystatechange = function() {
+    console.log('document.onreadystatechange readyState is: ', document.readyState)
+  }
+  window.onbeforeunload =  function() {
+    console.log('window.onbeforeunload')
+  }
+  </script>
+</body>
+</html>

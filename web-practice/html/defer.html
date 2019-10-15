@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Defer</title>
+</head>
+<body>
+  <h1>Defer</h1>
+  <p>只在IE9及以下浏览器可以使用defer</p>
+  <!-- <script defer>
+    alert('defer')
+  </script>
+  <script>
+    alert('script')
+  </script>
+  <script>
+    window.onload = function() {
+      alert('onload')
+    }
+  </script> -->
+  
+  <h1>async</h1>
+  <script defer src="./js/echarts.js"></script>
+  <script src="./js/graph.js"></script>
+  <script  src="./js/pdfobject.js"></script>
+  <script>
+    window.onload = function() {
+      // alert('onload')
+      console.log('onload')
+    }
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,26 @@
+/**
+ * This selector has a specificity of (0,0,2,2) because there are:
+ *   0 inline styles
+ *   0 IDs
+ *   1 class (.title), 0 attribute selectors, and 1 pseudoclass (:first-child)
+ *   2 type selectors (li, h2)
+ */
+li:first-child h2 .title {}
+
+/**
+ * This selector has a specificity of (0,1,2,1) because there are:
+ *   0 inline styles
+ *   1 ID (#nav)
+ *   1 class (.selected), 0 attribute selectors, and 1 pseudoclass (:hover)
+ *   1 type selector (a)
+ */
+#nav .selected > a:hover {}
+
+/**
+ * This selector has a specificity of (0,1,2,3) because there are:
+ *   0 inline styles
+ *   1 ID (#nav)
+ *   1 class (.selected), 0 attribute selectors, and 1 pseudoclass (:hover)
+ *   3 type selectors  (html, body, a)
+ */
+html body #nav .selected > a:hover {}

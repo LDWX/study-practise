@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style type="text/css">
+    *,
+    *:after,
+    *:before {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    /**
+     * Tab Component Styles
+     */
+
+    .tab {
+      background-color: #F2F2F2;
+      margin-left: 0;
+      margin-right: 0;
+      position: relative;
+    }
+
+    .tab:hover {
+      background-color: #F9F9F9;
+    }
+
+    .tab.active {
+      background-color: #FFFFFF;
+      color: #000000;
+    }
+
+    .tab > a {
+      color: inherit;
+      display: block;
+      height: 100%;
+      padding: 12px;
+      text-decoration: none;
+      width: 100%;
+    }
+
+    /**
+     * Tab Component Containers
+     */
+
+    .tab-group{
+      list-style: none;
+      margin: 0;
+      padding-left: 0;
+    }
+
+    .tab,
+    .tab-group{
+      border-color: #EEEEEE;
+      border-style: solid;
+      border-width: 0;
+    }
+
+    /**
+     * Horizontal Tab Groups
+     */
+
+    .tab-group {
+      border-bottom-width: 1px;
+    }
+
+    .tab-group .tab {
+      border-bottom-width: 1px;
+      border-top-width: 1px;
+      bottom: -1px;
+      display: inline-block;
+    }
+/* 
+    .tab-group .tab:first-child {
+      border-left-width: 1px;
+      border-top-left-radius: 4px;
+    }
+
+    .tab-group .tab:last-child {
+      border-right-width: 1px;
+      border-top-right-radius: 4px;
+    }
+
+    .tab-group .tab.active {
+      border-bottom-color: #2196F3;
+      border-bottom-width: 1px;
+    } */
+
+    /**
+     * Tab Component Containers
+     */
+
+    .tabbed-pane {
+      display: block;
+      width: 100%;
+      white-space: nowrap;
+    }
+
+    .tabbed-pane .tab-group {
+      float: left;
+      width: 100%;
+    }
+
+    /**
+     * Structural Styles
+     */
+
+    .content {
+      float: left;
+      padding: 5%;
+      width: 80%;
+    }
+
+  </style>
+</head>
+<body>
+    <main class="content">
+      <nav class="tabbed-pane">
+        <ul class="tab-group">
+          <li class="tab "><a href="#">Policy One</a></li>
+          <li class="tab test"><a href="#">Policy Two</a></li>
+          <li class="tab"><a href="#">Policy Three</a></li>
+          <li class="tab"><a href="#">Policy Three</a></li>
+
+        </ul>
+      </nav>
+    </main>
+</body>
+</html>

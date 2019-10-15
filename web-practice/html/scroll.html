@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=no, width=device-width">
+    <title>scroll-list</title>
+    <script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <style>
+    *{ margin: 0; padding: 0; box-sizing: border-box; }
+    body{ background-color: #f9f9f9; }
+    ul,li{ list-style: none; }
+    .wrap{ width: 320px; height: 480px; box-shadow: 0 2px 15px #ccc; margin: 50px auto;  overflow: hidden;  background-color: #fff;}
+    .tabs{
+      width: 100%;
+      overflow-x: scroll;
+      display: -webkit-box;
+      display: flex;
+      -webkit-flex-wrap:nowrap;
+      flex-wrap:nowrap;
+      -webkit-justify-content:space-between;
+      justify-content:space-between;
+      border-bottom: 1px solid #dedede;
+      position: relative;
+    }
+    .tab-list{
+      -webkit-flex:1 0 auto;
+      flex:1 0 auto;
+      padding: 10px 10px;
+      text-align: center;
+    }
+    .tab-list.active{
+      color: red;
+    }
+    .settle{  padding: 20px;  margin-top: 60px }
+    .settle button{  background-color: #fff; padding: 6px 10px; border: 1px solid #dedede; outline: none; }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+    <!-- start -->
+    <ul class='tabs'>
+      <li class='tab-list active'>web前端</li>
+      <li class='tab-list'>HTML5</li>
+      <li class='tab-list'>CSS3</li>
+      <li class='tab-list'>ES6</li>
+      <li class='tab-list'>Javascript</li>
+      <li class='tab-list'>Pmomise</li>
+      <li class='tab-list'>Vue</li>
+      <li class='tab-list'>React</li>
+    </ul>
+    <!-- end -->
+    <div class="settle">
+      <button onclick='scrollX (6)'>选择倒数第二个元素</button>
+      <button onclick='scrollX (7)'>选择最后一个元素</button>
+      <br><br>
+      <button onclick='scrollX (0)'>选择第一个元素</button>
+      <button onclick='scrollX (1)'>选择第二个元素</button>
+    </div>
+  </div>
+</body>
+<script>
+
+  function scrollX (n){
+    let ele = $('.tab-list').eq(n),           // 当前操作元素
+      e_width = ele.outerWidth(),             // 元素占位宽度
+      ul = $('.tabs'),                        // 父元素
+      w_width = ul.outerWidth(),              // 父元素宽度，即滚动的框的宽度
+      scroll_width = ul.scrollLeft()          // 滚动条卷去宽度
+    let _x = ele.position().left              // 相对父元素偏移量，需给父元素添加定位 position
+    // 尾部隐藏时，需滚动距离 = 当前操作元素在父元素中偏移量 + 元素占位宽度 - 父元素宽度 + 滚动条卷去宽度
+    let offset_left = _x + e_width - w_width + scroll_width
+    if( _x > w_width-e_width){
+      // 尾部被遮挡
+      ul.animate({scrollLeft: offset_left}, 200)
+    }else if( _x <0){
+      // 头部被遮挡时，比较简单，直接控制滚动条位置为 :
+      // 滚动条当前位置 - 操作元素在父元素中偏移量(此时为负)
+      ul.animate({scrollLeft: scroll_width + _x }, 200)
+    }
+    ele.siblings().removeClass('active')
+    ele.addClass('active')
+  }
+</script>
+</html>

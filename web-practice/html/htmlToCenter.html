@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  body {
+    height: 500px;
+  }
+  .absolute-wrapper {
+    position: relative;
+    background: #eeeeee;
+    height: 100px;
+  }
+  .absolute-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 30px;
+    background: red;
+  }
+
+  .container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: center;
+    background: #eeeeee;
+    height: 100px;
+  }
+  .block {
+    width: 100px;
+    height: 50px;
+    background: red;
+    text-align: center;
+  }
+
+  .table-wrapper {
+    display: table;
+    width: 100%;
+    height: 100px;
+    background: #eeeeee;
+  }
+  .table-content {
+    display: table-cell;
+    /* background: red;
+    width: 100px;
+    height: 30px; */
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  .margin-wrapper {
+    position: relative;
+    height: 80px;
+    background: #eeeeee;
+  }
+  .margin {
+    width: 100px;
+    margin: 0 auto;
+    background: red;
+  }
+  .text-align {
+    text-align: center;
+    background: #eeeeee;
+    height: 80px;
+  }
+  .text-align-left {
+    display: inline-block;
+    text-align: right;
+    background: red;
+    width: 100px;
+  }
+  </style>
+</head>
+<body>
+  <h1>用position: absolute;实现水平居中与垂直居中</h1>
+  <div class="absolute-wrapper">
+    <div class="absolute-content">
+      helloworld
+    </div>
+  </div>
+
+  <h1>用display: flex;实现水平居中与垂直居中</h1>
+  <div class="container">
+    <div class="block">
+      helloworld
+    </div>
+  </div>
+
+  <!-- 这种方法要想包含多个居中块，只能再table-content中添加 -->
+  <h1>用diaplay: table;实现水平居中</h1>
+  <div class="table-wrapper">
+    <div class="table-content"> 
+      helloworld
+      <span>hello</span>
+      <span>world</span>
+    </div>
+  </div>
+
+  <h1>通过margin: 0 auto;实现水平居中</h1>
+  <div class="margin-wrapper">
+    <div class="margin">
+      helloworld
+    </div>
+  </div>
+
+  <h1>通过在外部设置text-align: center;实现水平居中</h1>
+  <div class="text-align">
+    <div class="text-align-left">
+      helloworld
+    </div>
+  </div>
+</body>
+</html>

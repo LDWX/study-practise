@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Ferguson's Cat Shelter</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <main>
+      <h1 style="font-family: Helvetica, Arial, sans-serif;font-size: 36px;
+        font-weight: 400;text-align: center;">
+        San Francisco's Premiere Cat Shelter
+      </h1>     
+    </main>
+  </body>
+</html>

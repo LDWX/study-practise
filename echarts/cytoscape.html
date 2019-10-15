@@ -1,0 +1,222 @@
+<!DOCTYPE>
+
+<html>
+
+  <head>
+    <title>cytoscape-edgehandles.js demo</title>
+
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+
+    <script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+
+    <!-- for testing with local version of cytoscape.js -->
+    <!--<script src="../cytoscape.js/build/cytoscape.js"></script>-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.10/lodash.js"></script>
+    <script src="cytoscape-edgehandles.js"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.6.2/cytoscape.min.js"></script> -->
+
+    <style>
+      body {
+        font-family: helvetica neue, helvetica, liberation sans, arial, sans-serif;
+        font-size: 14px;
+      }
+
+      #cy {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 999;
+      }
+
+      h1 {
+        opacity: 0.5;
+        font-size: 1em;
+        font-weight: bold;
+      }
+
+      #buttons {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 99999;
+      }
+    </style>
+
+    <script>
+      
+      document.addEventListener('DOMContentLoaded', function(){
+        var cy = window.cy = cytoscape({
+          container: document.getElementById('cy'),
+          layout: {
+            name: 'breadthfirst',           
+          },
+
+          style: [       
+            {
+              selector: 'node',
+              style: {
+                shape: 'ellipse',
+                width: 60,
+                height: 60,
+                'background-fit': 'cover',
+                'background-image': function(ele) {
+                  let type = ele.data('type')
+                  console.log('background-image type: ', type)
+                  if (type == 1) {
+                    return 'https://co-image.qichacha.com/PersonImage/pbad511f00c5d2e41848d173eacfb323.jpg' 
+                  }
+                }
+              }
+            },    
+            {
+              selector: 'node[name]',
+              style: {
+                "text-wrap": 'wrap',
+                'content': 'data(name)',
+                'text-valign': 'top',
+              }
+            },
+            {
+              selector: 'node[age]',
+              style: {
+                // "text-wrap": 'wrap',
+                'label': 'data(age)',
+                'text-valign': 'bottom'
+              }
+            },
+
+            {
+              selector: 'edge',
+              style: {
+                'curve-style': 'bezier',
+                'target-arrow-shape': 'triangle',
+                'width': 1,
+                'label': 'data(attr)',
+                'color': 'blue',
+                'text-rotation': 'autorotate'
+              }
+            },
+            {
+              selector: 'edge[type=1]',
+              style: {
+                'line-color': 'red',
+                'target-arrow-color': 'red'
+              }
+            },
+
+            // some style for the extension
+
+            {
+              selector: '.eh-handle',
+              style: {
+                'background-color': 'red',
+                'width': 12,
+                'height': 12,
+                'shape': 'ellipse',
+                'overlay-opacity': 0,
+                'border-width': 12, // makes the handle easier to hit
+                'border-opacity': 0
+              }
+            },
+
+            {
+              selector: '.eh-hover',
+              style: {
+                'background-color': 'red'
+              }
+            },
+
+            {
+              selector: '.eh-source',
+              style: {
+                'border-width': 2,
+                'border-color': 'red'
+              }
+            },
+
+            {
+              selector: '.eh-target',
+              style: {
+                'border-width': 2,
+                'border-color': 'red'
+              }
+            },
+
+            {
+              selector: '.eh-preview, .eh-ghost-edge',
+              style: {
+                'background-color': 'red',
+                'line-color': 'red',
+                'target-arrow-color': 'red',
+                'source-arrow-color': 'red'
+              }
+            },
+
+            {
+              selector: '.eh-ghost-edge.eh-preview-active',
+              style: {
+                'opacity': 0
+              }
+            }
+          ],
+
+          elements: {
+            nodes: [
+              { data: { id: 1, name: 'Jerry\nkitty\nhello', type: 1, age: 12 } },
+              { data: { id: 2, name: 'Elaine', type: 2, age: 13 } },
+              { data: { id: 3, name: 'Kramer' } },
+              { data: { id: 4, name: 'George' } },
+              { data: { id: 5, name: 'link' } },
+            ],
+            edges: [
+              { data: { source: 1, target: 2, type: 1, attr: 'shenxin' } },
+              { data: { source: 1, target: 3, type: 2, attr: 'wangya' } },
+              { data: { source: 2, target: 4 } },
+              { data: { source: 4, target: 5 } },
+              // { data: { source: 'e', target: 'k' } },
+              // { data: { source: 'k', target: 'j', attr: 'nihao' } },
+              // { data: { source: 'k', target: 'e' } },
+              // // { data: { source: 'k', target: 'g' } },
+              // { data: { source: 'g', target: 'j' } },
+              // { data: { source: 'g', target: 'l' } },
+              // { data: { source: 'l', target: 'g' } },
+            ]
+          }
+        });
+
+        var eh = cy.edgehandles();
+
+        document.querySelector('#draw-on').addEventListener('click', function() {
+          eh.enableDrawMode();
+        });
+
+        document.querySelector('#draw-off').addEventListener('click', function() {
+          eh.disableDrawMode();
+        });
+
+        document.querySelector('#start').addEventListener('click', function() {
+          eh.start( cy.$('node:selected') );
+        });
+
+      });
+    </script>
+  </head>
+
+  <body>
+    <h1>cytoscape-edgehandles demo</h1>
+
+    <div id="cy"></div>
+
+    <div id="buttons">
+      <button id="start">Start on selected</button>
+      <button id="draw-on">Draw mode on</button>
+      <button id="draw-off">Draw mode off</button>
+    </div>
+
+  </body>
+
+</html>

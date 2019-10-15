@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  * {
+    box-sizing: border-box;
+  }
+  .container {
+    display: flex;
+    flex-flow: row wrap;
+    width: 810px;
+    border: 0.5px solid rgba(0,0,0,.1);
+  }
+  .flex-item {
+    display: flex;
+    flex: 1 1 50%;
+    line-height: 30px;
+    border: 0.5px solid rgba(0,0,0,.1);
+  }
+  .flex-item span:first-child {
+    flex: 0 0 100px;
+    background: gray;
+  }
+  .flex-item span:last-child {
+  }
+  .flex-full {
+    display: flex;
+    flex: 1 1 100%;
+    line-height: 30px;
+    border: 0.5px solid rgba(0,0,0,.1);
+  }
+  .flex-full span:first-child {
+    flex: 0 0 100px;
+    background: gray;
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="flex-item">
+      <span>姓名：</span>
+      <span>沈鑫d电饭锅水电费感受到分公司电饭锅水电费个打工的发给谁的分公司电饭锅水电费个水电费感受到</span>
+    </div>
+    <div class="flex-item">
+      <span>姓名：</span>
+      <span>沈鑫</span>
+    </div>
+    <div class="flex-item">
+      <span>姓名：</span>
+      <span>沈鑫</span>
+    </div>
+    <div class="flex-full">
+      <span>姓名：</span>
+      <span>沈鑫</span>
+    </div>
+    <div class="flex-item">
+      <span>姓名：</span>
+      <span>沈鑫</span>
+    </div>
+    <div class="flex-item">
+      <span>姓名a公司电饭锅水电费感受到：</span>
+      <span>沈鑫</span>
+    </div>
+  </div>
+</body>
+</html>

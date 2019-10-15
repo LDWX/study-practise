@@ -1,0 +1,2 @@
+Example 5-1 is in ./fergusons-cat-shelter/.gemini.js
+Example 5-2 is in ./fergusons-cat-shelter/tests

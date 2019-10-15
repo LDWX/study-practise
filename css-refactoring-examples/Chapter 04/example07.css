@@ -1,0 +1,31 @@
+/**
+ * Grouping tabs like this results in lots of unnecessary duplicated classes.
+ */
+
+.tab-1,
+.tab-2,
+.tab-3 {
+  /* styles go here */
+}
+
+.tab-1:hover,
+.tab-2:hover,
+.tab-3:hover {
+  /* styles go here */
+}
+
+.tab-1.active,
+.tab-2.active,
+.tab-3.active {
+  /* styles go here */
+}
+
+.tab-1 > a,
+.tab-2 > a,
+.tab-3 > a {
+  /* styles go here */
+}
+
+.tab-group {
+  /* styles go here */
+}

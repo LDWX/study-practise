@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>  
+  <style>
+    * {
+      margin: 0;
+    }
+    .container-position {
+      position: absolute;
+      display: block;
+      top: 40%;
+      width: 100%;
+     
+    }
+    .container {
+      display: flex;
+      align-items: center;
+      flex-flow: column wrap;
+    }
+    .container .tip-title{
+      margin-bottom: 20px;
+      font-size: 24px;
+      color: black;
+    }
+    
+    .container #showName {
+      font-size: 32px;
+      font-weight: bold;
+      color: #333333;
+    }
+    .btn {
+      cursor: pointer;
+      user-select: none;
+      display: inline-block;
+      color: white;
+      padding: 7px 10px;
+      background: #00bdd6;
+      border: 1px solid #00bdd6;
+      border-radius: 5px;
+    }
+    .btn + .btn {
+      margin-left: 20px;
+    }
+    .btn:active {
+      background: #00cee7;;
+      border: 1px solid #409eff;
+    }
+  </style>
+</head>
+<body>
+  <div style="text-align: center; margin-top: 30px;">
+    <div onclick="chooseNext()" class="btn">抽取下一个</div>
+    <div onclick="reset()" class="btn">重置</div>
+  </div>
+  <div class="container-position">
+    <div class="container">
+      <div style="margin-bottom: 20px;">当前还剩&nbsp;<span style="font-size: 20px; color: red;" id="remainName"></span>&nbsp;组单词</div>
+      <div class="tip-title">本次抽中的单词是：</div>
+      <div class="tip-content" id="showName"></div>
+    </div>
+  </div>
+  <script >
+    function chooseNext() {
+      let length = tmpArr.length;
+      let index = Math.floor(Math.random() * length)
+      let value = tmpArr[index]
+      document.querySelector("#showName").innerHTML = value
+      tmpArr.splice(index, 1)
+      document.querySelector("#remainName").innerHTML = tmpArr.length
+      console.log(index)
+    }
+    function reset() {
+      tmpArr = [...nameArr]
+      console.log(tmpArr)
+      document.querySelector("#showName").innerHTML = ""
+      document.querySelector("#remainName").innerHTML = tmpArr.length  
+    }
+    let nameString = "对牛弹琴、刻舟求剑、画饼充饥、泪流满面、捧腹大笑、画蛇添足、掩耳盗铃、眉飞色舞、连蹦带跳、左顾右盼、嬉皮笑脸、愁眉苦脸、东倒西歪、垂头丧气、暴跳如雷、狼吞虎咽、见钱眼开、摇头晃脑、昂首挺胸、幸灾乐祸、贼眉鼠眼、大跌眼镜、一心一意、三头六臂、一言为定、一表人才、一团和气、一路平安、一动不动、一鸣惊人、一点一滴、一模一样、一唱一和、三心二意、三山五岳、四面八方、四通八达、五花八门、五彩缤纷、五湖四海、六神无主、六亲不认、六根清净、七上八下、七嘴八舌、七老八十、七情六欲、七拼八凑、健身房、操场、火车站、飞机场、游泳馆、教室、KTV、食堂、超市、实验室、成都、鼓浪屿、蜜蜂、猫、狗、老鼠、兔子、大象、鱼、青蛙、大熊猫、蝴蝶、跑步、打篮球、高尔夫球、游泳、举重、唱歌、打电话、跨栏、俯卧撑、平板支撑、仰卧起坐、摇头、拥抱、微笑、瞪眼、跳绳、放屁、剪指甲、唱歌、打嗝、相亲、扭秧歌、打麻将、上楼梯、冰糖葫芦、菠萝、香蕉、草莓、汉堡、牛奶、鸡蛋、口红、钻戒、项链、腰带、洗面奶、裙子、帽子、风衣、镜子、雨伞、围巾、头发、火车、公交车、仙人掌、耳机、台灯、水果刀、电脑支架、口罩、沐浴露、遥控器、帽子、充电宝、鲜花、音响、手机、电脑、充电器、水杯、手套、五星红旗、镜子、微信、算盘、轮滑鞋、蜡烛、洗衣机、烘干机、衣架、晾衣杆、凳子、桌子、"
+    let nameArr = nameString.split("、")
+    let tmpArr = [...nameArr]
+    document.querySelector("#remainName").innerHTML = tmpArr.length   
+    
+  </script>
+  
+  
+</body>
+</html>

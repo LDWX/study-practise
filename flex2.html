@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style lang="scss">
+  .container {
+    display: flex;    
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    word-break: break-all;
+    /* background: #589bd666; */
+  }
+  .container div {
+    padding: 12px 20px;
+    width: 200px;
+  }
+  .flex1,
+  .flex2 {
+    flex: 1 1 300px ;
+  }
+  .sidebar1 {
+    order: 1;
+  }
+  .sidebar2 {
+    order: 3;
+  }
+  .main {
+    order: 2;
+  }
+  .title {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="flex1 main">
+      <span class="title">简介：</span>
+      <span>SD卡时间到了到</span>
+    </div>
+    <div class="flex1 sidebar1">
+      <span class="title">姓名：</span>
+      <span>沈鑫</span>
+    </div>
+    <div class="flex1 sidebar2">
+      <span class="title">年龄：</span>
+      <span>23</span>
+    </div>
+    
+  </div>
+</body>
+</html>

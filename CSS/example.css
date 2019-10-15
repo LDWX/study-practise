@@ -1,0 +1,188 @@
+@charset "UTF-8";
+.second-main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.table {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.test + .test {
+  font-size: 12px;
+}
+.test .test {
+  color: white;
+}
+
+/**
+* !optional
+*/
+.foo .bar, .foo .baz.test {
+  color: red;
+}
+
+.baz.test {
+  font-size: 20px;
+}
+
+/*
+* @at-root
+*/
+.parent {
+  color: red;
+}
+.parent .child {
+  background: steelblue;
+}
+.sun {
+  font-size: 20px;
+}
+
+.girl {
+  border: 1px solid black;
+}
+
+@media print {
+  .page {
+    width: 100px;
+  }
+}
+.page {
+  color: red;
+}
+@media print {
+  .with-media {
+    font-size: 20px;
+  }
+}
+/**
+*@debug
+*/
+/**
+*@if
+*@warn
+*unitless，用来判断一个值是否带有单位，如果不带单位返回的值为 true，带单位返回的值为 false。
+*/
+.mixin-test {
+  position: relative;
+  left: 10px;
+  top: 5px;
+}
+
+/**
+*@if @else-if
+*/
+p {
+  color: green;
+}
+
+/**
+*@for
+*from ... throgh ... 是[ ]
+*from ... to ... 是[ )
+*/
+.item-1 {
+  width: 2em;
+}
+
+.item-2 {
+  width: 4em;
+}
+
+.item-3 {
+  width: 6em;
+}
+
+.element-5 {
+  font-size: 5px;
+}
+
+.element-4 {
+  font-size: 4px;
+}
+
+.element-3 {
+  font-size: 3px;
+}
+
+.element-2 {
+  font-size: 2px;
+}
+
+/**
+*@each
+*/
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+/**
+*@while
+*/
+.item-while-6 {
+  width: 12em;
+}
+
+.item-while-4 {
+  width: 8em;
+}
+
+.item-while-2 {
+  width: 4em;
+}
+
+/**
+*@mixin, variable arguments
+*/
+.border {
+  color: red;
+  border: 1px, solid, yellow;
+}
+
+.background {
+  background: pink 30px 20px;
+}
+
+/**
+*@mixin, @content
+*/
+html {
+  color: black;
+}
+html .test {
+  font-weight: bold;
+}
+html .test .ie6-font {
+  font-size: 16px;
+  line-height: 2;
+}
+
+.colors {
+  background-color: red;
+  font-size: 20px;
+  color: white;
+  border-color: red;
+}
+
+/**
+*@function
+*define function
+*functions can access any globally defined variables 
+*as well as accept arguments just like a mixin
+*/
+#sidebar {
+  width: 240px;
+}
+
+/*# sourceMappingURL=example.css.map */

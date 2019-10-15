@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="./echarts.js"></script>
+  <title>Document</title>
+  <style>
+    .graphChart {
+      width:500px; 
+      height: 400px;
+      border: 1px solid black;
+    }
+    </style>
+</head>
+<body>
+  <div id="graphChart" class="graphChart" ></div>
+  <script>
+    var myChart = echarts.init(document.getElementById('graphChart'));
+
+    var graph = {
+      "nodes": [
+        {
+          "id": "0",
+          "name": "Myriel",
+          "itemStyle": null,
+          "symbolSize": 10,
+          "x": null,
+          "y": null,
+          "attributes": {
+            "modularity_class": 0
+          },
+          "value": 10,
+          
+          "draggable": true
+        }, 
+        {
+          "id": "1",
+          "name": "Napoleon",
+          "itemStyle": null,
+          "symbolSize": 10,
+          "x": null,
+          "y": null,
+          "attributes": {
+            "modularity_class": 0
+          },
+          "value": 10,
+          
+          "draggable": true
+        }, 
+        {
+          "id": "4",
+          "name": "CountessDeLo",
+          "itemStyle": null,
+          "symbolSize": 10,
+          "x": null,
+          "y": null,
+          "attributes": {
+            "modularity_class": 0
+          },
+          "value": 10,
+          
+          "draggable": true
+        }, 
+        {
+          "id": "5",
+          "name": "Geborand",
+          "itemStyle": null,
+          "symbolSize": 10,
+          "x": null,
+          "y": null,
+          "attributes": {
+            "modularity_class": 0
+          },
+          "value": 10,
+          
+          "draggable": true
+        }, 
+        {
+          "id": "6",
+          "name": "Champtercier",
+          "itemStyle": null,
+          "symbolSize": 10,
+          "x": null,
+          "y": null,
+          "attributes": {
+            "modularity_class": 0
+          },
+          "value": 10,
+          
+          "draggable": true
+        }, 
+        {
+          "id": "7",
+          "name": "Cravatte",
+          "itemStyle": null,
+          "symbolSize": 10,
+          "x": null,
+          "y": null,
+          "attributes": {
+            "modularity_class": 0
+          },
+          "value": 10,
+          
+          "draggable": true
+        }, 
+        {
+          "id": "8",
+          "name": "Count",
+          "itemStyle": null,
+          "symbolSize": 10,
+          "x": null,
+          "y": null,
+          "attributes": {
+            "modularity_class": 0
+          },
+          "value": 10,
+          
+          "draggable": true
+        }
+      ],
+      "links": [
+        {
+          // "id": "0",
+          "name": '111',
+          "source": "1",
+          "target": "0",
+          "lineStyle": {
+            "normal": {}
+          }
+        }, 
+        {
+          // "id": "0",
+          "name": '222',
+          "source": "1",
+          "target": "0",
+          "lineStyle": {
+            "normal": {}
+          }
+        }, 
+        {
+          // "id": "4",
+          "name": null,
+          "source": "4",
+          "target": "0",
+          "lineStyle": {
+            "normal": {}
+          }
+        }, 
+        {
+          // "id": "5",
+          "name": null,
+          "source": "5",
+          "target": "0",
+          "lineStyle": {
+            "normal": {}
+          }
+        }, 
+        {
+          // "id": "6",
+          "name": null,
+          "source": "6",
+          "target": "0",
+          "lineStyle": {
+            "normal": {}
+          }
+        }, 
+        {
+          // "id": "7",
+          "name": null,
+          "source": "7",
+          "target": "0",
+          "lineStyle": {
+            "normal": {}
+          }
+        }, 
+        {
+          // "id": "8",
+          "name": 111,
+          "source": "8",
+          "target": "7",
+          "lineStyle": {
+            "normal": {
+              color: 'red'
+            }
+          }
+        },
+        {
+          // "id": "9",
+          "name": 222,
+          "source": "7",
+          "target": "8",
+          "lineStyle": {
+            "normal": {
+              color: 'black'
+            }
+          }
+        }
+      ]
+    }
+    graph.nodes.forEach(function (node) {
+        node.itemStyle = null;
+        node.symbolSize = 10;
+        node.value = node.symbolSize;
+        node.category = node.attributes.modularity_class;
+        // Use random x, y
+        node.x = node.y = null;
+        node.draggable = true;
+        // console.log(node)
+    });
+    console.log('nodes: ', graph.nodes)
+    console.log('links: ', graph.links)
+    option = {
+        title: {
+            text: 'Les Miserables',
+            subtext: 'Default layout',
+            top: 'bottom',
+            left: 'right'
+        },
+        tooltip: {},
+        // legend: [{
+        //     // selectedMode: 'single',
+        //     data: categories.map(function (a) {
+        //         return a.name;
+        //     })
+        // }],
+        animation: false,
+        series : [
+            {
+              force: {
+                repulsion: 500,
+                edgeLength: 200
+              },
+              edgeSymbol: ['line', 'arrow'],
+                name: 'Les Miserables',
+                type: 'graph',
+                layout: 'force',
+                data: graph.nodes,
+                links: graph.links,
+                // categories: categories,
+                roam: true,
+                label: {
+                    normal: {
+                        position: 'right'
+                    }
+                },
+                force: {
+                    repulsion: 100
+                }
+            }
+        ]
+    };
+
+    myChart.setOption(option);
+  </script>
+</body>
+</html>

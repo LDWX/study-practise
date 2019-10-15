@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body onload=bodyOnload()>
+  <h1 class="h1">
+    document.onreadystatechange 不存在兼容性问题
+  </h1>
+  <script>
+  console.log('这是内嵌 js')
+  </script>
+  <script src="../assets/LAB.js"></script>
+  <script>
+    $LAB.script('../assets/test.js')
+        .wait(function() {
+          console.log('异步资源加载完毕')
+        })
+  </script>
+  <script>
+    window.addEventListener('DOMContentLoaded', function() {
+      console.log('this is DOMContentLoaded')
+    })
+    window.addEventListener('load', function() {
+      console.log('this is onload')
+    })
+    bodyOnload = function() {
+      console.log('this is body onload')
+    }
+    document.onreadystatechange = function() {
+      console.log('document.readyState: ', document.readyState)
+    }  
+  
+  </script>
+  
+</body>
+</html>

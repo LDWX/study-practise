@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=false"> -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  @viewport {
+    width:device-width;
+    zoom: 3;
+  }
+  </style>
+</head>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  .table-double-column {
+    font-size: 0;
+    border: 1px solid #dddddd;
+  }
+  .table-double-column span {
+    font-size: 12px;
+    display: inline-block;
+    padding: 7px 10px;
+  }
+  .table-double-column:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .column-three .thead span:nth-child(1),
+  .column-three .tbody span:nth-child(1)
+   {
+    width: 50%;
+  }
+  .column-three .thead span:nth-child(2),
+  .column-three .tbody span:nth-child(2) {
+    width: 25%;
+  }
+  .column-three .thead span:nth-child(3),
+  .column-three .tbody span:nth-child(3) {
+    width: 25%;
+  }
+  .thead {
+    float: left;
+    font-weight: bold;
+    width: 50%;    
+    background: #eeeeee;
+    border-bottom: 1px solid #dddddd;
+  }
+  .tbody {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+  }
+  .tbody::after,
+  .thead::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .tbody:nth-child(odd) {
+    border-bottom: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+  }
+  .tbody:nth-child(odd):last-child {
+    border-bottom: 0;
+  }
+  .tbody:nth-child(even) {
+    border-bottom: 1px solid #dddddd;
+  }
+
+</style>
+<body>
+  <div class="table-double-column column-three" style="width: 100%;">
+    <div class="thead">
+      <span>姓名</span>
+      <span>性别</span>
+      <span>年龄</span>
+    </div>
+    <div class="thead">
+      <span>姓名</span>
+      <span>性别</span>
+      <span>年龄</span>
+    </div>
+    <div class="tbody">
+      <span>沈鑫</span>
+      <span>男</span>
+      <span>25</span>
+    </div>
+    <div class="tbody">
+      <span>沈鑫</span>
+      <span>男</span>
+      <span>25</span>
+    </div>
+    <div class="tbody">
+      <span>沈鑫</span>
+      <span>男</span>
+      <span>25</span>
+    </div>
+    <div class="tbody">
+      <span>沈鑫</span>
+      <span>男</span>
+      <span>25</span>
+    </div>
+    <div class="tbody">
+      <span>沈鑫</span>
+      <span>男</span>
+      <span>25</span>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+    .hello {
+      font-size: 30px;
+    }
+    .test {
+      color: red;
+    }
+    </style>
+    <script>
+     function sayHello(e) {
+      e = e || window.event
+      e.stopPropagation()
+
+      let target = e.target
+      console.log(target)
+      if (target.dataset.text) {
+        console.log('有数据')
+      }
+      
+    }
+    </script>
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div>
+      这个肯定不行
+      <div onclick="sayHello()" class="hello" id="test">
+        className 能够赋值多个  
+        <div data-text="nihaoma">hello</div>
+      </div>
+
+    </div>
+    
+    <script async defer>
+    let test = document.querySelector('#test')
+    test.className += ' test'
+
+   
+
+    
+    </script>
+  </body>
+</html>
