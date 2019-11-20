@@ -1,10 +1,10 @@
 function fetch(x) {
-  // return new Promise((resolve) => {
-  //   setTimeout(function() {
-  //     console.log(x)
-  //     resolve(x)
-  //   }, x * 500)
-  // })
+  return new Promise((resolve) => {
+    setTimeout(function() {
+      // console.log(x)
+      resolve(x)
+    }, x * 500)
+  })
   
 }
 

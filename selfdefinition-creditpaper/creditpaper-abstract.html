@@ -13,7 +13,7 @@
 <body>
   <!-- 首页封面 -->
   <div class="paper-cover page-break-after page-start">
-    <div class="logo-container">
+    <div class="logo-container">`
       <div class="logo"></div>
       <div class="logo-info">详细了解企业信用&nbsp;尽在百融征信</div>
     </div>
@@ -210,6 +210,7 @@
       <div class="first-order-title-line"></div>
     </div> <span class="second-straight-line"></span>
     <div class="second-order-title-table-block"> 法人身份验证</div>
+    <div class="third-order-title-table-block">这是四级标题</div>
     <table class="table-margin">
       <!--法人强规则特殊处理-otherInfo-->
       <thead>
@@ -314,6 +315,20 @@
     </table>
     <span class="second-straight-line"></span>
     <div class="second-order-title-table-block"> 法人反欺诈强规则</div>
+    <div class="chart" id="lineChart"></div>
+    <div class="two-barchart-wrapper">
+      <div class="chart" id="barChart"></div>
+      <div class="chart-legend">
+        <span class="legend-icon-item">
+          <span class="legend-icon"></span>
+          <span class="legend-title">年度对比</span>
+        </span>
+        <span class="legend-icon-item">
+          <span class="legend-icon"></span>
+          <span class="legend-title">年度对比</span>
+        </span>
+      </div>
+    </div>
     <div class="table-margin">
       <table>
         <!--表格数据-高管信息格式-->
@@ -634,6 +649,7 @@
       <!--暂无数据-->
     </div> <span class="second-straight-line"></span>
     <div class="second-order-title-table-block"> 法人对外任职</div>
+    <div class="third-order-title-table-block">这是四级标题</div>
     <div class="table-margin">
       <table>
         <!--表格数据-高管信息格式-->
@@ -660,6 +676,7 @@
       </table>
       <!--暂无数据-->
     </div>
+    <div class="third-order-title-table-block">这是四级标题</div>
     <div class="first-order-title-table-block"> <span> 经营异常</span>
       <div class="first-order-title-line"></div>
     </div> <span class="second-straight-line"></span>
@@ -889,6 +906,165 @@
     </div>
     <div class="cover-end-footer"> <span>创新</span> <span>合作</span> <span>共赢</span> </div>
   </div>
+  <!-- 双折线图 -->
+  <script type="text/javascript" charset="utf-8">
+    var lineChart = echarts.init(document.getElementById('lineChart'));
+
+    var option = {
+      textStyle: {
+        color: '#666666',
+        fontSize: 16.5,
+      },
+      color: ['#0386FF', '#F5A623'],
+      legend: {
+        top: 10,
+        right: 20,
+        data: ['2018', '2019']
+      },
+      grid: {
+        left: '5%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+      },
+      xAxis: {
+        type: 'category',
+        name: '日期',
+        nameLocation: 'start',
+        nameTextStyle: {
+          fontSize: 16
+        },
+        nameGap: 20,
+        boundaryGap: true,
+        data: ['周一', '周二', '周三', '周四', '周五', '周六', '周日']
+      },
+      yAxis: {
+        type: 'value',
+        name: '                   销售收入(单位：万元)',//这里的空格不要删
+        nameLocation: 'end',
+      },
+      series: [
+        {
+          name: '2018',
+          type: 'line',
+          data: [20, 32, 11, 34, 9, 30, 10]
+        },
+        {
+          name: '2019',
+          type: 'line',
+          data: [20, 8, 9, 34, 20, 30, 20]
+        },
+      ]
+    };
+
+    lineChart.setOption(option);
+  </script>
+  <!-- 一张柱状图分两半 -->
+  <script type="text/javascript" charset="utf-8">
+   /**
+    * 年度对比， 颜色： #F5A623
+    * 历史同期对比，颜色： #0386FF
+    */
+    var barChart = echarts.init(document.getElementById('barChart'));
+    var option = {
+      textStyle: {
+        color: '#666666',
+        fontSize: 16.5,
+      },
+      // color: ['#0386FF', '#F5A623'],
+      // legend: {
+      //   top: 10,
+      //   right: 20,
+      //   data: ['年度对比', '历史同期对比']
+      //   // data: ['年度对比']
+      // },
+      grid: {
+        left: '5%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+      },
+      xAxis: {
+        type: 'category',
+        name: '日期',
+        nameLocation: 'start',
+        nameTextStyle: {
+          fontSize: 16
+        },
+        nameGap: 20,
+        boundaryGap: true,
+        axisTick: {
+          alignWithLabel: true
+        },
+        axisLine: {
+          onZero: false
+        },
+        data: ['2017年', '2018年', '2017年1-10月', '2018年1-10月', '2019年1-10月']
+      },
+      yAxis: {
+        type: 'value',
+        name: '                   销售收入(单位：万元)',//这里的空格不要删
+        nameLocation: 'end',
+        scale: true,
+        axisLine: {
+          onZero: false
+        },
+      },
+      series: [{
+        type: 'bar',
+        name: '年度对比',
+        barWidth: 55,
+        data: [
+          {
+            value: 1000,
+            itemStyle: {
+              color: '#F5A623'
+            }
+          },
+          {
+            value: 2000,
+            itemStyle: {
+              color: '#F5A623'
+            }
+          },
+          {
+            value: 100,
+            itemStyle: {
+              color: '#0386FF'
+            }
+          },
+          {
+            value: 200,
+            itemStyle: {
+              color: '#0386FF'
+            }
+          },
+          {
+            value: 300,
+            itemStyle: {
+              color: '#0386FF'
+            }
+          },
+        ],
+        markPoint: {
+          symbol: 'pin',
+          symbolSize: 90,
+          label: {
+            color: "white"
+          },
+          data: [
+            // { value : "-26.8%", xAxis: 0, yAxis: 1000 },
+            { value : "-26.8%", xAxis: 1, yAxis: 2000},
+            { value : "-26.8%", xAxis: 2, yAxis: 100},
+            { value : "-26.8%", xAxis: 3, yAxis: 200},
+            { value : "-26.8%", xAxis: 4, yAxis: 300},
+          ]
+        }
+
+      }]
+    };
+    barChart.setOption(option)
+  </script>
   <script type="text/javascript" charset="utf-8">
     var myChart = echarts.init(document.getElementById('category-radar'));
     var radarMaxHTML = document.getElementById('radarMax');
