@@ -961,23 +961,16 @@
   </script>
   <!-- 一张柱状图分两半 -->
   <script type="text/javascript" charset="utf-8">
-   /**
-    * 年度对比， 颜色： #F5A623
-    * 历史同期对比，颜色： #0386FF
-    */
+    /**
+     * 年度对比， 颜色： #F5A623
+     * 历史同期对比，颜色： #0386FF
+     */
     var barChart = echarts.init(document.getElementById('barChart'));
     var option = {
       textStyle: {
         color: '#666666',
         fontSize: 16.5,
       },
-      // color: ['#0386FF', '#F5A623'],
-      // legend: {
-      //   top: 10,
-      //   right: 20,
-      //   data: ['年度对比', '历史同期对比']
-      //   // data: ['年度对比']
-      // },
       grid: {
         left: '5%',
         right: '4%',
@@ -1013,7 +1006,7 @@
       series: [{
         type: 'bar',
         name: '年度对比',
-        barWidth: 55,
+        barWidth: 70,
         data: [
           {
             value: 1000,
@@ -1047,17 +1040,47 @@
           },
         ],
         markPoint: {
-          symbol: 'pin',
-          symbolSize: 90,
+          symbol: 'path://m 0,0 h 88 v 35 h -40 l -4,10 l -4,-10 h -40 z', // 'circle', 'rect', 'roundRect', 'triangle', 'diamond', 'pin', 'arrow', path://m 0,0 h 48 v 20 h -30 l -6,10 l -6,-10 h -6 z,  path://m 0,0 h 48 v 20 h -34 l -6,10 l -6,-10 h -2 z
+          symbolSize: function (val) {
+            return [80, 35]
+          },
+          symbolOffset: ['0', '-20'],
           label: {
-            color: "white"
+            color: "white",
+            position: "inside",
+            // distance: 7,
           },
           data: [
-            // { value : "-26.8%", xAxis: 0, yAxis: 1000 },
-            { value : "-26.8%", xAxis: 1, yAxis: 2000},
-            { value : "-26.8%", xAxis: 2, yAxis: 100},
-            { value : "-26.8%", xAxis: 3, yAxis: 200},
-            { value : "-26.8%", xAxis: 4, yAxis: 300},
+            {
+              itemStyle: {
+                color: '#EC4848'
+              },
+              value: 100, xAxis: 0, yAxis: 1000
+            },
+            {
+              itemStyle: {
+                color: '#EC4848'
+              },
+              value: 100, xAxis: 1, yAxis: 2000
+            },
+            {
+              itemStyle: {
+                color: '#2FB61D'
+              },
+              value: "-28.8%", xAxis: 2, yAxis: 100
+            },
+            {
+              itemStyle: {
+                color: '#2FB61D'
+              },
+              value: 100, xAxis: 3, yAxis: 200
+            },
+            {
+              itemStyle: {
+                color: '#2FB61D'
+              },
+              value: 100, xAxis: 4, yAxis: 300
+            },
           ]
         }
 
