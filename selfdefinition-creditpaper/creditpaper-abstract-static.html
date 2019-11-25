@@ -965,23 +965,6 @@
      * 年度对比， 颜色： #F5A623
      * 历史同期对比，颜色： #0386FF
      */
-    let xAxis = [
-      "2017年",
-      "2018年",
-      "2017年1-10月",
-      "2018年1-10月",
-      "2019年1-10月"
-    ];
-
-    let legend = [
-      "2018",
-      "2019"
-    ];
-
-    //整年的数据用颜色："#F5A623"， 月份的数据用颜色： "#0386FF"
-    let yearSeries = [1000, 2000];
-    let monthSeries = [500, 200, 300];
-
     var barChart = echarts.init(document.getElementById('barChart'));
     var option = {
       textStyle: {
@@ -1009,7 +992,7 @@
         axisLine: {
           onZero: false
         },
-        data: []
+        data: ['2017年', '2018年', '2017年1-10月', '2018年1-10月', '2019年1-10月']
       },
       yAxis: {
         type: 'value',
@@ -1020,163 +1003,90 @@
           onZero: false
         },
       },
-      series: [
-        {
-          type: 'bar',
-          name: '年度对比',
-          barWidth: 70,
-          data: [],
-          markPoint: {
-            symbol: 'path://m 0,0 h 88 v 35 h -40 l -4,10 l -4,-10 h -40 z',
-            symbolSize: function (val) {
-              return [80, 35]
+      series: [{
+        type: 'bar',
+        name: '年度对比',
+        barWidth: 70,
+        data: [
+          {
+            value: 1000,
+            itemStyle: {
+              color: '#F5A623'
+            }
+          },
+          {
+            value: 2000,
+            itemStyle: {
+              color: '#F5A623'
+            }
+          },
+          {
+            value: 100,
+            itemStyle: {
+              color: '#0386FF'
+            }
+          },
+          {
+            value: 200,
+            itemStyle: {
+              color: '#0386FF'
+            }
+          },
+          {
+            value: 300,
+            itemStyle: {
+              color: '#0386FF'
+            }
+          },
+        ],
+        markPoint: {
+          symbol: 'path://m 0,0 h 88 v 35 h -40 l -4,10 l -4,-10 h -40 z',
+          symbolSize: function (val) {
+            return [80, 35]
+          },
+          symbolOffset: ['0', '-20'],
+          label: {
+            color: "white",
+            position: "inside",
+            offset: [0, -2]
+          },
+          data: [
+            {
+              itemStyle: {
+                color: '#EC4848'
+              },
+              value: 100, xAxis: 0, yAxis: 1000
             },
-            symbolOffset: ['0', '-20'],
-            label: {
-              color: "white",
-              position: "inside",
-              offset: [0, -2]
+            {
+              itemStyle: {
+                color: '#EC4848'
+              },
+              value: 100, xAxis: 1, yAxis: 2000
             },
-            data: []
-          }
+            {
+              itemStyle: {
+                color: '#2FB61D'
+              },
+              value: "-28.8%", xAxis: 2, yAxis: 100
+            },
+            {
+              itemStyle: {
+                color: '#2FB61D'
+              },
+              value: 100, xAxis: 3, yAxis: 200
+            },
+            {
+              itemStyle: {
+                color: '#2FB61D'
+              },
+              value: 100, xAxis: 4, yAxis: 300
+            },
+          ]
         }
-      ]
+
+      }]
     };
-
-    // option.legend = _legend;
-
-
-    let yLen = yearSeries.length;
-    let mLen = monthSeries.length;
-    let series = [];
-    let markPoint = [];
-    let tmp = {};
-
-    let tmpMP = {
-      itemStyle: {
-        color: ""
-      },
-      value: 0,
-      xAxis: 0,
-      yAxis: 0
-    };
-    let tmpSeries = {
-      itemStyle: {
-        color: ""
-      },
-      value: 0
-    };
-    // 设置markPoint
-    tmpSeries.itemStyle.color = "#F5A623";
-    tmpSeries.value = yearSeries[0];
-    series.push(tmpSeries);
-    if (yLen > 1) {
-      // 正值颜色： '#EC4848'， 负值颜色： '#2FB61D'
-      for (let i = 1; i < yLen; i++) {
-        tmpMP = {
-          itemStyle: {
-            color: ""
-          },
-          value: 0,
-          xAxis: 0,
-          yAxis: 0
-        };
-        tmpSeries = {
-          itemStyle: {
-            color: ""
-          },
-          value: 0
-        };
-        let first = Number(yearSeries[i - 1]);
-        let second = Number(yearSeries[i]);
-        let rate = ((second - first) / first) * 100
-        if (rate < 0) {
-          tmpMP.itemStyle.color = "#2FB61D"
-        } else if (rate > 0) {
-          tmpMP.itemStyle.color = "#EC4848"
-        } else {
-          delete tmpMP.itemStyle
-        }
-        tmpMP.value = rate + "%";
-        tmpMP.xAxis = i;
-        tmpMP.yAxis = second;
-        markPoint.push(tmpMP);
-
-        tmpSeries.itemStyle.color = "#F5A623";
-        tmpSeries.value = second;
-        series.push(tmpSeries);
-
-      }
-    }
-
-    tmpMP = {
-      itemStyle: {
-        color: ""
-      },
-      value: 0,
-      xAxis: 0,
-      yAxis: 0
-    };
-    tmpSeries = {
-      itemStyle: {
-        color: ""
-      },
-      value: 0
-    };
-
-    tmpSeries.itemStyle.color = "#0386FF";
-    tmpSeries.value = monthSeries[0];
-    series.push(tmpSeries);
-    if (mLen > 1) {
-      for (let i = 1; i < mLen; i++) {
-        tmpMP = {
-          itemStyle: {
-            color: ""
-          },
-          value: 0,
-          xAxis: 0,
-          yAxis: 0
-        };
-        tmpSeries = {
-          itemStyle: {
-            color: ""
-          },
-          value: 0
-        };
-        let first = Number(monthSeries[i - 1]);
-        let second = Number(monthSeries[i]);
-        let rate = ((second - first) / first) * 100
-        if (rate < 0) {
-          tmpMP.itemStyle.color = "#2FB61D"
-        } else if (rate > 0) {
-          tmpMP.itemStyle.color = "#EC4848"
-        } else {
-          delete tmpMP.itemStyle
-        }
-        tmpMP.value = rate + "%";
-        tmpMP.xAxis = i + yLen;
-        tmpMP.yAxis = second;
-        markPoint.push(tmpMP);
-
-        tmpSeries.itemStyle.color = "#0386FF";
-        tmpSeries.value = second;
-        series.push(tmpSeries);
-      }
-    }
-
-
-    option.xAxis.data = xAxis;
-    option.series[0].data = series;
-    option.series[0].markPoint.data = markPoint;
-
-    console.log("markPoint data: ", markPoint)
-
-    console.log("series data: ", series)
-
-    console.log("option data: ", option)
-
-
-    barChart.setOption(option);
+    barChart.setOption(option)
   </script>
   <script type="text/javascript" charset="utf-8">
     var myChart = echarts.init(document.getElementById('category-radar'));
