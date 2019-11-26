@@ -9,4 +9,4 @@ set SECOND=%time:~6,2%
 set MILLIS=%time:~9,2%
 set CURRENT_TIME=%YEAR%%MONTH%%DAY%%HOUR%%MINUTE%%SECOND%%MILLIS%
 echo %YEAR%-%MONTH%-%DAY% %HOUR%:%MINUTE%:%SECOND%:%MILLIS%
-start /max "" "d:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe " --footer-right [page]/[topage]  customTemplate.html  pdf-%CURRENT_TIME%.pdf 
+start /max "" "d:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe " --footer-right [page]/[topage]  creditpaper-abstract-static.html  pdf-%CURRENT_TIME%.pdf 

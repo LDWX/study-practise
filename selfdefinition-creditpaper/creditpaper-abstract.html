@@ -76,7 +76,19 @@
     <div class="menu-content-line"> <span class="menu-content-line-item">法人失信被执行</span> </div>
     <div class="page-break-before chapter-title"> 企业综合策略建议</div>
     <div class="category-title">
-      <!--建议策略--> <span>建议策略:</span> <span style="color:#c02e34;">拒绝</span> </div>
+      <div>
+        <!--建议策略--> <span>建议策略:</span> <span style="color:#c02e34;">拒绝</span>
+      </div>
+      <div class="sub">基础分500，信用得分178</div>
+    </div>
+    <div class="key-value-line">
+      <span>是否行内开户客户</span>
+      <span>是</span>
+    </div>
+    <div class="category-title-noborder">
+      <div>授信额度：190万</div>
+      <div class="sub">基础分500，信用得分178</div>
+    </div>
     <div>
       <!-- 雷达图-->
       <div style="display:none;" id="radarMax">
@@ -317,7 +329,7 @@
     <div class="second-order-title-table-block"> 法人反欺诈强规则</div>
     <div class="chart" id="lineChart"></div>
     <div class="two-barchart-wrapper">
-      <div class="chart" id="barChart"></div>
+      <div class="chart" id="bar-chart"></div>
       <div class="chart-legend">
         <span class="legend-icon-item">
           <span class="legend-icon"></span>
@@ -911,6 +923,7 @@
     var lineChart = echarts.init(document.getElementById('lineChart'));
 
     var option = {
+      animation: false,
       textStyle: {
         color: '#666666',
         fontSize: 16.5,
@@ -961,11 +974,7 @@
   </script>
   <!-- 一张柱状图分两半 -->
   <script type="text/javascript" charset="utf-8">
-    /**
-     * 年度对比， 颜色： #F5A623
-     * 历史同期对比，颜色： #0386FF
-     */
-    let xAxis = [
+    var xAxis = [
       "2017年",
       "2018年",
       "2017年1-10月",
@@ -973,20 +982,20 @@
       "2019年1-10月"
     ];
 
-    let legend = [
+    var legend = [
       "2018",
       "2019"
     ];
 
-    //整年的数据用颜色："#F5A623"， 月份的数据用颜色： "#0386FF"
-    let yearSeries = [1000, 2000];
-    let monthSeries = [500, 200, 300];
+    var yearSeries = [1000, 2000];
+    var monthSeries = [500, 200, 300];
 
-    var barChart = echarts.init(document.getElementById('barChart'));
+    var barChart = echarts.init(document.getElementById('bar-chart'));
     var option = {
+      animation: false,
       textStyle: {
         color: '#666666',
-        fontSize: 16.5,
+        fontSize: 16.5
       },
       grid: {
         left: '5%',
@@ -1013,12 +1022,12 @@
       },
       yAxis: {
         type: 'value',
-        name: '                   销售收入(单位：万元)',//这里的空格不要删
+        name: '                   销售收入(单位：万元)',
         nameLocation: 'end',
         scale: true,
         axisLine: {
           onZero: false
-        },
+        }
       },
       series: [
         {
@@ -1043,16 +1052,13 @@
       ]
     };
 
-    // option.legend = _legend;
+    var yLen = yearSeries.length;
+    var mLen = monthSeries.length;
+    var series = [];
+    var markPoint = [];
+    var tmp = {};
 
-
-    let yLen = yearSeries.length;
-    let mLen = monthSeries.length;
-    let series = [];
-    let markPoint = [];
-    let tmp = {};
-
-    let tmpMP = {
+    var tmpMP = {
       itemStyle: {
         color: ""
       },
@@ -1060,18 +1066,18 @@
       xAxis: 0,
       yAxis: 0
     };
-    let tmpSeries = {
+    var tmpSeries = {
       itemStyle: {
         color: ""
       },
       value: 0
     };
-    // 设置markPoint
+
+
     tmpSeries.itemStyle.color = "#F5A623";
     tmpSeries.value = yearSeries[0];
     series.push(tmpSeries);
     if (yLen > 1) {
-      // 正值颜色： '#EC4848'， 负值颜色： '#2FB61D'
       for (let i = 1; i < yLen; i++) {
         tmpMP = {
           itemStyle: {
@@ -1087,15 +1093,15 @@
           },
           value: 0
         };
-        let first = Number(yearSeries[i - 1]);
-        let second = Number(yearSeries[i]);
-        let rate = ((second - first) / first) * 100
+        var first = Number(yearSeries[i - 1]);
+        var second = Number(yearSeries[i]);
+        var rate = ((second - first) / first) * 100;
         if (rate < 0) {
-          tmpMP.itemStyle.color = "#2FB61D"
+          tmpMP.itemStyle.color = "#2FB61D";
         } else if (rate > 0) {
-          tmpMP.itemStyle.color = "#EC4848"
+          tmpMP.itemStyle.color = "#EC4848";
         } else {
-          delete tmpMP.itemStyle
+          delete tmpMP.itemStyle;
         }
         tmpMP.value = rate + "%";
         tmpMP.xAxis = i;
@@ -1105,7 +1111,6 @@
         tmpSeries.itemStyle.color = "#F5A623";
         tmpSeries.value = second;
         series.push(tmpSeries);
-
       }
     }
 
@@ -1128,7 +1133,7 @@
     tmpSeries.value = monthSeries[0];
     series.push(tmpSeries);
     if (mLen > 1) {
-      for (let i = 1; i < mLen; i++) {
+      for (var i = 1; i < mLen; i++) {
         tmpMP = {
           itemStyle: {
             color: ""
@@ -1143,15 +1148,15 @@
           },
           value: 0
         };
-        let first = Number(monthSeries[i - 1]);
-        let second = Number(monthSeries[i]);
-        let rate = ((second - first) / first) * 100
+        var first = Number(monthSeries[i - 1]);
+        var second = Number(monthSeries[i]);
+        var rate = ((second - first) / first) * 100;
         if (rate < 0) {
-          tmpMP.itemStyle.color = "#2FB61D"
+          tmpMP.itemStyle.color = "#2FB61D";
         } else if (rate > 0) {
-          tmpMP.itemStyle.color = "#EC4848"
+          tmpMP.itemStyle.color = "#EC4848";
         } else {
-          delete tmpMP.itemStyle
+          delete tmpMP.itemStyle;
         }
         tmpMP.value = rate + "%";
         tmpMP.xAxis = i + yLen;
@@ -1168,13 +1173,6 @@
     option.xAxis.data = xAxis;
     option.series[0].data = series;
     option.series[0].markPoint.data = markPoint;
-
-    console.log("markPoint data: ", markPoint)
-
-    console.log("series data: ", series)
-
-    console.log("option data: ", option)
-
 
     barChart.setOption(option);
   </script>
