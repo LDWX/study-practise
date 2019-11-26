@@ -325,7 +325,7 @@
         </span>
         <span class="legend-icon-item">
           <span class="legend-icon"></span>
-          <span class="legend-title">年度对比</span>
+          <span class="legend-title">历史同期对比</span>
         </span>
       </div>
     </div>
@@ -915,6 +915,7 @@
         color: '#666666',
         fontSize: 16.5,
       },
+      animation: false,
       color: ['#0386FF', '#F5A623'],
       legend: {
         top: 10,
@@ -966,11 +967,30 @@
      * 历史同期对比，颜色： #0386FF
      */
     var barChart = echarts.init(document.getElementById('barChart'));
+
+    var xAxis = [
+      "2017年",
+      "2018年",
+      "2017年1-10月",
+      "2018年1-10月",
+      "2019年1-10月"
+    ];
+
+    var legend = [
+      "2018",
+      "2019"
+    ];
+
+    var yearSeries = [1000, 2000];
+    var monthSeries = [500, 200, 300];
+
+
     var option = {
       textStyle: {
         color: '#666666',
         fontSize: 16.5
       },
+      animation: false,
       grid: {
         left: '5%',
         right: '4%',
@@ -992,7 +1012,7 @@
         axisLine: {
           onZero: false
         },
-        data: ['2017年', '2018年', '2017年1-10月', '2018年1-10月', '2019年1-10月']
+        data: []
       },
       yAxis: {
         type: 'value',
@@ -1007,38 +1027,7 @@
         type: 'bar',
         name: '年度对比',
         barWidth: 70,
-        data: [
-          {
-            value: 1000,
-            itemStyle: {
-              color: '#F5A623'
-            }
-          },
-          {
-            value: 2000,
-            itemStyle: {
-              color: '#F5A623'
-            }
-          },
-          {
-            value: 100,
-            itemStyle: {
-              color: '#0386FF'
-            }
-          },
-          {
-            value: 200,
-            itemStyle: {
-              color: '#0386FF'
-            }
-          },
-          {
-            value: 300,
-            itemStyle: {
-              color: '#0386FF'
-            }
-          }
-        ],
+        data: [],
         markPoint: {
           symbol: 'path://m 0,0 h 88 v 35 h -40 l -4,10 l -4,-10 h -40 z',
           symbolSize: function (val) {
@@ -1050,42 +1039,127 @@
             position: "inside",
             offset: [0, -2]
           },
-          data: [
-            {
-              itemStyle: {
-                color: '#EC4848'
-              },
-              value: 100, xAxis: 0, yAxis: 1000
-            },
-            {
-              itemStyle: {
-                color: '#EC4848'
-              },
-              value: 100, xAxis: 1, yAxis: 2000
-            },
-            {
-              itemStyle: {
-                color: '#2FB61D'
-              },
-              value: "-28.8%", xAxis: 2, yAxis: 100
-            },
-            {
-              itemStyle: {
-                color: '#2FB61D'
-              },
-              value: 100, xAxis: 3, yAxis: 200
-            },
-            {
-              itemStyle: {
-                color: '#2FB61D'
-              },
-              value: 100, xAxis: 4, yAxis: 300
-            }
-          ]
+          data: []
         }
 
       }]
     };
+
+    var series = [];
+    var markPoint = [];
+    var yLen = yearSeries.length;
+    var mLen = monthSeries.length;
+    var i = 0;
+
+
+    var tmpSeries = {
+      itemStyle: {
+        color: ""
+      },
+      value: 0
+    };
+    var tmpMP = {
+      itemStyle: {
+        color: ""
+      },
+      value: 0,
+      xAxis: 0,
+      yAxis: 0
+    };
+
+    tmpSeries.itemStyle.color = "#F5A623";
+    tmpSeries.value = yearSeries[0];
+    series.push(tmpSeries);
+    if (yLen > 1) {
+      for (i = 1; i < yLen; i++) {
+        tmpSeries = {
+          itemStyle: {
+            color: ""
+          },
+          value: 0
+        };
+        tmpMP = {
+          itemStyle: {
+            color: ""
+          },
+          value: 0,
+          xAxis: 0,
+          yAxis: 0
+        };
+        var first = Number(yearSeries[i - 1]);
+        var second = Number(yearSeries[i]);
+        tmpSeries.itemStyle.color = "#F5A623";
+        tmpSeries.value = second;
+        series.push(tmpSeries);
+
+        var rate = ((second - first) / first) * 100;
+        if (rate < 0) {
+          tmpMP.itemStyle.color = "#2FB61D";
+        } else if (rate > 0) {
+          tmpMP.itemStyle.color = "#EC4848";
+        } else {
+          delete tmpMP.itemStyle;
+        }
+        tmpMP.value = rate + "%";
+        tmpMP.xAxis = i;
+        tmpMP.yAxis = second;
+        markPoint.push(tmpMP);
+      }
+    }
+
+    tmpSeries = {
+      itemStyle: {
+        color: ""
+      },
+      value: 0
+    };
+    tmpSeries.itemStyle.color = "#0386FF";
+    tmpSeries.value = monthSeries[0];
+    series.push(tmpSeries);
+    if (mLen > 1) {
+      for (i = 1; i < mLen; i++) {
+        tmpSeries = {
+          itemStyle: {
+            color: ""
+          },
+          value: 0
+        };
+        tmpMP = {
+          itemStyle: {
+            color: ""
+          },
+          value: 0,
+          xAxis: 0,
+          yAxis: 0
+        };
+        var first = Number(monthSeries[i - 1]);
+        var second = Number(monthSeries[i]);
+        tmpSeries.itemStyle.color = "#0386FF";
+        tmpSeries.value = second;
+        series.push(tmpSeries);
+
+        var rate = ((second - first) / first) * 100;
+        if (rate < 0) {
+          tmpMP.itemStyle.color = "#2FB61D";
+        } else if (rate > 0) {
+          tmpMP.itemStyle.color = "#EC4848";
+        } else {
+          delete tmpMP.itemStyle;
+        }
+        tmpMP.value = rate + "%";
+        tmpMP.xAxis = i + yLen;
+        tmpMP.yAxis = second;
+        markPoint.push(tmpMP);
+      }
+
+    }
+
+    
+
+    option.xAxis.data = xAxis;
+    option.series[0].data = series;
+    option.series[0].markPoint.data = markPoint;
+
     barChart.setOption(option)
   </script>
   <script type="text/javascript" charset="utf-8">
