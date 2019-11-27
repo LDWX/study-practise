@@ -929,7 +929,7 @@
     var legend = ['2018', '2019'];
     var xAxis = ['1月', '2月', '3月', '4月'];
     var computedSerie = [320, 332, 301, 334];
-    var normalSerie = [220, 182, 191, 234];
+    var normalSerie = [];
 
     var doubleBarChart = echarts.init(document.getElementById('double-bar-chart'));
 
@@ -989,13 +989,7 @@
             },
             data: []
           }
-        },
-        {
-          name: '',
-          type: 'bar',
-          barWidth: 60,
-          data: [220, 182, 191, 234, 290]
-        }
+        }        
       ]
     }
 
@@ -1044,8 +1038,17 @@
     option.series[0].data = computedSerie;
     option.series[0].markPoint.data = markPoint;
     option.series[0].name = legend[0];
-    option.series[1].data = normalSerie;
-    option.series[1].name = legend[1];
+
+    if (normalSerie.length) {
+      option.series.push({
+          name: '',
+          type: 'bar',
+          barWidth: 60,
+          data: []
+        })
+      option.series[1].data = normalSerie;
+      option.series[1].name = legend[1];
+    }
 
     doubleBarChart.setOption(option);
 
