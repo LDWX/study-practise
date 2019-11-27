@@ -8,6 +8,8 @@
   <title>Document</title>
   <link rel="stylesheet" href="./credit-assets/CSS/abstract.css">
   <script src="./credit-assets/utils/echarts.js"></script>
+  <script crossorigin="anonymous" integrity="sha384-Fbe31ZqFxktD++WKw92rzNU9ROzGC0taO0LK7GrLloHkGRmL60n7Rp4gauiM2cfr"
+    src="https://lib.baomitu.com/babel-polyfill/7.7.0/polyfill.min.js"></script>
 </head>
 
 <body>
@@ -315,8 +317,13 @@
     </table>
     <span class="second-straight-line"></span>
     <div class="second-order-title-table-block"> 法人反欺诈强规则</div>
-    <div class="chart" id="lineChart"></div>
-    <div class="two-barchart-wrapper">
+
+    <div class="chart-wrapper">
+      <div class="chart" id="lineChart"></div>
+    </div>
+
+
+    <div class="chart-wrapper">
       <div class="chart" id="barChart"></div>
       <div class="chart-legend">
         <span class="legend-icon-item">
@@ -329,6 +336,16 @@
         </span>
       </div>
     </div>
+
+    <div class="chart-wrapper">
+      <div class="chart" id="single-line-chart"></div>
+    </div>
+
+    <div class="chart-wrapper">
+      <div class="chart" id="double-bar-chart"></div>
+    </div>
+
+
     <div class="table-margin">
       <table>
         <!--表格数据-高管信息格式-->
@@ -906,6 +923,178 @@
     </div>
     <div class="cover-end-footer"> <span>创新</span> <span>合作</span> <span>共赢</span> </div>
   </div>
+  <!-- 双柱图 -->
+  <script type="text/javascript" charset="utf-8">
+    var showYaxis = false;
+    var legend = ['2018', '2019'];
+    var xAxis = ['1月', '2月', '3月', '4月'];
+    var computedSerie = [320, 332, 301, 334];
+    var normalSerie = [220, 182, 191, 234];
+
+    var doubleBarChart = echarts.init(document.getElementById('double-bar-chart'));
+
+    var option = {
+      animation: false,
+      color: ['#0386FF', '#F5A623'],
+      textStyle: {
+        color: '#666666',
+        fontSize: 16.5,
+      },
+      legend: {
+        top: 10,
+        right: 20,
+        data: []
+      },
+      grid: {
+        left: '5%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+      },
+      xAxis: {
+        type: 'category',
+        axisTick: { show: false },
+        data: []
+      },
+      yAxis: {
+        type: 'value',
+        axisLabel: {
+          show: showYaxis
+        },
+        axisLine: {
+          show: showYaxis
+        },
+        axisTick: {
+          show: showYaxis
+        }
+
+      },
+      series: [
+        {
+          name: '',
+          type: 'bar',
+          barGap: 0,
+          barWidth: 60,
+          data: [320, 332, 301, 334, 390],
+          markPoint: {
+            symbol: 'path://m 0,0 h 88 v 35 h -40 l -4,10 l -4,-10 h -40 z',
+            symbolSize: function (val) {
+              return [80, 35]
+            },
+            symbolOffset: ['0', '-20'],
+            label: {
+              color: "white",
+              position: "inside",
+              offset: [0, -2]
+            },
+            data: []
+          }
+        },
+        {
+          name: '',
+          type: 'bar',
+          barWidth: 60,
+          data: [220, 182, 191, 234, 290]
+        }
+      ]
+    }
+
+    var cLen = computedSerie.length;
+    var markPoint = [];
+    var i = 0;
+
+    var tmpMP = {
+      itemStyle: {
+        color: ""
+      },
+      value: 0,
+      xAxis: 0,
+      yAxis: 0
+    };
+    if (cLen > 1) {
+      for (i = 1; i < cLen; i++) {
+        tmpMP = {
+          itemStyle: {
+            color: ""
+          },
+          value: 0,
+          xAxis: 0,
+          yAxis: 0
+        };
+        var first = Number(computedSerie[i - 1]);
+        var second = Number(computedSerie[i]);
+        var rate = ((second - first) / first) * 100;
+        rate = rate.toFixed(2)
+        if (rate < 0) {
+          tmpMP.itemStyle.color = "#2FB61D";
+        } else if (rate > 0) {
+          tmpMP.itemStyle.color = "#EC4848";
+        } else {
+          delete tmpMP.itemStyle;
+        }
+        tmpMP.value = rate + "%";
+        tmpMP.xAxis = i;
+        tmpMP.yAxis = second;
+        markPoint.push(tmpMP);
+      }
+    }
+
+    option.legend.data = legend;
+    option.xAxis.data = xAxis;
+    option.series[0].data = computedSerie;
+    option.series[0].markPoint.data = markPoint;
+    option.series[0].name = legend[0];
+    option.series[1].data = normalSerie;
+    option.series[1].name = legend[1];
+
+    doubleBarChart.setOption(option);
+
+  </script>
+  <!-- 单折线图 -->
+  <script type="text/javascript" charset="utf-8">
+
+    var showYaxis = false;
+
+    var lineChart = echarts.init(document.getElementById('single-line-chart'));
+    var option = {
+      animation: false,
+      color: ['#0386FF', '#F5A623'],
+      textStyle: {
+        color: '#666666',
+        fontSize: 16.5,
+      },
+      grid: {
+        left: '5%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+      },
+      xAxis: {
+        type: 'category',
+        axisTick: { show: false },
+        data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+      },
+      yAxis: {
+        type: 'value',
+        axisLabel: {
+          show: showYaxis
+        },
+        axisLine: {
+          show: showYaxis
+        },
+        axisTick: {
+          show: showYaxis
+        }
+      },
+      series: [{
+        type: 'line',
+        data: [820, 932, 901, 934, 1290, 1330, 1320]
+      }]
+    };
+
+    lineChart.setOption(option);
+
+  </script>
   <!-- 双折线图 -->
   <script type="text/javascript" charset="utf-8">
     var lineChart = echarts.init(document.getElementById('lineChart'));
@@ -937,12 +1126,13 @@
         },
         nameGap: 20,
         boundaryGap: true,
+        axisTick: { show: false },
         data: ['周一', '周二', '周三', '周四', '周五', '周六', '周日']
       },
       yAxis: {
         type: 'value',
         name: '                   销售收入(单位：万元)',//这里的空格不要删
-        nameLocation: 'end',
+        nameLocation: 'end'
       },
       series: [
         {
@@ -1007,6 +1197,7 @@
         nameGap: 20,
         boundaryGap: true,
         axisTick: {
+          show: false,
           alignWithLabel: true
         },
         axisLine: {
@@ -1093,6 +1284,7 @@
         series.push(tmpSeries);
 
         var rate = ((second - first) / first) * 100;
+        rate = rate.toFixed(2)
         if (rate < 0) {
           tmpMP.itemStyle.color = "#2FB61D";
         } else if (rate > 0) {
@@ -1139,6 +1331,7 @@
         series.push(tmpSeries);
 
         var rate = ((second - first) / first) * 100;
+        rate = rate.toFixed(2)
         if (rate < 0) {
           tmpMP.itemStyle.color = "#2FB61D";
         } else if (rate > 0) {
@@ -1154,14 +1347,13 @@
 
     }
 
-    
-
     option.xAxis.data = xAxis;
     option.series[0].data = series;
     option.series[0].markPoint.data = markPoint;
 
     barChart.setOption(option)
   </script>
+  <!-- 雷达图 -->
   <script type="text/javascript" charset="utf-8">
     var myChart = echarts.init(document.getElementById('category-radar'));
     var radarMaxHTML = document.getElementById('radarMax');
