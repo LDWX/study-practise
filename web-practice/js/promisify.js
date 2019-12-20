@@ -20,8 +20,8 @@ function run (str1, str2, callback) {
 
 const func = promisify(run);
 func('a', 'b')
-  .then((res) => {
+  .then((res,res1) => {
     console.log(res)
-    console.log(res + ' this is then')
+    console.log(res1)
   })
   .catch(err => console.warn('Catch error:', err));
