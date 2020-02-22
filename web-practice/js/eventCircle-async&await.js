@@ -6,7 +6,10 @@ async function async1() {
 }
 
 // 这里加不加async会影响到async2 end 与 promise3的执行顺序
-async function async2() {
+// 加上async表示是异步调用，await后面跟异步调用，会直接执行后面的操作，而不是将await后的操作定义为微任务
+// await后面加常量或普通函数，则会将await后面的操作定义为微任务
+// 详情参考： https://juejin.im/post/5dc28ea66fb9a04a881d1ac0
+function async2() {
   console.log('async2')
 }
 

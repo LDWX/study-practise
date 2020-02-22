@@ -1,3 +1,5 @@
+// 参考地址： https://juejin.im/post/5dc28ea66fb9a04a881d1ac0
+
 console.log('script start')
 
 async function async1() {
@@ -48,3 +50,4 @@ console.log('script end')
  * => promise2 
  * => setTimeout
  */
+

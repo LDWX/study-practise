@@ -22,3 +22,6 @@
 //   .catch( value => {
 //     console.error(value)
 //   })
+
+
+console.log(self)

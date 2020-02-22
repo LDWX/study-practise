@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  * {
+    margin: 0;
+  }
+  body {
+    width: auto;
+    background: steelblue;
+  }
+  .wrapper {
+    /* position: relative; */
+    width: 500px;
+    height: 300px;
+    margin: 0 auto;
+    background: pink;
+  }
+  .block1 {
+    width: 200px;
+    height: 100px;
+    background: yellowgreen;
+    margin: 0 auto;
+  }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="block1">
+
+    </div>
+
+  </div>
+  <h1>wrapper</h1>
+  <h2>width: 500px</h2>
+  <h2>height: 300px</h2>
+  <p>
+    由鼠标事件（MouseEvent）可以发现： 
+       其中包含了许多的坐标，且每个坐标的含义都不一样。下面我们来挨个介绍常用的坐标，以及它们的含义。
+
+  </p>
+  <p>
+    一、clientX、clientY
+    点击位置距离当前body可视区域的x，y坐标
+  </p>
+  <p>
+    二、pageX、pageY
+      对于整个页面来说，包括了被卷去的body部分的长度
+  </p>
+  <p>
+    三、screenX、screenY
+    点击位置距离当前电脑屏幕的x，y坐标
+  </p>  
+  <p>
+    四、offsetX、offsetY
+      相对于带有定位的父盒子的x，y坐标
+  </p>  
+  <p>
+    五、x、y
+    和screenX、screenY一样
+  </p>
+  
+
+  <script>
+    let ele = document.querySelector('body')
+    ele.addEventListener('click', e => {
+      console.log("clientX: %s, clientY: %s", e.clientX, e.clientY)
+      
+      console.log("screenX: %s, screenY: %s", e.screenX, e.screenY)
+      
+      console.log("offsetX: %s, offsetY: %s", e.offsetX, e.offsetY)
+      
+    })
+  </script>
+</body>
+</html>
