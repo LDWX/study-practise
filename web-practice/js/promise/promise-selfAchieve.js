@@ -1,3 +1,5 @@
+// 所有功能全都测试通过
+
 const isFunction = variable => typeof variable === 'function';
 
 const PENDING = 'PENDING'
@@ -68,7 +70,7 @@ class Promise {
       this._value = err
       let cb
       while ( cb = this._rejectedQueues.shift() ) {
-        cb(error)
+        cb(err)
       }
     }
     setTimeout(run, 0)
@@ -104,8 +106,8 @@ class Promise {
       // 封装一个失败时执行的函数 
       let rejected = error => {
         try {
-          if (!isFunction(onFulfilled)) {
-            onRejectedNext(value)
+          if (!isFunction(onRejected)) {
+            onRejectedNext(error)
           } else {
             let res = onRejected(error)
             if (res instanceof Promise) {
@@ -142,37 +144,88 @@ class Promise {
   }
 
   static resolve(value) {
-
+    // 如果参数是 Promise 实例，直接返回这个实例
+    if (value instanceof Promise) return value
+    return new Promise( resolve => resolve(value))
   }
 
-  static reject() {
-
+  static reject(value) {
+    return new Promise( (resolve, reject) => reject(value))
   }
 
-  static all() {
+  static all(list) {
+    return new Promise( (resolve, reject) => {
+      let values = []
+      let count = 0
+      for (let [i, p] of list.entries() ) {
+        //  不管数组参数是不是Promise实例， 都直接调用Promise.resolve
+        this.resolve(p)
+        .then(res => {
+          values[i] = res
+          count++
 
+          // 所有状态都变成fulfilled时，返回 Promise 状态就变成fulfilled
+          if (count === list.length) resolve(values) 
+        }, err => {
+          // 有一个被 rejected 时，返回的Promise状态就变成rejected
+          console.log('all be reject::: ', err)
+          reject(err)
+        })
+      }
+    })
   }
 
-  static race() {
-
+  static race(list) {
+    return new Promise( (resolve, reject) => {
+      for (let p of list) {
+        // 
+        this.resolve(p).then(res => {
+          resolve(res)
+        }, err => {
+          reject(err)
+        })
+      }
+    })
   }
-
-
 }
 
-
-// function test() {
-//   return new Promise( (resovle, reject) => {
-//     console.log('start')
-//     resovle(111)
-//   })
-// }
-
-
 let p1 = new Promise( (resovle, reject) => {
-  console.log('start')
-  resovle(111)
+  setTimeout(() => {
+    resovle(111)
+  }, 1000)
+  
 })
-p1.then(res => {
-    console.log(res)
+
+let p2 = new Promise( (resovle, reject) => {
+  setTimeout(() => {
+    resovle(222)
+  }, 2000)  
+})
+
+
+// Promise.all([p1, p2, 333])  
+//   .then(res => {
+//     console.log(res)
+//   })
+//   .catch(err => {
+//     console.log('$$$$$$$$$$$$err: ', err)
+//   })
+
+Promise.race([p1, p2])
+  .then(res => {
+    console.log('race then:::', res)
   })
+  .catch(err => {
+    console.log('race catch:::', err)
+  })
+  
+
+
+// p1.then(res => {
+//   console.log(res)
+// })
+
+// Promise.resolve(p1)
+//   .then(res => {
+//     console.log(res)
+//   })

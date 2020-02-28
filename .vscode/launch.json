@@ -8,7 +8,7 @@
       "type": "node",
       "request": "launch",
       "name": "Launch Program",
-      "program": "${workspaceFolder}/web-practice/js/promise-selfAchieve.js"
+      "program": "${workspaceFolder}/web-practice/js/promise/promise-selfAchieve.js"
     },
     
     {

@@ -1,6 +1,9 @@
 index.js 依赖了 moduleA 与moduleB，
 moduleB 依赖了 moduleA.
 
+[参考地址](http://shouce.jb51.net/webpack/amd.html)
+
+
 
 ### 本实例演示了：
 1. AMD 的使用方法

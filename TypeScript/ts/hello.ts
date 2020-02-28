@@ -11,7 +11,7 @@ interface Person2 {
   name: string;
   age: number;
   gender?: string;
-  [propName: string]: string;
+  [propName: string]: string | number;
 }
 let tom: Person2 = {
   name: 'shenxin',

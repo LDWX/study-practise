@@ -16,10 +16,11 @@ function memfactorial(n) {
   return memfactorial.cache[n]
 }
 
-let result = memfactorial(5)
-console.log(result)
+// let result = memfactorial(5)
+// console.log(result)
 
 function factorial(n) {
+  console.count('factorial')
   if (n === 0) {
     return 1;
   }else {
@@ -39,4 +40,10 @@ function memoize(fundamental, cache) {
 
   return shell
 }
+
+let cache = {}
+let memoization = memoize(factorial, cache)
+
+console.log(memoization(4))
+console.log(memoization(4))
 

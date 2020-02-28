@@ -2,8 +2,10 @@
 function promisify(fn) {
   return function (...args) {
     return new Promise((resolve, reject) => {
-      const callback = function (...args) {
-        resolve(args);
+      const callback = function (...params) {
+        // 如果既想拿到callback中的参数，又想拿到func中的参数，则在这里将两个参数进行合并：
+        params = [...params, ...args]
+        resolve(params);
       };
       fn.apply(null, [...args, callback]);
     });
@@ -13,7 +15,7 @@ function promisify(fn) {
 function run (str1, str2, callback) {
   setTimeout( function() {
     console.log('setTimeout: ',str1)
-    callback(str1, str2)
+    callback( "shenxin", "wangya")
   }, 1000)
 
 }
