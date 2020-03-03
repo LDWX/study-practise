@@ -1,6 +1,5 @@
 let obj = {
   arr: ['shenxin', 'wangya', 'hello', 'world'],
-  index: 0,
   
   [Symbol.iterator]() {
     let index = 0

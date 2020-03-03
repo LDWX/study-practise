@@ -28,6 +28,8 @@ class Promise {
       // 依次执行成功队列中的函数，并清空队列
       const runFullfilled = value => {
         let cb
+        // _fulfilledQueues/_rejectedQueues 中的回调是获取的后面的 then 函数的回调。
+        // 如果后面没有 then 函数了，则也没有回调被放入这个 _fulfilledQueues/_rejectedQueues 队列了
         while ( cb = this._fulfilledQueues.shift() ) {
           cb(value)
         }
@@ -89,6 +91,7 @@ class Promise {
           if (!isFunction(onFulfilled)) {
             onFullfilledNext(value)
           } else {
+            // 获取then函数的回调函数的return值，并通过类型判断传递给下一个then函数
             let res = onFulfilled(value)
             if (res instanceof Promise) {
               // 如果当前回调函数返回Promise对象，则必须等待期状态改变后再执行下一个回调
@@ -109,6 +112,7 @@ class Promise {
           if (!isFunction(onRejected)) {
             onRejectedNext(error)
           } else {
+            // 获取then函数的回调函数的return值，并通过类型判断传递给下一个then函数
             let res = onRejected(error)
             if (res instanceof Promise) {
               // 如果当前回调函数返回Promise对象，则必须等待期状态改变后再执行下一个回调
@@ -189,18 +193,31 @@ class Promise {
   }
 }
 
-let p1 = new Promise( (resovle, reject) => {
-  setTimeout(() => {
-    resovle(111)
-  }, 1000)
-  
+
+let pThen = new Promise( (resolve, reject) => {
+  resolve('test')
 })
 
-let p2 = new Promise( (resovle, reject) => {
-  setTimeout(() => {
-    resovle(222)
-  }, 2000)  
+pThen.then( res => {
+  console.log(res)
+  return 11111
 })
+.then( res => {
+  console.log(res)
+})
+
+// let p1 = new Promise( (resovle, reject) => {
+//   setTimeout(() => {
+//     resovle(111)
+//   }, 1000)
+  
+// })
+
+// let p2 = new Promise( (resovle, reject) => {
+//   setTimeout(() => {
+//     resovle(222)
+//   }, 2000)  
+// })
 
 
 // Promise.all([p1, p2, 333])  
@@ -211,13 +228,13 @@ let p2 = new Promise( (resovle, reject) => {
 //     console.log('$$$$$$$$$$$$err: ', err)
 //   })
 
-Promise.race([p1, p2])
-  .then(res => {
-    console.log('race then:::', res)
-  })
-  .catch(err => {
-    console.log('race catch:::', err)
-  })
+// Promise.race([p1, p2])
+//   .then(res => {
+//     console.log('race then:::', res)
+//   })
+//   .catch(err => {
+//     console.log('race catch:::', err)
+//   })
   
 
 
