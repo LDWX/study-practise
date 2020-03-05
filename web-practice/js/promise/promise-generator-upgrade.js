@@ -27,12 +27,14 @@ function run (func) {
 
   function step() {
     if (result.done) {
+      // 所有 yield 全都执行完毕后的最后一次 next() 结果
       console.log('done:: ', result)
       return result.value
     }; 
     
     !result.done && result.value.then( res => {
       console.log(res)
+      // 将上一个 yield 的执行结果传入下一个 yield 执行函数
       result = it.next(res)
       step()
     })

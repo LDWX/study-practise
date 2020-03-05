@@ -26,19 +26,6 @@ function p3() {
   })
 }
 
-// 基于 Generator 和 Promise 的自动执行器
-function run(asyncPromise) {
-  // let g = gen();
-  function next() {
-      let result = asyncPromise.next();    
-      (!result.done&&result.value) && result.value.then((value) => {
-        console.log(value)
-        next()
-      }); 
-  }  
-  next();
-}
-
 function *asyncPromise(array) {
   // 用 for 和 for...of都可以实现
   // for (let p of array) {
@@ -48,7 +35,22 @@ function *asyncPromise(array) {
     yield array[i]();
   }
 }
+
+
 let array = [p1, p2, p3]
+// 基于 Generator 和 Promise 的自动执行器
+function run(it) {
+  // let g = gen();
+  function next() {
+      let result = it.next();
+
+      (!result.done&&result.value) && result.value.then((value) => {
+        console.log(value)
+        next()
+      }); 
+  }  
+  next();
+}
 
 // run(gen);
 run(asyncPromise(array));
