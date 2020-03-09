@@ -93,6 +93,9 @@ myProxy[addressSymbol] = "address"
 console.log(Object.getOwnPropertyNames(obj))
 console.log(Object.getOwnPropertyNames(myProxy))
 
+console.log(Object.getOwnPropertySymbols(myProxy))
+console.log(Object.keys(myProxy))
+
 
 
 // myProxy.address = 111

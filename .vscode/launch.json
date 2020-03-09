@@ -8,7 +8,8 @@
       "type": "node",
       "request": "launch",
       "name": "Launch Program",
-      "program": "${workspaceFolder}/web-practice/js/async-await.js"
+      "program": "${workspaceFolder}/web-practice/js/proxy-reflect/proxy-arrayUsage.js"
+      
     },
     
     {

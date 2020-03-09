@@ -28,13 +28,9 @@ for (let item of obj) {
 console.log([...obj])
 
 
-// console.log(obj[Symbol.iterator]())
-// console.log(obj.next())
-// console.log(obj.next())
-// console.log(obj.next())
-// console.log(obj.next())
-
-
-
-// let iter = obj[Symbol.iterator]()
-// iter.getThis()
+let it = obj[Symbol.iterator]()
+console.log( it.next())
+console.log( it.next())
+console.log( it.next())
+console.log( it.next())
+console.log( it.next())
