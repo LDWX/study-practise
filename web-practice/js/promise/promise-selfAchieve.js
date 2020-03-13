@@ -84,6 +84,9 @@ class Promise {
       _status
     } = this
 
+    // console.log("_value ::: ", _value)
+    // console.log("_status ::: ", _status)
+
     return new Promise( (onFullfilledNext, onRejectedNext) => {
       // 封装一个成功执行时的函数
       let fulfilled = value => { 
@@ -91,6 +94,7 @@ class Promise {
           if (!isFunction(onFulfilled)) {
             onFullfilledNext(value)
           } else {
+            console.log("/////////////////////::: ", value)
             // 获取then函数的回调函数的return值，并通过类型判断传递给下一个then函数
             let res = onFulfilled(value)
             if (res instanceof Promise) {
@@ -134,9 +138,11 @@ class Promise {
           this._rejectedQueues.push(rejected)
           break;
         case FULFILLED:
+          console.log("FULFILLED::: ", _value)
           fulfilled(_value)
           break;
         case REJECTED:
+          console.log("REJECTED::: ", _value)
           rejected(_value)
           break;
       }
@@ -172,7 +178,6 @@ class Promise {
           if (count === list.length) resolve(values) 
         }, err => {
           // 有一个被 rejected 时，返回的Promise状态就变成rejected
-          console.log('all be reject::: ', err)
           reject(err)
         })
       }
@@ -194,18 +199,21 @@ class Promise {
 }
 
 
-let pThen = new Promise( (resolve, reject) => {
-  resolve('test')
-})
+/** 例一 */
+// let pThen = new Promise( (resolve, reject) => {
+//   resolve('test')
+// })
 
-pThen.then( res => {
-  console.log(res)
-  return 11111
-})
-.then( res => {
-  console.log(res)
-})
+// pThen.then( res => {
+//   console.log(res)
+//   return 11111
+// })
+// .then( res => {
+//   console.log(res)
+// })
 
+
+/** 例二 */
 // let p1 = new Promise( (resovle, reject) => {
 //   setTimeout(() => {
 //     resovle(111)
@@ -214,9 +222,11 @@ pThen.then( res => {
 // })
 
 // let p2 = new Promise( (resovle, reject) => {
-//   setTimeout(() => {
-//     resovle(222)
-//   }, 2000)  
+//   // setTimeout(() => {
+//   //   // resovle(222)
+//   //   reject(222)
+//   // }, 2000)  
+//   return 222
 // })
 
 
@@ -228,6 +238,8 @@ pThen.then( res => {
 //     console.log('$$$$$$$$$$$$err: ', err)
 //   })
 
+
+
 // Promise.race([p1, p2])
 //   .then(res => {
 //     console.log('race then:::', res)
@@ -238,11 +250,14 @@ pThen.then( res => {
   
 
 
-// p1.then(res => {
-//   console.log(res)
-// })
+let p1 = new Promise( (resolve, reject) => {
+  resolve(1)
+  // reject(1)
+})
 
-// Promise.resolve(p1)
-//   .then(res => {
-//     console.log(res)
-//   })
+
+setTimeout( () => {
+  p1.then(res => {
+    console.log(res)
+  })
+})
