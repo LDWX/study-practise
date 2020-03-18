@@ -19,5 +19,11 @@
   "homepage": "https://github.com/LDWX/study-practise#readme",
   "dependencies": {
     "co": "^4.6.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.7",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "rxjs": "^6.5.4"
   }
 }
