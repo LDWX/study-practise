@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sprite</title>
+  <style>
+    .up {
+      width: 24px;
+      height: 16px;
+      background: url('../assets/imgages/test.png');
+      background-position: 0px 0;
+    }
+    .plus {
+      width: 32px;
+      height: 32px;
+      background: url('../assets/imgages/test.png');
+      background-position: -32px -140px ;
+    }
+  </style>
+</head>
+<body>
+  <h1>雪碧图使用尝试</h1>
+  <div class="up"></div>
+  <div class="plus"></div>
+  <p>生成雪碧图后如果要使用某个图标，需要将图片进行移动，所以 background-position 取的是负值，而不是正值</p>
+  
+</body>
+</html>
