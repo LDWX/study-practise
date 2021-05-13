@@ -1,1 +1,4 @@
-console.log('this is deno test');
+
+export default function print() {
+  console.log('this is deno test');
+}
