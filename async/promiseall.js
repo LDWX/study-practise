@@ -3,7 +3,6 @@ let obj = {
   service2: '222'
 }
 
-const keys = Object.keys(obj);
 
 
 const promise1 = Promise.resolve(3);
@@ -14,11 +13,32 @@ const promise3 = new Promise((resolve, reject) => {
 
 
 
-async function test() {
-  const [...keys] = await Promise.all([promise1, promise2, promise3])
-  console.log(keys[0], keys[1])
-}
+// async function test() {
+//   const [...keys] = await Promise.all([promise1, promise2, promise3])
+//   console.log(keys[0], keys[1])
+// }
 
-test();
+// test();
 
 
+
+
+const keys = [
+	'service1',
+  'service2'
+]
+const resList = [
+  {
+    key: 'data1'
+  },
+  {
+    key: 'data2'
+  }
+]
+
+let result = {}
+resList.forEach((res, index) => {
+  result[keys[index]] = res;
+})
+
+console.log('#### ', result)

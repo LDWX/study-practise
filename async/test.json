@@ -1,0 +1,1059 @@
+ficcbffweb-54-5141,/home/admin/logs/ficcbffweb/ficcbffweb-web.log,
+2020-12-16 15: 16: 48,
+742 INFO 1464 [cxy******cn.com/2088002514867434/2408: 8456: 5053:fcc0: : 1/0b47885b16081030083581660e3144/380ms RPC com.alipay.ficcbffweb.dq.v2.asset.detail
+] [dq:asset:detail:queryConfirmedAssetDetail
+][查询资产详情结果
+] req={
+  "isResume": false,
+  "application": 1,
+  "source": "ALIPAY",
+  "channel": "MOBILE",
+  "channelVersion": "10.2.8.7000",
+  "userId": "2088002514867434",
+  "assetId": "2020102131034048430687858286",
+  "orderId": "",
+  "category": "BANK_NETVALUE_ACC_SETTING",
+  "productId": "W2020110A00000005212"
+}, result={
+  "success": true,
+  "errorContext": null,
+  "result": {
+    "orderId": null,
+    "productId": "W2020110A00000005212",
+    "productIcon": "https://tfsimg.alipay.com/images/financemng/TB1oONgcnVyDuNk6XeaXXXCWXXa",
+    "productName": "交银理财2个月定开01",
+    "confirmed": true,
+    "recruitmentBusiness": false,
+    "category": "BANK_NETVALUE_ACC_SETTING",
+    "refundType": "null",
+    "duringDays": 55,
+    "rateString": null,
+    "rate": "3.400000",
+    "rateType": "业绩基准(年化)",
+    "rateTypeCode": 9,
+    "canPledge": false,
+    "productType": null,
+    "isProfitArrival": true,
+    "yesterdayProfitShowType": null,
+    "insuProfitSyncHint": null,
+    "expireTime": null,
+    "supportCashing": false,
+    "cashingStatusPromptMessage": null,
+    "netValueDateStr": null,
+    "duringNum": null,
+    "duringUnit": null,
+    "isFundHunheInitPeriod": false,
+    "subInsuranceContractParam": null,
+    "inTest": false,
+    "repayGuaranteeCopy": null,
+    "surrenderChargeDuringNum": null,
+    "surrenderChargeDuringUnit": null,
+    "assetStatus": null,
+    "assetStatusForDisplay": null,
+    "expProcessType": null,
+    "restDays": null,
+    "exchangeRestDays": 0,
+    "assetId": "2020102131034048430687858286",
+    "productStatus": "2",
+    "showAutoRenew": false,
+    "transactionInitiateType": null,
+    "instHotLine": null,
+    "productCode": "Y88_5811220015",
+    "instId": "JYLC",
+    "autoRenewDisabled": false,
+    "autoRenewDisabledReason": null,
+    "instName": "交银理财有限责任公司",
+    "refundTarget": null,
+    "autoRenewal": false,
+    "disableAutoRenewal": false,
+    "instTransactionCfmDate": null,
+    "surrenderDate": null,
+    "refundPosition": null,
+    "refundInstName": null,
+    "refundCardNo": null,
+    "refundErrorCode": null,
+    "autoInvestScene": null,
+    "guideType": null,
+    "redeemBizType": null,
+    "canRedeem": false,
+    "redeemDisableCode": null,
+    "canExchange": false,
+    "hasExchanged": false,
+    "exchangeCurStatus": null,
+    "bizScene": "default",
+    "dividendStatus": null,
+    "nextProfitDate": null,
+    "withDividendRestDays": null,
+    "dividendType": null,
+    "dividendTypeProcessing": false,
+    "fundCode": null,
+    "cashFlowMode": null,
+    "expectedRefundTarget": null,
+    "expectedRefundCardNo": null,
+    "expectedRefundBankName": null,
+    "instRefundTarget": null,
+    "instRefundCardNo": null,
+    "instRefundBankName": null,
+    "instRefundDate": null,
+    "refundStatus": null,
+    "specCategory": null,
+    "allowRealTimeRedeem": false,
+    "hasFreezeDetail": false,
+    "canPledgeToJiebei": false,
+    "hasPledgeToJiebei": false,
+    "interestDate": "2020-10-21T16:00:00.000Z",
+    "totalProfit": {
+      "cent": 4472,
+      "currency": {
+        "currencyCode": "CNY"
+      }
+    },
+    "prinAmount": {
+      "cent": 1000000,
+      "currency": {
+        "currencyCode": "CNY"
+      }
+    },
+    "holdAmount": {
+      "cent": 1004472,
+      "currency": {
+        "currencyCode": "CNY"
+      }
+    },
+    "actualCollectedAmount": {
+      "cent": 0,
+      "currency": {
+        "currencyCode": "CNY"
+      }
+    },
+    "expectProfit": null,
+    "yesterdayProfit": {
+      "cent": 0,
+      "currency": {
+        "currencyCode": "CNY"
+      }
+    },
+    "endNetValue": null,
+    "dealedCashingAmount": {
+      "cent": 0,
+      "currency": {
+        "currencyCode": "CNY"
+      }
+    },
+    "cashingProfit": null,
+    "maxCashableAmount": null,
+    "repayProfit": null,
+    "repayPrinAmount": null,
+    "netValue": null,
+    "endDate": null,
+    "preEndDate": null,
+    "paidTime": null,
+    "refundDate": null,
+    "expectedRefundDate": null,
+    "equityInfo": null,
+    "bottomYearRate": null,
+    "expectYearRate": {
+      "value": "3.400000"
+    },
+    "prizeInfo": null,
+    "assetUnit": {
+      "value": "9936.41"
+    },
+    "buyConfirmNetValue": null,
+    "freezeUnit": {
+      "value": "0.00"
+    },
+    "availableUnit": {
+      "value": "9936.41"
+    },
+    "drawRate": null,
+    "redeemApplyDate": null,
+    "openUnit": null,
+    "limitUnit": null,
+    "dailyCharge": null,
+    "pcreditRepayDate": null,
+    "productDisplayTagList": null,
+    "extMap": {},
+    "lastRedeemDate": null,
+    "openTimeInfoList": null,
+    "assetAssignInfo": null,
+    "minRedeemShare": null,
+    "minRemainShare": null
+  },
+  "currentTime": "2020-12-16T07:16:48.739Z"
+}
+
+
+
+
+ficcbffweb-54-5103,/home/admin/logs/ficcbffweb/ficcbffweb-web.log,
+2020-12-16 15: 17: 33,
+778 INFO 1605 [cxy******cn.com/2088002514867434/2408: 8456: 5053:fcc0: : 1/0b47885b16081030529506078e3144/824ms RPC com.alipay.ficcbffweb.dq.v2.asset.detail
+] [ficcbffweb.dq.proxy.purchaseDetailQueryFacade.queryProductDetail
+][调用产品详情
+] req={
+  "application": 1,
+  "source": "ALIPAY",
+  "channel": "MOBILE",
+  "channelVersion": "10.2.8.7000",
+  "userId": "2088002514867434",
+  "productId": "W2020110A00000005212",
+  "scene": "BFF_PRODDETAILPAGE",
+  "skipProductAuthCheck": true
+}, resp={
+  "success": true,
+  "errorContext": null,
+  "result": {
+    "instCustomerHotline": null,
+    "instName": "交银理财有限责任公司",
+    "productManager": null,
+    "rateRemark": null,
+    "rateRule": null,
+    "description": null,
+    "canAppoint": false,
+    "canBuy": false,
+    "canNotBuyReason": null,
+    "canSell": null,
+    "canNotSellReason": null,
+    "quotationTTL": null,
+    "tradeTimeRule": null,
+    "canExchange": null,
+    "exchangeChannels": null,
+    "instArrangementNo": null,
+    "quotationSymbol": null,
+    "dispSaleState": "11",
+    "showAutoRenew": false,
+    "incrementType": null,
+    "opposite": null,
+    "merchantInstId": null,
+    "displayTag": null,
+    "contractListJson": "{\"PRODUCT_RISK\":\"20201019000690000101000000019640\",\"PRODUCT_CONTRACT\":\"20201019000690000101000000019639\"}",
+    "instAddress": "上海市浦东新区陆家嘴环路333号31层",
+    "inventoryTypeCode": null,
+    "canShare": true,
+    "linkedTargetName": null,
+    "linkedTargetCode": null,
+    "linkedTargetType": null,
+    "endRateRemarkUrl": null,
+    "observationStartDate": null,
+    "observationEndDate": null,
+    "productSerialId": null,
+    "productSerialName": null,
+    "fluctuationDirection": null,
+    "availablePersonCount": 0,
+    "personCount": 0,
+    "floatingType": null,
+    "instShortName": null,
+    "parentInstShortName": null,
+    "withDrawalMode": null,
+    "withdrawalType": null,
+    "dispRedeemState": "1",
+    "maxCountLimitPersonDaily": null,
+    "allowRealtimeRedeem": false,
+    "refundInterval": null,
+    "cashFlowMode": null,
+    "specCategory": null,
+    "closeAssignTime": null,
+    "productId": "W2020110A00000005212",
+    "productName": "交银理财2个月定开01",
+    "productCode": "Y88_5811220015",
+    "productType": null,
+    "duringDays": 55,
+    "duringNum": 55,
+    "duringUnit": "D",
+    "openTradeTime": null,
+    "closeTradeTime": null,
+    "payOrder": 0,
+    "saleState": 2,
+    "refundType": null,
+    "category": "BANK_NETVALUE_ACC_SETTING",
+    "inTest": false,
+    "sellChannel": 2,
+    "riskLevel": "ML",
+    "instId": "JYLC",
+    "iconPath": "https://tfsimg.alipay.com/images/financemng/TB1oONgcnVyDuNk6XeaXXXCWXXa",
+    "rateShowType": 9,
+    "defaultEndDealType": 2,
+    "activityTag": null,
+    "ageMaxLimit": 0,
+    "ageMinLimit": 0,
+    "interestPeriod": 365,
+    "nextSaleTime": null,
+    "nextOffSaleTime": null,
+    "nextStockCount": null,
+    "predictDealTime": null,
+    "buyChargeRate": null,
+    "minBuyLimitUnit": null,
+    "maxBuyLimitUnit": null,
+    "sellChargeRate": null,
+    "minSellLimitUnit": null,
+    "maxSellLimitUnit": null,
+    "maxBuyLimitMoney": null,
+    "maxSellLimitMoney": null,
+    "quotationFluctuateThreshold": null,
+    "exchangeRate": null,
+    "dispOnSaleTime": "2021-02-10T07:17:33.544Z",
+    "currentOffSaleTime": null,
+    "bottomYearRate": null,
+    "incomeExample": {
+      "cent": 0,
+      "currency": {
+        "currencyCode": "CNY"
+      }
+    },
+    "productDisplayTagList": null,
+    "prodHighLights": null,
+    "rateRemarkUrls": null,
+    "dividendYearRate": null,
+    "recAndDisplayTopRate": {
+      "value": "3.40"
+    },
+    "recAndDisplayBottomRate": {
+      "value": "3.40"
+    },
+    "extInfo": null,
+    "dispOnSaleStartTime": null,
+    "dispOnSaleEndTime": null,
+    "dispRedeemStartTime": null,
+    "dispRedeemEndTime": null,
+    "minRemainShare": {
+      "value": "0.5"
+    },
+    "minRedeemShare": {
+      "value": "0.5"
+    },
+    "expectRedeemStartTime": "2021-02-09T16:00:00.000Z",
+    "maxRedeemShare": null,
+    "maxLimitPersonDaily": null,
+    "lastRedeemDate": null,
+    "openTimeInfoList": null,
+    "profitTenThousand": null,
+    "profitSevenDays": null,
+    "expectYearRate": {
+      "value": "3.40"
+    },
+    "topYearRate": {
+      "value": "3.400000"
+    },
+    "minLimitOrder": {
+      "cent": 100,
+      "currency": {
+        "currencyCode": "CNY"
+      }
+    },
+    "unitPrice": {
+      "cent": 100,
+      "currency": {
+        "currencyCode": "CNY"
+      }
+    },
+    "maxLimitOrder": {
+      "cent": 20000000,
+      "currency": {
+        "currencyCode": "CNY"
+      }
+    },
+    "onSaleTime": "2020-08-04T16:00:00.000Z",
+    "offSaleTime": "2099-12-30T16:00:00.000Z",
+    "stockCount": null,
+    "onSaleCount": null,
+    "freezeCount": null,
+    "minRaiseCount": null,
+    "maxLimitPerson": {
+      "cent": "9999999999999900",
+      "currency": {
+        "currencyCode": "CNY"
+      }
+    },
+    "offSaleDate": "2099-12-30T16:00:00.000Z",
+    "sevenDayValue": {
+      "value": "3.400000"
+    },
+    "confirmDate": null,
+    "matureDate": null,
+    "interestDate": "2020-08-12T16:00:00.000Z",
+    "selledCount": null
+  },
+  "currentTime": "2020-12-16T07:17:33.775Z"
+}
+
+
+
+ficcbffweb-54-5141,/home/admin/logs/ficcbffweb/ficcbffweb-web.log,
+2020-12-16 15: 16: 48,
+747 INFO 1464 [cxy******cn.com/2088002514867434/2408: 8456: 5053:fcc0: : 1/0b47885b16081030083581660e3144/385ms RPC com.alipay.ficcbffweb.dq.v2.asset.detail
+] [ficcbffweb.dq.proxy.purchaseDetailQueryFacade.queryProductDetail
+][调用产品详情
+] req={
+  "application": 1,
+  "source": "ALIPAY",
+  "channel": "MOBILE",
+  "channelVersion": "10.2.8.7000",
+  "userId": "2088002514867434",
+  "productId": "W2020110A00000005212",
+  "scene": "BFF_PRODDETAILPAGE",
+  "skipProductAuthCheck": true
+}, resp={
+  "success": true,
+  "errorContext": null,
+  "result": {
+    "instCustomerHotline": null,
+    "instName": "交银理财有限责任公司",
+    "productManager": null,
+    "rateRemark": null,
+    "rateRule": null,
+    "description": null,
+    "canAppoint": false,
+    "canBuy": false,
+    "canNotBuyReason": null,
+    "canSell": null,
+    "canNotSellReason": null,
+    "quotationTTL": null,
+    "tradeTimeRule": null,
+    "canExchange": null,
+    "exchangeChannels": null,
+    "instArrangementNo": null,
+    "quotationSymbol": null,
+    "dispSaleState": "11",
+    "showAutoRenew": false,
+    "incrementType": null,
+    "opposite": null,
+    "merchantInstId": null,
+    "displayTag": null,
+    "contractListJson": "{\"PRODUCT_RISK\":\"20201019000690000101000000019640\",\"PRODUCT_CONTRACT\":\"20201019000690000101000000019639\"}",
+    "instAddress": "上海市浦东新区陆家嘴环路333号31层",
+    "inventoryTypeCode": null,
+    "canShare": true,
+    "linkedTargetName": null,
+    "linkedTargetCode": null,
+    "linkedTargetType": null,
+    "endRateRemarkUrl": null,
+    "observationStartDate": null,
+    "observationEndDate": null,
+    "productSerialId": null,
+    "productSerialName": null,
+    "fluctuationDirection": null,
+    "availablePersonCount": 0,
+    "personCount": 0,
+    "floatingType": null,
+    "instShortName": null,
+    "parentInstShortName": null,
+    "withDrawalMode": null,
+    "withdrawalType": null,
+    "dispRedeemState": "1",
+    "maxCountLimitPersonDaily": null,
+    "allowRealtimeRedeem": false,
+    "refundInterval": null,
+    "cashFlowMode": null,
+    "specCategory": null,
+    "closeAssignTime": null,
+    "productId": "W2020110A00000005212",
+    "productName": "交银理财2个月定开01",
+    "productCode": "Y88_5811220015",
+    "productType": null,
+    "duringDays": 55,
+    "duringNum": 55,
+    "duringUnit": "D",
+    "openTradeTime": null,
+    "closeTradeTime": null,
+    "payOrder": 0,
+    "saleState": 2,
+    "refundType": null,
+    "category": "BANK_NETVALUE_ACC_SETTING",
+    "inTest": false,
+    "sellChannel": 2,
+    "riskLevel": "ML",
+    "instId": "JYLC",
+    "iconPath": "https://tfsimg.alipay.com/images/financemng/TB1oONgcnVyDuNk6XeaXXXCWXXa",
+    "rateShowType": 9,
+    "defaultEndDealType": 2,
+    "activityTag": null,
+    "ageMaxLimit": 0,
+    "ageMinLimit": 0,
+    "interestPeriod": 365,
+    "nextSaleTime": null,
+    "nextOffSaleTime": null,
+    "nextStockCount": null,
+    "predictDealTime": null,
+    "buyChargeRate": null,
+    "minBuyLimitUnit": null,
+    "maxBuyLimitUnit": null,
+    "sellChargeRate": null,
+    "minSellLimitUnit": null,
+    "maxSellLimitUnit": null,
+    "maxBuyLimitMoney": null,
+    "maxSellLimitMoney": null,
+    "quotationFluctuateThreshold": null,
+    "exchangeRate": null,
+    "dispOnSaleTime": "2021-02-10T07:16:46.183Z",
+    "currentOffSaleTime": null,
+    "bottomYearRate": null,
+    "incomeExample": {
+      "cent": 0,
+      "currency": {
+        "currencyCode": "CNY"
+      }
+    },
+    "productDisplayTagList": null,
+    "prodHighLights": null,
+    "rateRemarkUrls": null,
+    "dividendYearRate": null,
+    "recAndDisplayTopRate": {
+      "value": "3.40"
+    },
+    "recAndDisplayBottomRate": {
+      "value": "3.40"
+    },
+    "extInfo": null,
+    "dispOnSaleStartTime": null,
+    "dispOnSaleEndTime": null,
+    "dispRedeemStartTime": null,
+    "dispRedeemEndTime": null,
+    "minRemainShare": {
+      "value": "0.5"
+    },
+    "minRedeemShare": {
+      "value": "0.5"
+    },
+    "expectRedeemStartTime": "2021-02-09T16:00:00.000Z",
+    "maxRedeemShare": null,
+    "maxLimitPersonDaily": null,
+    "lastRedeemDate": null,
+    "openTimeInfoList": null,
+    "profitTenThousand": null,
+    "profitSevenDays": null,
+    "expectYearRate": {
+      "value": "3.40"
+    },
+    "topYearRate": {
+      "value": "3.400000"
+    },
+    "minLimitOrder": {
+      "cent": 100,
+      "currency": {
+        "currencyCode": "CNY"
+      }
+    },
+    "unitPrice": {
+      "cent": 100,
+      "currency": {
+        "currencyCode": "CNY"
+      }
+    },
+    "maxLimitOrder": {
+      "cent": 20000000,
+      "currency": {
+        "currencyCode": "CNY"
+      }
+    },
+    "onSaleTime": "2020-08-04T16:00:00.000Z",
+    "offSaleTime": "2099-12-30T16:00:00.000Z",
+    "stockCount": null,
+    "onSaleCount": null,
+    "freezeCount": null,
+    "minRaiseCount": null,
+    "maxLimitPerson": {
+      "cent": "9999999999999900",
+      "currency": {
+        "currencyCode": "CNY"
+      }
+    },
+    "offSaleDate": "2099-12-30T16:00:00.000Z",
+    "sevenDayValue": {
+      "value": "3.400000"
+    },
+    "confirmDate": null,
+    "matureDate": null,
+    "interestDate": "2020-08-12T16:00:00.000Z",
+    "selledCount": null
+  },
+  "currentTime": "2020-12-16T07:16:48.744Z"
+}
+
+
+
+
+ficcbffweb-54-5104,/home/admin/logs/ficcbffweb/ficcbffweb-web.log,
+2020-12-16 06: 27: 00,
+210 INFO 1530 [cxy******cn.com/2088002514867434/124.240.27.115/0b43172e16080712194878982ed259/719ms RPC com.alipay.ficcbffweb.dq.v2.asset.detail
+] [ficcbffweb.dq.proxy.purchaseDetailQueryFacade.queryProductDetail
+][调用产品详情
+] req={
+  "application": 1,
+  "source": "ALIPAY",
+  "channel": "MOBILE",
+  "channelVersion": "10.2.8.7000",
+  "userId": "2088002514867434",
+  "productId": "W2020110A00000005212",
+  "scene": "BFF_PRODDETAILPAGE",
+  "skipProductAuthCheck": true
+}, resp={
+  "success": true,
+  "errorContext": null,
+  "result": {
+    "instCustomerHotline": null,
+    "instName": "交银理财有限责任公司",
+    "productManager": null,
+    "rateRemark": null,
+    "rateRule": null,
+    "description": null,
+    "canAppoint": false,
+    "canBuy": false,
+    "canNotBuyReason": null,
+    "canSell": null,
+    "canNotSellReason": null,
+    "quotationTTL": null,
+    "tradeTimeRule": null,
+    "canExchange": null,
+    "exchangeChannels": null,
+    "instArrangementNo": null,
+    "quotationSymbol": null,
+    "dispSaleState": "2",
+    "showAutoRenew": false,
+    "incrementType": null,
+    "opposite": null,
+    "merchantInstId": null,
+    "displayTag": null,
+    "contractListJson": "{\"PRODUCT_RISK\":\"20201019000690000101000000019640\",\"PRODUCT_CONTRACT\":\"20201019000690000101000000019639\"}",
+    "instAddress": "上海市浦东新区陆家嘴环路333号31层",
+    "inventoryTypeCode": "04",
+    "canShare": true,
+    "linkedTargetName": null,
+    "linkedTargetCode": null,
+    "linkedTargetType": null,
+    "endRateRemarkUrl": null,
+    "observationStartDate": null,
+    "observationEndDate": null,
+    "productSerialId": null,
+    "productSerialName": null,
+    "fluctuationDirection": null,
+    "availablePersonCount": 0,
+    "personCount": 0,
+    "floatingType": null,
+    "instShortName": null,
+    "parentInstShortName": null,
+    "withDrawalMode": null,
+    "withdrawalType": null,
+    "dispRedeemState": "3",
+    "maxCountLimitPersonDaily": null,
+    "allowRealtimeRedeem": false,
+    "refundInterval": null,
+    "cashFlowMode": null,
+    "specCategory": null,
+    "closeAssignTime": null,
+    "productId": "W2020110A00000005212",
+    "productName": "交银理财2个月定开01",
+    "productCode": "Y88_5811220015",
+    "productType": null,
+    "duringDays": 55,
+    "duringNum": 55,
+    "duringUnit": "D",
+    "openTradeTime": null,
+    "closeTradeTime": null,
+    "payOrder": 0,
+    "saleState": 2,
+    "refundType": null,
+    "category": "BANK_NETVALUE_ACC_SETTING",
+    "inTest": false,
+    "sellChannel": 2,
+    "riskLevel": "ML",
+    "instId": "JYLC",
+    "iconPath": "https://tfsimg.alipay.com/images/financemng/TB1oONgcnVyDuNk6XeaXXXCWXXa",
+    "rateShowType": 9,
+    "defaultEndDealType": 2,
+    "activityTag": null,
+    "ageMaxLimit": 0,
+    "ageMinLimit": 0,
+    "interestPeriod": 365,
+    "nextSaleTime": null,
+    "nextOffSaleTime": null,
+    "nextStockCount": null,
+    "predictDealTime": null,
+    "buyChargeRate": null,
+    "minBuyLimitUnit": null,
+    "maxBuyLimitUnit": null,
+    "sellChargeRate": null,
+    "minSellLimitUnit": null,
+    "maxSellLimitUnit": null,
+    "maxBuyLimitMoney": null,
+    "maxSellLimitMoney": null,
+    "quotationFluctuateThreshold": null,
+    "exchangeRate": null,
+    "dispOnSaleTime": null,
+    "currentOffSaleTime": null,
+    "bottomYearRate": null,
+    "incomeExample": {
+      "cent": 0,
+      "currency": {
+        "currencyCode": "CNY"
+      }
+    },
+    "productDisplayTagList": null,
+    "prodHighLights": null,
+    "rateRemarkUrls": null,
+    "dividendYearRate": null,
+    "recAndDisplayTopRate": {
+      "value": "3.40"
+    },
+    "recAndDisplayBottomRate": {
+      "value": "3.40"
+    },
+    "extInfo": null,
+    "dispOnSaleStartTime": "2020-12-15T16:00:00.000Z",
+    "dispOnSaleEndTime": "2020-12-16T07:00:00.000Z",
+    "dispRedeemStartTime": "2020-12-15T16:00:00.000Z",
+    "dispRedeemEndTime": "2020-12-16T07:00:00.000Z",
+    "minRemainShare": {
+      "value": "0.5"
+    },
+    "minRedeemShare": {
+      "value": "0.5"
+    },
+    "expectRedeemStartTime": null,
+    "maxRedeemShare": null,
+    "maxLimitPersonDaily": null,
+    "lastRedeemDate": null,
+    "openTimeInfoList": null,
+    "profitTenThousand": null,
+    "profitSevenDays": null,
+    "expectYearRate": {
+      "value": "3.40"
+    },
+    "topYearRate": {
+      "value": "3.400000"
+    },
+    "minLimitOrder": {
+      "cent": 100,
+      "currency": {
+        "currencyCode": "CNY"
+      }
+    },
+    "unitPrice": {
+      "cent": 100,
+      "currency": {
+        "currencyCode": "CNY"
+      }
+    },
+    "maxLimitOrder": {
+      "cent": 20000000,
+      "currency": {
+        "currencyCode": "CNY"
+      }
+    },
+    "onSaleTime": "2020-08-04T16:00:00.000Z",
+    "offSaleTime": "2099-12-30T16:00:00.000Z",
+    "stockCount": {
+      "cent": 14000000000,
+      "currency": {
+        "currencyCode": "CNY"
+      }
+    },
+    "onSaleCount": {
+      "cent": 13933178000,
+      "currency": {
+        "currencyCode": "CNY"
+      }
+    },
+    "freezeCount": {
+      "cent": 2500000,
+      "currency": {
+        "currencyCode": "CNY"
+      }
+    },
+    "minRaiseCount": null,
+    "maxLimitPerson": {
+      "cent": "9999999999999900",
+      "currency": {
+        "currencyCode": "CNY"
+      }
+    },
+    "offSaleDate": "2099-12-30T16:00:00.000Z",
+    "sevenDayValue": {
+      "value": "3.400000"
+    },
+    "confirmDate": null,
+    "matureDate": null,
+    "interestDate": "2020-08-12T16:00:00.000Z",
+    "selledCount": {
+      "cent": 64322000,
+      "currency": {
+        "currencyCode": "CNY"
+      }
+    }
+  },
+  "currentTime": "2020-12-15T22:27:00.206Z"
+}
+
+
+ficcbffweb-54-5123,/home/admin/logs/ficcbffweb/ficcbffweb-web.log,
+2020-12-16 19: 51: 42,
+510 INFO 1557 [cxy******cn.com/2088002514867434/124.240.27.115/0b4316a116081195019454700e1861/562ms RPC com.alipay.ficcbffweb.dq.v3.index.asset.query
+] [ficcbffweb:service:dq:v3:index:queryAssetInfo:userHomepageQueryFacade:queryMobileHomePage
+][首屏资产列表信息v3
+] req={
+  "application": 1,
+  "source": "ALIPAY",
+  "channel": "MOBILE",
+  "channelVersion": "10.2.8.7000",
+  "userId": "2088002514867434",
+  "currentPage": 1,
+  "itemsPerPage": 10,
+  "lastKeyForOldAsset": "",
+  "lastKeyForNewAsset": "",
+  "scene": "BFF_HOMEPAGE",
+  "version": "NEW",
+  "businessIdentity": "FINANCIAL",
+  "hideAppointment": true
+}, resp={
+  "success": true,
+  "errorContext": null,
+  "result": {
+    "appointmentId": null,
+    "appointmentPeriodStr": null,
+    "appointmentRate": null,
+    "appointmentStatus": null,
+    "totalUserCount": null,
+    "totalDealedAmount": null,
+    "userLevel": "2",
+    "totalItems": 0,
+    "totalPages": 0,
+    "currentPage": 0,
+    "itemsPerPage": 10,
+    "lastKeyForOldAsset": "",
+    "lastKeyForNewAsset": "",
+    "yebOpenAccountFlag": false,
+    "apmProductType": "P2P",
+    "apmProductFilter": "empty",
+    "hasZHX": false,
+    "zhxLink": null,
+    "showLink": false,
+    "rateShowTypeName": "约定年化收益率",
+    "hasAsset": true,
+    "nonAssetUser": false,
+    "hasCashingAssets": false,
+    "guideType": null,
+    "appointmentApplyAmount": null,
+    "appointmentDealedAmount": null,
+    "assetInfoList": [],
+    "accountTypeAssetList": [
+      {
+        "assetId": "2020102131034048430687858286",
+        "orderId": null,
+        "assetTitle": "交银理财2个月定开01",
+        "assetStatus": "NORMAL",
+        "statusForDisplay": null,
+        "canPledge": null,
+        "supportCashing": false,
+        "assetStatisticsId": null,
+        "iconPath": null,
+        "hasEnoughCashingAmout": false,
+        "showRefundHint": false,
+        "cannotCashingReason": null,
+        "skipAuthorityGuide": null,
+        "confirmingHint": null,
+        "freezeBizType": null,
+        "redeemBizType": null,
+        "allowRedemptDays": 0,
+        "isCashing": false,
+        "productDuringDays": 0,
+        "incrementType": "8",
+        "incrementRate": "3.400000",
+        "isFund": false,
+        "category": "BANK_NETVALUE_ACC_SETTING",
+        "inTest": false,
+        "showAutoRenew": false,
+        "restDays": 0,
+        "exchangeRestDays": 0,
+        "autoRenewDisabled": false,
+        "autoRenewal": false,
+        "canExchange": false,
+        "hasExchanged": false,
+        "exchangeCurStatus": null,
+        "instId": "JYLC",
+        "instName": null,
+        "productId": "W2020110A00000005212",
+        "isNowOpenDate": false,
+        "guideType": null,
+        "prodDuringDay": null,
+        "bizScene": null,
+        "canWithdraw": false,
+        "withdrawRestDays": 0,
+        "duringNum": null,
+        "specCategory": null,
+        "hasPledgeToJiebei": false,
+        "hasFreezeDetail": false,
+        "hodingDividend": false,
+        "isNowRedeemOpenDate": false,
+        "withDividendRestDays": null,
+        "dividendStatus": null,
+        "assetAmount": {
+          "cent": 1004472,
+          "currency": {
+            "currencyCode": "CNY"
+          }
+        },
+        "totalProfitAmount": {
+          "cent": 4472,
+          "currency": {
+            "currencyCode": "CNY"
+          }
+        },
+        "openUnit": {
+          "value": "0"
+        },
+        "actualCollectedAmount": {
+          "cent": 0,
+          "currency": {
+            "currencyCode": "CNY"
+          }
+        },
+        "liabilityPrinAmount": {
+          "cent": 0,
+          "currency": {
+            "currencyCode": "CNY"
+          }
+        },
+        "endDate": null,
+        "refundDate": null,
+        "interestDate": "2020-10-21T16:00:00.000Z",
+        "yesterdayProfileAmount": null,
+        "maxCashingMoney": null,
+        "maxCashingAmountOfMinRate": null,
+        "showConfirmDate": null,
+        "netValue": null,
+        "netValueDate": null,
+        "nextOpenDate": null,
+        "predictNextOpenDate": "2021-02-10T11:51:42.420Z",
+        "expectYearRate": null,
+        "productDisplayTagList": null,
+        "lastRedeemDate": null,
+        "openTimeInfoList": null,
+        "extInfo": null,
+        "drawRate": null,
+        "nextOpenPurchaseEndDate": null,
+        "nextOpenRedeemEndDate": null,
+        "nextRedeemOpenDate": "2020-12-15T16:00:00.000Z",
+        "predictNextRedeemOpenDate": null
+      }
+    ],
+    "periodList": [
+      {
+        "weeklyAppointmentCount": "0",
+        "financingName": "短期理财",
+        "periodCode": "IN_SIX_MONTH",
+        "periodName": "6个月内",
+        "periodMaxMonth": 6,
+        "periodMinMonth": 0,
+        "showAdviseRate": false,
+        "rateMax": {
+          "value": "5.00000000"
+        }
+      },
+      {
+        "weeklyAppointmentCount": "0",
+        "financingName": "中期理财",
+        "periodCode": "SIX_TWELVE_MONTH",
+        "periodName": "6-12个月",
+        "periodMaxMonth": 12,
+        "periodMinMonth": 6,
+        "showAdviseRate": false,
+        "rateMax": {
+          "value": "5.50000000"
+        }
+      }
+    ],
+    "appointmentList": null,
+    "yebAccountBalance": null,
+    "minApmAmt": {
+      "cent": 10000,
+      "currency": {
+        "currencyCode": "CNY"
+      }
+    },
+    "maxApmAmt": {
+      "cent": 1000000000,
+      "currency": {
+        "currencyCode": "CNY"
+      }
+    },
+    "totalAssetInfo": {
+      "yesterdayProfitStatus": "YESTERDAY_PROFIT_COMPLETE",
+      "averagedRateHint": null,
+      "unfinishedCount": 0,
+      "isHoldAmountStatDelay": false,
+      "holdAmountStatDelayMinute": null,
+      "totalStatisticsAsset": {
+        "cent": 1004472,
+        "currency": {
+          "currencyCode": "CNY"
+        }
+      },
+      "totalAsset": {
+        "cent": 1004472,
+        "currency": {
+          "currencyCode": "CNY"
+        }
+      },
+      "totalProfit": null,
+      "totalCashedAmount": {
+        "cent": 0,
+        "currency": {
+          "currencyCode": "CNY"
+        }
+      },
+      "totalCashableAmount": {
+        "cent": 0,
+        "currency": {
+          "currencyCode": "CNY"
+        }
+      },
+      "yesterdayProfit": {
+        "cent": 0,
+        "currency": {
+          "currencyCode": "CNY"
+        }
+      },
+      "totalEndProfit": {
+        "cent": 0,
+        "currency": {
+          "currencyCode": "CNY"
+        }
+      },
+      "totalEndNetValue": {
+        "cent": 0,
+        "currency": {
+          "currencyCode": "CNY"
+        }
+      },
+      "averagedRate": null,
+      "unfinishedList": [],
+      "totalConfirmingAmount": {
+        "cent": 0,
+        "currency": {
+          "currencyCode": "CNY"
+        }
+      },
+      "totalRedeemingAmount": {
+        "cent": 0,
+        "currency": {
+          "currencyCode": "CNY"
+        }
+      },
+      "totalCashingProfit": {
+        "cent": 0,
+        "currency": {
+          "currencyCode": "CNY"
+        }
+      },
+      "userTotalStatisticsProfit": {
+        "cent": 6565,
+        "currency": {
+          "currencyCode": "CNY"
+        }
+      },
+      "extInfo": null
+    },
+    "haResultDesc": null
+  },
+  "currentTime": "2020-12-16T11:51:42.508Z"
+}
