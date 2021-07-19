@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "各种技术学习练习",
   "main": "fetch.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
