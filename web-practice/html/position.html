@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>    
+    .container {
+      position: relative;
+      background: red;      
+    }
+
+    .content {
+      position: absolute;      
+      top: 40px;    
+    }
+
+    .fix-content {
+      position: fixed;
+      top: 170px;
+
+    }
+  </style>
+</head>
+<body>
+  <h1>absolute/fixed 元素还是会触发事件冒泡</h1>
+  <div class="container" onclick="test()">
+    <label>test</label>
+    <div class="content">this is absolute content</div>
+    <div class="fix-content">this is fixed content</div>
+  </div>
+
+  <script>
+    function test () {
+      console.log('1111111111')
+    }
+
+  </script>
+</body>
+</html>
