@@ -1,3 +1,6 @@
+### 安装sass
+> npm install -g sass
+
 ### 编译
 > sass --watch SASS:CSS
 
