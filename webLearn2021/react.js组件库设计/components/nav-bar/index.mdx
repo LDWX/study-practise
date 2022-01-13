@@ -1,0 +1,29 @@
+---
+name: NavBar 导航栏
+route: /nav-bar
+menu: 组件
+sidebar: true
+---
+
+import { Playground, Props } from 'docz';
+import NavBar from './';
+
+# NavBar
+
+## API
+
+<Props of={NavBar} />
+
+## 基本用法
+
+<Playground>
+  <NavBar title="zhaowa" />
+</Playground>
+
+## 多种用法展示
+
+<Playground>
+  <NavBar title="标题1" backgroundColor="#0a0a0a" textColor="#fff" navigationBarTextStyle="#ffffff" />
+  <NavBar title="标题2" backgroundColor="#ddd" fontWeight="lighter" />
+  <NavBar title="标题3" fontSize={30} />
+</Playground>

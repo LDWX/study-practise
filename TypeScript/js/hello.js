@@ -1,6 +1,6 @@
-function sayHello(person) {
+const sayHello = (person) => {
     console.log('Hello, ' + person);
-}
+};
 function getLength(something) {
     return something;
 }
@@ -11,3 +11,4 @@ let tom = {
     sleep: 10
 };
 console.log(tom);
+console.log('sayHello: ', sayHello('shenxin'));

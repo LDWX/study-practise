@@ -1,0 +1,466 @@
+ficcbffweb-54-5150,/home/admin/logs/ficcbffweb/ficcbffweb-web.log,
+2021-10-19 11: 04: 08,
+716 INFO 1463 [
+  132******28/2088702793774538/27.198.242.101/0b43187416346126476286482ec6b8/1084ms RPC com.alipay.ficcbffweb.dq.v2.asset.detail
+] com.alipay.ficcbffweb.dq.v2.asset.detail req=[
+  {
+    "assetId": "2020101331034048530685406360",
+    "isResume": 0,
+    "orderId": "",
+    "productId": "W2020110A00000008744",
+    "category": "BANK_NETVALUE_ACC_SETTING",
+    "chInfo": "wealthRegular"
+  }
+],res={
+  "cardData": {
+    "dq_asset_yellow_notice": {
+      "desc": "资产详情cdp小黄条",
+      "view": {
+        "type": "buildIn",
+        "path": "asset/assetYellowNotice"
+      },
+      "data": {
+        "cdpConfigList": []
+      }
+    },
+    "dq_product_inst_header": {
+      "desc": "定期产品&结构信息头部",
+      "view": {
+        "type": "buildIn",
+        "path": "asset/productInstHeader"
+      },
+      "data": {
+        "productIcon": "https://tfsimg.alipay.com/images/financemng/TB1oONgcnVyDuNk6XeaXXXCWXXa",
+        "productName": "交银理财1年定开03",
+        "tagList": [
+          {
+            "value": "净值型"
+          }
+        ],
+        "instName": "交银理财有限责任公司",
+        "instNameDesc": "由交银理财有限责任公司提供",
+        "productId": "W2020110A00000008744",
+        "dispSaleState": 2,
+        "assetServiceXmd": "alipays://platformapi/startapp?appId=20000691&url=%2Fwww%2Fsrc%2Fxmada.html%3Fscene%3Dapp_licaizi_detail",
+        "allowGotoProductDetail": true,
+        "headerMemo": "",
+        "assetPaScene": "app_licaizi_detail",
+        "sdkExtParams": {
+          "instId": "JYLC",
+          "productId": "W2020110A00000008744"
+        }
+      }
+    },
+    "dq_asset_header": {
+      "desc": "资产详情头部",
+      "view": {
+        "type": "buildIn",
+        "path": "asset/assetHeader"
+      },
+      "data": {
+        "holdTitle": "金额(元)",
+        "holdAmount": "1,045.20",
+        "subItems": [
+          {
+            "title": "昨日收益(元)",
+            "value": "0.00"
+          },
+          {
+            "title": "累计收益(元)",
+            "value": "45.20"
+          }
+        ],
+        "shareInfo": [
+          {
+            "label": "总份额",
+            "amount": "1000.00"
+          },
+          {
+            "label": "冻结份额",
+            "amount": "0.00"
+          },
+          {
+            "label": "可用份额",
+            "amount": "1000.00"
+          }
+        ],
+        "assetTip": "",
+        "memoText": "",
+        "assetStatus": null
+      }
+    },
+    "dq_anna_peiban": {
+      "desc": "安娜版陪伴",
+      "view": {
+        "type": "buildIn",
+        "path": "common/annaPeiban/index"
+      },
+      "data": {
+        "bizCode": "dingqi",
+        "scene": "assetDetail",
+        "enabled": true,
+        "productId": "W2020110A00000008744",
+        "orderId": null,
+        "assetId": "2020101331034048530685406360"
+      }
+    },
+    "dq_asset_equity": {
+      "desc": "资产详情券",
+      "view": {
+        "type": "buildIn",
+        "path": "asset/assetEquity"
+      },
+      "data": {
+        "equityTip": "",
+        "equityList": [],
+        "hasUndeliveredRenewalVoucher": false
+      }
+    },
+    "dq_asset_trade": {
+      "desc": "资产详情交易记录",
+      "view": {
+        "type": "buildIn",
+        "path": "asset/assetTrade"
+      },
+      "data": {
+        "list": [],
+        "maxPageNo": 3,
+        "totalCount": 0,
+        "assetId": "2020101331034048530685406360",
+        "category": "BANK_NETVALUE_ACC_SETTING",
+        "productId": "W2020110A00000008744",
+        "navInfo": {
+          "confirmingUrl": "alipays://platformapi/startapp?appId=20000165&url=%2Fwww%2FtradeRecords.htm%3Ftype%3Dconfirming%26productId%3DW2020110A00000008744%26category%3DBANK_NETVALUE_ACC_SETTING%26enableWK%3DYES&allowsBounceVertical=NO&appClearTop=false&pd=NO&sd=NO&so=NO&startMultApp=YES&btc=16777215&tbc=16777215",
+          "allUrl": "alipays://platformapi/startapp?appId=20000165&url=%2Fwww%2FtradeRecords.htm%3Ftype%3Dall%26productId%3DW2020110A00000008744%26category%3DBANK_NETVALUE_ACC_SETTING%26enableWK%3DYES&allowsBounceVertical=NO&appClearTop=false&pd=NO&sd=NO&so=NO&startMultApp=YES&btc=16777215&tbc=16777215",
+          "profitUrl": "alipays://platformapi/startapp?appId=60000119&url=%2Fwww%2Fprofit-details.html%3FproductId%3DW2020110A00000008744%26assetId%3D2020101331034048530685406360%26category%3DBANK_NETVALUE_ACC_SETTING%26enableWK%3DYES&allowsBounceVertical=NO&appClearTop=false&pd=NO&sd=NO&so=NO&startMultApp=YES"
+        }
+      }
+    },
+    "dq_asset_Rate": {
+      "desc": "资产详情图表",
+      "view": {
+        "type": "buildIn",
+        "path": "asset/assetRate"
+      },
+      "data": {
+        "showRate": true,
+        "yearProfit": {
+          "data": [
+            "0.00",
+            "0.00",
+            "0.00",
+            "0.00",
+            "0.00",
+            "0.23",
+            "1.11",
+            "1.83",
+            "2.27",
+            "2.57",
+            "2.36",
+            "2.20",
+            "2.58",
+            "2.79",
+            "2.96",
+            "3.18",
+            "3.38",
+            "3.46",
+            "3.69",
+            "3.99",
+            "3.97",
+            "3.98",
+            "3.88",
+            "3.95",
+            "3.96",
+            "4.02",
+            "3.95",
+            "3.90",
+            "4.02",
+            "3.98",
+            "4.01",
+            "4.03",
+            "3.98",
+            "4.06",
+            "4.08",
+            "4.06",
+            "4.10",
+            "4.18",
+            "4.26",
+            "4.26",
+            "4.21",
+            "4.17",
+            "4.15",
+            "4.18",
+            "4.21",
+            "4.32",
+            "4.33",
+            "4.24",
+            "4.34",
+            "4.40",
+            "4.38",
+            "4.39",
+            "4.40",
+            "4.43",
+            "4.41",
+            "4.38",
+            "4.37",
+            "4.34",
+            "4.34"
+          ],
+          "labels": [
+            1601308800000,
+            1601395200000,
+            1602172800000,
+            1602432000000,
+            1602518400000,
+            1602604800000,
+            1603209600000,
+            1603814400000,
+            1604419200000,
+            1605024000000,
+            1605628800000,
+            1606233600000,
+            1606838400000,
+            1607443200000,
+            1608048000000,
+            1608652800000,
+            1609257600000,
+            1609344000000,
+            1609862400000,
+            1610467200000,
+            1611072000000,
+            1611676800000,
+            1612281600000,
+            1612886400000,
+            1613577600000,
+            1614096000000,
+            1614700800000,
+            1615305600000,
+            1615910400000,
+            1616515200000,
+            1617120000000,
+            1617724800000,
+            1618329600000,
+            1618934400000,
+            1619539200000,
+            1620230400000,
+            1620748800000,
+            1621353600000,
+            1621958400000,
+            1622563200000,
+            1623168000000,
+            1623772800000,
+            1624377600000,
+            1624982400000,
+            1625587200000,
+            1626192000000,
+            1626796800000,
+            1627401600000,
+            1628006400000,
+            1628611200000,
+            1629216000000,
+            1629820800000,
+            1630425600000,
+            1631030400000,
+            1631635200000,
+            1632240000000,
+            1632844800000,
+            1633622400000,
+            1634054400000
+          ],
+          "indicatorName": "成立以来年化增长"
+        },
+        "periodProfit": {
+          "displayPeriod": true,
+          "data": [
+            "42.50",
+            "43.10",
+            "43.10",
+            "43.10",
+            "43.10",
+            "43.10",
+            "43.80",
+            "43.80",
+            "44.60",
+            "44.60",
+            "44.60",
+            "45.20",
+            "45.20",
+            "45.20",
+            "45.20"
+          ],
+          "labels": [
+            1631808000000,
+            1632240000000,
+            1632326400000,
+            1632412800000,
+            1632672000000,
+            1632758400000,
+            1632844800000,
+            1632931200000,
+            1633622400000,
+            1633881600000,
+            1633968000000,
+            1634054400000,
+            1634140800000,
+            1634227200000,
+            1634486400000
+          ],
+          "totalProfit": "45.20"
+        },
+        "category": "BANK_NETVALUE_ACC_SETTING",
+        "paidTime": "--",
+        "assetType": "account",
+        "assetId": "2020101331034048530685406360",
+        "instId": "JYLC",
+        "productCode": "Y88_5811220034",
+        "productId": "W2020110A00000008744",
+        "isNetvalue": true
+      }
+    },
+    "dq_asset_Contract": {
+      "desc": "资产详情合同块儿",
+      "view": {
+        "type": "buildIn",
+        "path": "asset/assetContract"
+      },
+      "data": {
+        "productId": "W2020110A00000008744",
+        "url": "./archive-details.html?productId=W2020110A00000008744&assetId=2020101331034048530685406360&scene=ASSET_CONTRACT"
+      }
+    },
+    "dq_asset_HotLine": {
+      "desc": "资产详情机构客服",
+      "view": {
+        "type": "buildIn",
+        "path": "asset/assetHotLine"
+      },
+      "data": {
+        "instHotLine": ""
+      }
+    },
+    "dq_asset_sns": {
+      "desc": "问答专区",
+      "view": {
+        "type": "buildIn",
+        "path": "asset/sns"
+      },
+      "data": {
+        "productId": "W2020110A00000008744",
+        "isSnsQa": false
+      }
+    },
+    "dq_asset_Btn": {
+      "desc": "资产详情按钮",
+      "view": {
+        "type": "buildIn",
+        "path": "asset/assetBtn"
+      },
+      "data": {
+        "assetType": "account",
+        "redeemBtn": {
+          "status": false
+        },
+        "sellBtn": {
+          "dispSaleState": 11,
+          "productId": "W2020110A00000008744",
+          "category": "BANK_NETVALUE_ACC_SETTING",
+          "status": false,
+          "text": "买入"
+        },
+        "assetBtnYellowTip": {
+          "text": "预计2022-10-18开放买入"
+        },
+        "buttonInfo": {
+          "redeemButtonInfo": {
+            "dispSaleState": 11,
+            "dispRedeemState": "3",
+            "productId": "W2020110A00000008744",
+            "category": "BANK_NETVALUE_ACC_SETTING",
+            "assetId": "2020101331034048530685406360",
+            "status": true,
+            "toastText": "",
+            "text": "赎回",
+            "followAction": {
+              "redeemAiConfig": {
+                "percent": null,
+                "enable": false,
+                "productId": "W2020110A00000008744"
+              },
+              "actionType": "confirm",
+              "confirmConfig": {
+                "title": "确认要赎回吗？",
+                "spm": {
+                  "spmC": "c63566"
+                },
+                "text": "当前产品库存稀缺或后续不再供应，赎回后可能无法再购买到。",
+                "buttonInfos": [
+                  {
+                    "text": "仍然赎回",
+                    "disabled": true,
+                    "type": "redeem",
+                    "spm": {
+                      "spmC": "c63566",
+                      "spmD": "d131000",
+                      "spmParam": {
+                        "ob_type": "DINGQI",
+                        "ob_id": "W2020110A00000008744"
+                      }
+                    },
+                    "followAction": {
+                      "actionType": "url",
+                      "actionUrl": ""
+                    }
+                  },
+                  {
+                    "text": "暂不赎回",
+                    "disabled": false,
+                    "spm": {
+                      "spmC": "c63566",
+                      "spmD": "d130999",
+                      "spmParam": {
+                        "ob_type": "DINGQI",
+                        "ob_id": "W2020110A00000008744"
+                      }
+                    },
+                    "followAction": {
+                      "actionType": "noop"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "sellButtonInfo": {
+            "dispSaleState": 11,
+            "productId": "W2020110A00000008744",
+            "category": "BANK_NETVALUE_ACC_SETTING",
+            "assetId": "2020101331034048530685406360",
+            "status": false,
+            "toastText": "该产品当前未开放买入",
+            "hide": true,
+            "text": "买入"
+          }
+        },
+        "buttonTipInfo": {
+          "type": "normal",
+          "text": "2021-10-19 15:00前开放赎回"
+        }
+      }
+    }
+  },
+  "hierarchy": [
+    "dq_asset_yellow_notice",
+    "dq_product_inst_header",
+    "dq_asset_header",
+    "dq_anna_peiban",
+    "dq_asset_equity",
+    "dq_asset_trade",
+    "dq_asset_Rate",
+    "dq_asset_Contract",
+    "dq_asset_HotLine",
+    "dq_asset_sns",
+    "dq_asset_Btn"
+  ],
+  "version": "1.0",
+  "cardConfigVersion": "6.2.6"
+}

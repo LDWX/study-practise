@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ajax</title>
+</head>
+<body>
+  <script type="module">
+    // 先撸一个简单的
+    function ajax(url, onSuccess, onFailed) {
+      // 1. 创建 xhr
+      const xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject("Microsoft.XMLHTTP");
+      // 2. 连接服务器
+      xhr.open('GET', url, true);
+      // 3. 发送
+      xhr.send();
+      // 4. 默认带上 cookie
+      // xhr.withCredentials = true;
+      // 5. 接收
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4) {
+          if (xhr.status === 200) {
+            onSuccess && onSuccess(xhr.responseText);
+          }
+          else {
+            onFailed && onFailed();
+          }
+        }
+      }
+    }
+
+    // ajax('http://127.0.0.1:5500/demo.json', e => console.log(e));
+
+    // fetch('http://127.0.0.1:5500/demo.json')
+    //   .then(res => res.json())
+    //   .then(res => console.log(res));
+    let cc = null;
+
+    const mitt = {
+      cache: {},
+      on(name, func) {
+        this.cache[name] = func;
+      },
+      emit(name, data) {
+        const fn = this.cache[name];
+        fn && fn(data);
+      }
+    }
+
+    function adaptor (config) {
+      return new Promise((resolve, reject) => {
+        let request = new XMLHttpRequest();
+        request.open(
+          config.method.toUpperCase(),
+          config.url,
+          true
+        )
+        request.send();
+        request.timeout = config.timeout;
+        request.onabort = function () {
+          reject('[abort] request is abort.');
+          request = null;
+        }
+
+        if (config.cancel) {
+          mitt.emit('abort', function onCancel() {
+            request.abort();
+            request = null;
+            reject('【abort】current request is abort.')
+          })
+        }
+
+        request.onreadystatechange = function () {
+          if (request.readyState === 4) {
+            if (request.status === 200) {
+              setTimeout(() => resolve(request && request.responseText), 10000);
+            }
+            else {
+              reject('request error');
+            }
+          }
+        }
+      })
+    }
+
+    function dispatchRequest(config) {
+      return adaptor(config).then(function(response) {
+        return response;
+      }, function(reason) {
+        return Promise.reject(reason);
+      })
+    }
+
+    // 撸一个复杂一丢丢的
+    function req(config = {}) {
+      // 如何实现拦截
+      const chain = [dispatchRequest, undefined];
+
+      if (config.interceptor) {
+        chain.unshift(
+          config.interceptor.fullfilled,
+          config.interceptor.rejected
+        )
+      }
+
+      if (config.cancel) {
+        mitt.on('abort', function (cancel) {
+          config.cancel(cancel);
+        })
+      }
+
+      if (config.adaptor) {
+        chain.push(
+          config.adaptor.fullfilled,
+          config.adaptor.rejected
+        )
+      }
+      // [拦截器成功，拦截器失败，请求成功，请求失败，响应成功，响应失败]
+      // promise 链
+      let promise = Promise.resolve(config);
+
+      while (chain.length) {
+        promise = promise.then(chain.shift(), chain.shift());
+      }
+
+      return promise;
+    }
+
+    req({
+      url: 'http://127.0.0.1:5500/demo.json',
+      method: 'get',
+      interceptor: {
+        fullfilled: e => {
+          console.log('请求拦截成功', e);
+          return e;
+        }
+      },
+      adaptor: {
+        fullfilled: e => {
+          console.log('响应拦截成功', e);
+          return e;
+        }
+      },
+      cancel(onCancel) {
+        cc = onCancel;
+      }
+    })
+
+    setTimeout(() => cc && cc(), 2000);
+  </script>
+</body>
+</html>

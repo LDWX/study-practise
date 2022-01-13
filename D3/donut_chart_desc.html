@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donut_Chart</title>
+  <script src="./d3.js"></script>
+  <style>
+
+  </style>
+</head>
+<body>
+  <h1>普通环形图</h1>
+  <div id="my_donut_chart"></div>
+
+  <script>
+    const width = 450,
+      height = 450,
+      margin = 40;
+
+    const radius = Math.min(width, height) / 2 - margin;
+
+    const svg = d3.select('#my_donut_chart')
+      .append('svg')
+        .attr('width', width)
+        .attr('height', height)
+      .append("g")
+        .attr('transform', `translate(${width / 2},${height / 2})`)
+
+    const data = {a: 3, b: 6, c: 9, d: 12, e: 30};
+
+    const color = d3.scaleOrdinal()
+
+      .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56"]);
+
+    const pie = d3.pie()
+      .value(d => d[1])
+      (Object.entries(data))
+
+    const arc = pie.arc()
+      .innerRadius(130)         // This is the size of the donut hole
+      .outerRadius(200);
+
+    const outerArc = pie()
+      .innerRadius(180)         // This is the size of the donut hole
+      .outerRadius(180);
+
+    svg
+      .selectAll('hello world')
+      .data(pie)
+      // .append('g')
+      .join('path')
+      .attr('d', arc)
+      .attr('fill', d => color(d.data[0]))
+      .attr("stroke", "black")
+      .style("stroke-width", "2px")
+      .style("opacity", 0.7);
+
+    // svg
+    //   .selectAll('allPolyLines')
+    //   .data(pie)
+    //   .enter()
+    //   .append('polyline')
+    //     .attr('stroke', 'black')
+    //     .style('fill', 'none')
+    //     .attr('stroke-width', 1)
+    //     .attr('points', function(d) {
+    //       let posA = arc.centroid(d);
+    //       let posB = outerArc.centroid(d);
+    //       var posC = outerArc.centroid(d);
+    //       var midangle = d.startAngle + (d.endAngle - d.startAngle) / 2 // we need the angle to see if the X position will be at the extreme right or extreme left
+    //       posC[0] = radius * 0.95 * (midangle < Math.PI ? 1 : -1); // multiply by 1 or -1 to put it on the right or on the left
+    //       return [posA, posB, posC]
+    //     })
+  </script>
+</body>
+</html>

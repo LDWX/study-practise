@@ -1,3 +1,7 @@
 {
-  "eggHelper.serverPort": 50116
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "eggHelper.serverPort": 36747,
+  "deno.enable": true,
+  "deno.lint": true,
+  "deno.unstable": true
 }

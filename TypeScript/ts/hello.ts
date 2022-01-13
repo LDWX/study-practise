@@ -1,4 +1,8 @@
-function sayHello (person: string): void {
+// 引入声明文件
+/// <reference path="./global.d.ts" />
+
+
+const sayHello: SayHello = (person: string) => {
   console.log('Hello, ' + person)
 }
 
@@ -20,3 +24,5 @@ let tom: Person2 = {
   sleep: 10
 }
 console.log(tom)
+
+console.log('sayHello: ', sayHello('shenxin'))

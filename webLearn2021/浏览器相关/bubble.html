@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>事件冒泡与捕获</title>
+  <style>
+    .outer {
+      padding: 20px;
+      background-color: orange;
+    }
+    .middle {
+      padding: 20px;
+      background-color: steelblue;
+    }
+    .inner {
+      padding: 20px;
+      background-color: pink;
+    }
+  </style>
+</head>
+<body>
+  <div class="outer">
+    <div class="middle">
+      <div class="inner">
+        <button>click me!</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module">
+    // console.log('%c code is running...', 'color: red;');
+
+    // ------------ utils start ------------
+    const $ = selector => document.querySelector(selector);
+    // ------------ utils end --------------
+
+    // 1、冒泡是怎么的
+    $('.outer').addEventListener('click', function(e) {
+      // console.log('%c [target]', 'color: orange;', e.target);
+      // console.log('%c [currentTarget]', 'color: orange;', e.currentTarget);
+      console.log('%c [bubble] outer div is clicked.', 'color: orange;');
+    }, false);
+
+    $('.inner').addEventListener('click', function(e) {
+      // console.log('%c [target]', 'color: pink;', e.target);
+      // console.log('%c [currentTarget]', 'color: pink;', e.currentTarget);
+      console.log('%c [bubble] inner div is clicked.', 'color: pink;');
+    }, false);
+
+    $('.middle').addEventListener('click', function(e) {
+      // console.log('%c [target]', 'color: steelblue;', e.target);
+      // console.log('%c [currentTarget]', 'color: steelblue;', e.currentTarget);
+      console.log('%c [bubble] middle div is clicked.', 'color: steelblue;');
+    }, false);
+
+    $('button').addEventListener('click', function(e) {
+      // console.log('[target]', e.target);
+      // console.log('[currentTarget]', e.currentTarget);
+      console.log('[bubble] button is clicked.');
+    }, false);
+
+    // 什么是捕获
+    $('.outer').addEventListener('click', function() {
+      console.log('%c [capture] outer div is clicked.', 'color: orange;');
+    }, true);
+
+    $('.middle').addEventListener('click', function() {
+      console.log('%c [capture] middle div is clicked.', 'color: steelblue;');
+    }, true);
+
+    $('.inner').addEventListener('click', function() {
+      console.log('%c [capture] inner div is clicked.', 'color: pink;');
+    }, true);
+
+    $('button').addEventListener('click', function() {
+      console.log('[capture] button is clicked.');
+    }, true);
+  </script>
+</body>
+</html>
