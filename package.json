@@ -10,7 +10,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@ali/schema": "^0.1.11",
     "deno_ls_plugin": "^0.1.0",
-    "typescript": "^3.3.1"
-  }
+    "moment": "^2.30.1",
+    "typescript": "^3.3.1",
+    "uuid": "^9.0.1",
+    "versioning": "^1.1.2"
+  },
+  "repository": "git@github.com:LDWX/study-practise.git"
 }
