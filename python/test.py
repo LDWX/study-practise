@@ -16,7 +16,6 @@
 # print(arr[:])  # 输入整个数组
 
 
-
 # 声明一个数组
 # test= map(lambda x: x**2, [2,4,6])
 # arr = list(test)
@@ -64,24 +63,5 @@
 # dict3 = dict([('sape', 4139), ('guido', 4127), ('jack', 4098)])
 
 
-
-# 执行导入模块
-# from pyModules.fibo import fib2 as myfib
-# num = myfib(3)
-# print(num)
-# import pyModules.fibo
-# pyModules.fibo.fib(50)
-
-
-
 # table = {'Sjoerd': '4127', 'Jack': '4098', 'Dcab': 8637678}
 # print('Jack: {Jack}; Sjoerd: {Sjoerd}; Dcab: {Dcab:d}'.format(**table))
-
-
-# 读写文件
-# whence 值为 0 时，表示从文件开头计算，1 表示使用当前文件位置，2 表示使用文件末尾作为参考点。省略 whence 时，其默认值为 0，即使用文件开头作为参考点。
-# with open('workfile.txt', 'rb+') as f:
-#   f.write(b'0123456789abcdef')
-#   f.seek(-3, 2)
-#   print(f.read(2))
-#   print(f.tell())
