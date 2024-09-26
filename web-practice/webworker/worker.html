@@ -14,11 +14,11 @@
 
     worker.onmessage = function(event) {
       document.getElementById("result").textContent = event.data;
-      dump("Got: " + event.data + "\n");
+      // dump("Got: " + event.data + "\n");
     };
 
     worker.onerror = function(error) {
-      dump("Worker error: " + error.message + "\n");
+      // dump("Worker error: " + error.message + "\n");
       throw error;
     };
 

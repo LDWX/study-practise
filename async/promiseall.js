@@ -13,32 +13,32 @@ const promise3 = new Promise((resolve, reject) => {
 
 
 
-// async function test() {
-//   const [...keys] = await Promise.all([promise1, promise2, promise3])
-//   console.log(keys[0], keys[1])
-// }
+async function test() {
+  const [...keys] = await Promise.all([promise1, promise2, promise3])
+  console.log(keys[0], keys[1], keys[2])
+}
 
-// test();
-
-
+test();
 
 
-const keys = [
-	'service1',
-  'service2'
-]
-const resList = [
-  {
-    key: 'data1'
-  },
-  {
-    key: 'data2'
-  }
-]
 
-let result = {}
-resList.forEach((res, index) => {
-  result[keys[index]] = res;
-})
 
-console.log('#### ', result)
+// const keys = [
+// 	'service1',
+//   'service2'
+// ]
+// const resList = [
+//   {
+//     key: 'data1'
+//   },
+//   {
+//     key: 'data2'
+//   }
+// ]
+
+// let result = {}
+// resList.forEach((res, index) => {
+//   result[keys[index]] = res;
+// })
+
+// console.log('#### ', result)
