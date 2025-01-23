@@ -50,7 +50,7 @@ def cal_fd(rate, months, money, showDetail):
           print('等额本金第{}个月月供：{}元'.format(i+1, round(mpan, 2)))
 
 # 利率, 月数, 金额
-cal_fd(0.4, 30 * 12, 400000, False)
+# cal_fd(0.4, 30 * 12, 400000, False)
 # cal_fd(2.85, 30 * 12, 400000, False)
 
 
@@ -88,7 +88,7 @@ def cal_profit_multi_rate(money, profit, year, period):
   print(f"""复利年化利率为：{rate}%""")
   
 # 本金, 利息, 年限, 定期周期
-# cal_profit_multi_rate(10000, 1000, 3, 1)
+# cal_profit_multi_rate(500000, 78700, 30, 1) 
   
   
   
