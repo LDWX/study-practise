@@ -1,0 +1,8 @@
+langchain-community
+langchain
+langchain-openai
+docx2txt
+pypdf
+qdrant-client
+tiktoken
+flask

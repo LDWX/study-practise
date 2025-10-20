@@ -3,5 +3,7 @@
   "eggHelper.serverPort": 36747,
   "deno.enable": true,
   "deno.lint": true,
-  "deno.unstable": true
+  "deno.unstable": true,
+  "python-envs.defaultEnvManager": "ms-python.python:venv",
+  "python-envs.pythonProjects": []
 }
