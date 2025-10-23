@@ -6,3 +6,4 @@ pypdf
 qdrant-client
 tiktoken
 flask
+langchain_openai

@@ -8,9 +8,7 @@ from dotenv import load_dotenv  # 用于加载环境变量
 load_dotenv()  # 加载 .env 文件中的环境变量
 
 # 1.Load 导入Document Loaders
-from langchain.document_loaders import PyPDFLoader
-from langchain.document_loaders import Docx2txtLoader
-from langchain.document_loaders import TextLoader
+from langchain_community.document_loaders import PyPDFLoader, Docx2txtLoader, TextLoader
 
 # 加载Documents
 base_dir = './docs' # 文档的存放目录
@@ -34,8 +32,8 @@ text_splitter = RecursiveCharacterTextSplitter(chunk_size=200, chunk_overlap=10)
 chunked_documents = text_splitter.split_documents(documents)
 
 # 3.Store 将分割嵌入并存储在矢量数据库Qdrant中
-from langchain.vectorstores import Qdrant
-from langchain.embeddings import OpenAIEmbeddings
+from langchain_community.vectorstores import Qdrant
+from langchain_openai import OpenAIEmbeddings
 vectorstore = Qdrant.from_documents(
     documents=chunked_documents, # 以分块的文档
     embedding=OpenAIEmbeddings(), # 用OpenAI的Embedding Model做嵌入
@@ -46,7 +44,7 @@ vectorstore = Qdrant.from_documents(
 import logging # 导入Logging工具
 logging.basicConfig(level=logging.DEBUG)
 
-from langchain.chat_models import ChatOpenAI # ChatOpenAI模型
+from langchain_openai import ChatOpenAI # ChatOpenAI模型
 from langchain.retrievers.multi_query import MultiQueryRetriever # MultiQueryRetriever工具
 from langchain.chains import RetrievalQA # RetrievalQA链
 
