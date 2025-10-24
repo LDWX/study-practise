@@ -29,14 +29,15 @@ prompt_sample = PromptTemplate(input_variables=["flower_type", "occasion", "ad_c
 # print(prompt_sample.format(**samples[0]))
 
 from langchain.prompts import FewShotPromptTemplate
-prompt = FewShotPromptTemplate(
-    examples=samples,
-    example_prompt=prompt_sample,
-    # prefix="请为以下鲜花店文案撰写一个吸引人的短文案：",
-    suffix="鲜花类型: {flower_type}\n场合: {occasion}\n",
-    input_variables=["flower_type", "occasion"],
-    example_separator="\n\n"
-)
+# 将全量的sample传递给大模型
+# prompt = FewShotPromptTemplate(
+#     examples=samples,
+#     example_prompt=prompt_sample,
+#     # prefix="请为以下鲜花店文案撰写一个吸引人的短文案：",
+#     suffix="鲜花类型: {flower_type}\n场合: {occasion}\n",
+#     input_variables=["flower_type", "occasion"],
+#     example_separator="\n\n"
+# )
 
 # print(prompt.format(flower_type="水仙花", occasion="友谊"))
 
@@ -55,5 +56,31 @@ prompt = FewShotPromptTemplate(
 from langchain_openai import OpenAI
 model = OpenAI(model_name='gpt-3.5-turbo-instruct')
 
+# result = model.invoke(prompt.format(flower_type="水仙花", occasion="友谊"))
+# print(result)
+
+
+# 使用示例选择器
+from langchain.prompts.example_selector import SemanticSimilarityExampleSelector
+from langchain_chroma import Chroma
+from langchain_openai import OpenAIEmbeddings
+
+# ***会从我们的sample中选出与prompt中最相似的例子送给大模型，从而节约了token***
+example_selector = SemanticSimilarityExampleSelector.from_examples(
+  examples=samples,
+  embeddings=OpenAIEmbeddings(),
+  vectorstore_cls=Chroma(),
+  k=1
+)
+
+prompt = FewShotPromptTemplate(
+    example_selector=example_selector,
+    example_prompt=prompt_sample,
+    suffix="鲜花类型: {flower_type}\n场合: {occasion}\n",
+    input_variables=["flower_type", "occasion"],
+    example_separator="\n\n"
+)
+
+print(prompt.format(flower_type="水仙花", occasion="友谊"))
 result = model.invoke(prompt.format(flower_type="水仙花", occasion="友谊"))
 print(result)
