@@ -50,7 +50,6 @@ AI（使用ToT框架）：
 """
 
 
-
 from langchain.prompts import ChatPromptTemplate, HumanMessagePromptTemplate, SystemMessagePromptTemplate
 system_prompt_role = SystemMessagePromptTemplate.from_template(role_template)
 # system_prompt_cot = SystemMessagePromptTemplate.from_template(cot_template)

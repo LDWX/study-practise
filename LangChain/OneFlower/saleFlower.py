@@ -15,6 +15,7 @@ response_schemas = [
     ResponseSchema(name="reason", description="为什么这样进行描述，有什么优势"),
 ]
 output_parser = StructuredOutputParser.from_response_schemas(response_schemas)
+# 返回一个字符串，用于指导如何格式化语言模型的输出，告诉它应该如何组织并构建它的回答
 format_instructions = output_parser.get_format_instructions()
 
 prompt = PromptTemplate(
@@ -36,7 +37,7 @@ for flower, price in zip(flowers, prices):
     
     # 通过大模型获取输出，输出结果对观看不友好，需要parse一下才方便查看
     output = llm.invoke(input_prompt)
-    
+    # 这个方法接收一个字符串（也就是语言模型的输出）并将其解析为特定的数据结构或格式。这一步通常用于确保模型的输出符合我们的预期，并且能够以我们需要的形式进行后续处理
     parsed_output = output_parser.parse(output.content)
     # print("""parsed_output: {}""".format(parsed_output))
     

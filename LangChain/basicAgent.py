@@ -1,9 +1,5 @@
 from langchain_openai import ChatOpenAI
 
-# import os
-# os.environ["OPENAI_API_BASE"] = "https://api.openai-proxy.org/v1"
-# os.environ["OPENAI_API_KEY"] = "sk-xxxxxxxxxx"
-
 
 chat = ChatOpenAI(
     model="gpt-4",
